@@ -19,7 +19,7 @@ SITE_CONFIG = {
     # ----------------------------------------------------------
     # 2. SEO / analytics
     # ----------------------------------------------------------
-    "ga_id":         os.getenv("GA_ID", "G-XXXXXXXXXX"),    # Google Analytics ID
+    "ga_id":         os.getenv("GA_ID", "G-P2PSDNKE9D"),    # Google Analytics 4 (gtag)
     "maps_api_key":  os.getenv("MAPS_API_KEY", ""),         # Google Maps JS API Key
     "maps_id":       os.getenv("MAPS_ID", ""),              # Google Cloud Maps ID (Advanced Markers)
 
@@ -76,19 +76,17 @@ SITE_CONFIG = {
     # 8. Guide section images
     # ----------------------------------------------------------
     "guide_images": [
-        "https://images.unsplash.com/photo-1552611052-33e04de081de?q=80&w=800&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?q=80&w=800&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1555126634-323283e090fa?q=80&w=800&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1511910849309-0dffb8785146?q=80&w=800&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1534604973900-c43ab4c2e0ab?q=80&w=800&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1526318896980-cf78c088247c?q=80&w=800&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1503764654157-72d979d9af2f?q=80&w=800&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?q=80&w=800&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1553621042-f6e147245754?q=80&w=800&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1467003909585-2f8a72700288?q=80&w=800&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1506368249639-73a05d6f6488?q=80&w=800&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1525755662778-989d0524087e?q=80&w=800&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1591814441348-73546747d96a?q=80&w=800&auto=format&fit=crop",
+        # Dedicated guide image pool (separate from item thumbnails)
+        "/static/images/guides/guide_cover_01.jpg",
+        "/static/images/guides/guide_cover_02.jpg",
+        "/static/images/guides/guide_cover_03.jpg",
+        "/static/images/guides/guide_cover_04.jpg",
+        "/static/images/guides/guide_cover_05.jpg",
+        "/static/images/guides/guide_cover_06.jpg",
+        "/static/images/guides/guide_cover_07.jpg",
+        "/static/images/guides/guide_cover_08.jpg",
+        "/static/images/guides/guide_cover_09.jpg",
+        "/static/images/guides/guide_cover_10.jpg",
     ],
 
     # ----------------------------------------------------------

@@ -2,13 +2,13 @@
    1. Variables & Global Settings
    ========================================= */
 :root {
-    --primary-color: #2c3e50;
-    --accent-color: #e74c3c;       /* keep aligned with accent_color in config.py */
-    --accent-hover: #c0392b;
-    --bg-color: #fffaf0;
+    --primary-color: #3a2a1f;
+    --accent-color: #8b5e3c;       /* coffee brown */
+    --accent-hover: #6f4528;
+    --bg-color: #f8f3ec;
     --card-bg: #ffffff;
-    --text-gray: #555;
-    --bg-dot-color: #f39c12;       /* keep aligned with bg_dot_color in config.py */
+    --text-gray: #5f5043;
+    --bg-dot-color: #d6b48a;       /* latte dot */
 }
 
 body {
@@ -90,7 +90,7 @@ header {
 }
 .theme-button.active {
     background-color: var(--accent-color); color: white; border-color: var(--accent-color);
-    box-shadow: 0 4px 10px rgba(231, 76, 60, 0.2);
+    box-shadow: 0 4px 10px rgba(139, 94, 60, 0.25);
 }
 
 .count-badge {
@@ -130,7 +130,7 @@ header {
     border: 3px solid var(--accent-color);
     padding: 30px 20px; border-radius: 20px; background-color: #fff;
     margin-bottom: 50px;
-    box-shadow: 0 10px 30px rgba(231, 76, 60, 0.1);
+    box-shadow: 0 10px 30px rgba(139, 94, 60, 0.15);
 }
 
 .guide-section-title {
@@ -145,7 +145,7 @@ header {
     display: inline-block; padding: 12px 35px;
     background-color: var(--accent-color); color: white !important;
     border-radius: 30px; font-weight: 800; transition: all 0.3s;
-    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+    box-shadow: 0 4px 15px rgba(139, 94, 60, 0.35);
 }
 .btn-view-all:hover { transform: translateY(-3px); background-color: var(--accent-hover); }
 
@@ -228,7 +228,7 @@ header {
 
 .booking-box {
     text-align: center; margin: 50px 0; padding: 30px;
-    background: #fff5f5; border-radius: 15px; border: 2px dashed var(--accent-color);
+    background: #f7efe5; border-radius: 15px; border: 2px dashed var(--accent-color);
 }
 .booking-btn {
     display: inline-block; background: var(--accent-color); color: white;
@@ -270,11 +270,70 @@ footer {
    9. Responsive
    ========================================= */
 @media (max-width: 768px) {
-    .header-top { height: 65px; }
-    .logo-img { height: 55px; }
-    .detail-title { font-size: 1.5rem; }
-    .map-section { height: 45vh; min-height: 280px; }
-    .onsen-grid { grid-template-columns: 1fr; }
-    .content-wrapper { margin-top: -20px; padding: 0 15px 40px; }
-    .guide-section-title { font-size: 1.4rem; }
+    .header-top {
+        height: auto;
+        min-height: 70px;
+        padding: 8px 0;
+    }
+    .header-left { left: 6px; }
+    .header-left a { font-size: 0.82rem !important; }
+    .lang-selector { right: 6px; gap: 4px; }
+    .lang-btn { padding: 5px 10px; font-size: 0.72rem; }
+    .logo-img { height: 52px; max-width: 58vw; object-fit: contain; }
+
+    .theme-filter-buttons {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding: 10px 10px 12px;
+        gap: 8px;
+    }
+    .theme-button { flex: 0 0 auto; padding: 7px 14px; font-size: 0.82rem; }
+
+    .detail-title { font-size: 1.35rem; line-height: 1.35; }
+    .detail-meta { font-size: 0.82rem; line-height: 1.5; word-break: break-word; }
+    .detail-content { font-size: 0.95rem; line-height: 1.8; }
+    .detail-content h2 { font-size: 1.2rem; margin-top: 28px; }
+    .detail-content h3 { font-size: 1.05rem; margin-top: 22px; }
+    .detail-content table { display: block; overflow-x: auto; white-space: nowrap; }
+    .detail-container { margin: 24px auto; padding: 0 14px 48px; }
+
+    .map-section { height: 45vh; min-height: 260px; }
+    .onsen-grid { grid-template-columns: 1fr; gap: 16px; }
+    .card-thumb { height: 180px; }
+    .card-content { padding: 14px; }
+    .card-title { font-size: 1.02rem; }
+    .card-summary { font-size: 0.86rem; }
+    .card-meta { font-size: 0.77rem; gap: 8px; }
+    .content-wrapper { margin-top: -14px; padding: 0 12px 36px; }
+    .guide-section-title { font-size: 1.25rem; }
+    .guide-highlight-section { padding: 20px 14px; border-width: 2px; }
+    .intro-box { padding: 18px 14px; margin-bottom: 28px; }
+    .intro-box h2 { font-size: 1.35rem; }
+}
+
+@media (max-width: 480px) {
+    .header-top {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-areas:
+          "logo logo"
+          "guide lang";
+        align-items: center;
+        row-gap: 8px;
+        padding: 10px 2px 6px;
+    }
+    .header-top h1 { grid-area: logo; margin: 0; justify-self: center; }
+    .header-left { grid-area: guide; position: static; justify-self: start; }
+    .lang-selector { grid-area: lang; position: static; justify-self: end; }
+    .logo-img { height: 44px; max-width: 70vw; }
+    .header-left a { font-size: 0.78rem !important; }
+    .lang-btn { font-size: 0.68rem; padding: 5px 8px; }
+
+    .list-title { font-size: 1.35rem; margin: 28px 0 18px; }
+    .btn-view-all { padding: 10px 22px; font-size: 0.92rem; }
+    .back-btn { padding: 11px 20px; font-size: 0.9rem; }
+    .booking-btn { padding: 12px 20px; font-size: 0.92rem; }
+    .footer-links a { display: inline-block; margin: 4px 6px; }
 }

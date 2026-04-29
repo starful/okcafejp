@@ -16,11 +16,11 @@ export const CATEGORY_MAP = {
 
 // Marker color per theme
 export const THEME_COLORS = {
-    'specialty': '#9b5b2b',
-    'dessert':   '#d16ba5',
-    'work':      '#3b82f6',
-    'scenic':    '#22c55e',
-    'vintage':   '#8b7355',
-    'roastery':  '#92400e',
-    'default':   '#757575',
+    'specialty': '#8b5e3c',
+    'dessert':   '#a06a45',
+    'work':      '#7a4e2f',
+    'scenic':    '#9b6b47',
+    'vintage':   '#6e4b34',
+    'roastery':  '#5c3a24',
+    'default':   '#8b5e3c',
 };

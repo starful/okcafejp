@@ -234,10 +234,10 @@ def item_detail(item_id):
 @app.route('/static/images/<path:filename>')
 def serve_images(filename):
     image_dir = os.path.join(STATIC_DIR, 'images')
-    if any(x in filename for x in ['favicon', 'apple-touch', 'android-chrome']):
-        local_path = os.path.join(image_dir, filename)
-        if os.path.exists(local_path):
-            return send_from_directory(image_dir, filename)
+    local_path = os.path.join(image_dir, filename)
+    # Prefer local files (important for local preview and freshly generated images).
+    if os.path.exists(local_path):
+        return send_from_directory(image_dir, filename)
     project_name = SITE_CONFIG['project_name']
     version = os.environ.get('ASSET_VERSION', '').strip()
     url = f"https://storage.googleapis.com/ok-project-assets/{project_name}/{filename}"

@@ -1,70 +1,344 @@
 {
   "last_updated": "2026.04.29",
-  "total_count": 4,
+  "total_count": 20,
   "items": [
     {
-      "id": "sample_item_1_ko",
+      "id": "tokyo_brew_spot_tokyo_ginza_ko",
       "lang": "ko",
-      "title": "Sample Item 1: Korean Guide",
-      "lat": 35.6909,
-      "lng": 139.7018,
+      "title": "도쿄 긴자 필수 방문지: 도쿄 브루 스팟 003에서 만나는 특별한 디저트 페어링과 스타일리시한 휴식",
+      "lat": 35.6718,
+      "lng": 139.7645,
       "categories": [
-        "Local Gem"
+        "Dessert",
+        "Specialty"
       ],
-      "thumbnail": "/static/images/sample_item_1.jpg",
+      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_ginza.jpg",
+      "address": "Tokyo, Ginza",
+      "published": "2026-04-29",
+      "summary": "도쿄 긴자 중심에 자리한 도쿄 브루 스팟 003은 단순한 카페를 넘어, 세련된 인테리어와 미학적으로 완벽한 디저트 페어링으로 오감을 만족시키는 특별한 공간입니다. 영어 메뉴 덕분에 해외 방문객도 편안하게 최고의 경험을 즐길 수 있어, 도쿄 여행의 필수 코스로 자리매김하고 있습니다.",
+      "agoda": "",
+      "link": "/item/tokyo_brew_spot_tokyo_ginza_ko"
+    },
+    {
+      "id": "tokyo_brew_spot_tokyo_harajuku_en",
+      "lang": "en",
+      "title": "Tokyo Brew Spot 009: Harajuku's Ultimate Dessert Cafe & Signature Latte Photo Haven",
+      "lat": 35.6702,
+      "lng": 139.7026,
+      "categories": [
+        "Dessert",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_harajuku.jpg",
+      "address": "Tokyo, Harajuku",
+      "published": "2026-04-29",
+      "summary": "Discover Tokyo Brew Spot 009, Harajuku's enchanting dessert cafe, celebrated for its exquisite signature lattes and picture-perfect setting that promises an unforgettable culinary and visual experience, making it a must-visit photo spot in the heart of Tokyo.",
+      "agoda": "",
+      "link": "/item/tokyo_brew_spot_tokyo_harajuku_en"
+    },
+    {
+      "id": "tokyo_brew_spot_tokyo_roppongi_ko",
+      "lang": "ko",
+      "title": "롯폰기의 밤을 밝히는 아늑한 커피 성지: 도쿄 브루 스팟 004 (Tokyo Brew Spot 004)",
+      "lat": 35.6655,
+      "lng": 139.7293,
+      "categories": [
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_roppongi.jpg",
+      "address": "Tokyo, Roppongi",
+      "published": "2026-04-29",
+      "summary": "도쿄 롯폰기 한가운데 자리한 도쿄 브루 스팟 004는 최고급 싱글 오리진 원두와 늦게까지 이어지는 영업 시간, 그리고 아늑한 조명이 어우러져 특별한 커피 경험을 선사합니다. 번화한 도시의 밤 속에서 진정한 휴식과 깊은 커피의 맛을 찾아 떠나는 이들을 위한 완벽한 안식처입니다.",
+      "agoda": "",
+      "link": "/item/tokyo_brew_spot_tokyo_roppongi_ko"
+    },
+    {
+      "id": "tokyo_brew_spot_tokyo_kichijoji_en",
+      "lang": "en",
+      "title": "Tokyo Brew Spot 008: Your Serene Garden Cafe Escape in Kichijoji, Tokyo",
+      "lat": 35.7004,
+      "lng": 139.5803,
+      "categories": [
+        "Specialty",
+        "Scenic"
+      ],
+      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_kichijoji.jpg",
+      "address": "Tokyo, Kichijoji",
+      "published": "2026-04-29",
+      "summary": "Discover Tokyo Brew Spot 008, a charming cafe sanctuary nestled in the vibrant heart of Kichijoji. Indulge in exquisite hand-drip coffee amidst a lush garden terrace, perfect for a peaceful escape or a joyful family outing. This hidden gem offers a unique blend of artisanal quality and welcoming ambiance.",
+      "agoda": "",
+      "link": "/item/tokyo_brew_spot_tokyo_kichijoji_en"
+    },
+    {
+      "id": "tokyo_brew_spot_tokyo_shinjuku_en",
+      "lang": "en",
+      "title": "Tokyo Brew Spot 002: Shinjuku's Premier Sanctuary for Third-Wave Coffee & Laptop Productivity",
+      "lat": 35.6895,
+      "lng": 139.7005,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_shinjuku.jpg",
       "address": "Tokyo, Shinjuku",
       "published": "2026-04-29",
-      "summary": "Korean version draft for Sample Item 1, with practical highlights.",
+      "summary": "Discover Tokyo Brew Spot 002, Shinjuku's hidden gem renowned for its exquisite third-wave espresso, tranquil atmosphere, and exceptional laptop-friendly environment, perfect for discerning coffee lovers and remote professionals alike.",
       "agoda": "",
-      "link": "/item/sample_item_1_ko"
+      "link": "/item/tokyo_brew_spot_tokyo_shinjuku_en"
     },
     {
-      "id": "sample_item_2_ko",
+      "id": "tokyo_brew_spot_tokyo_shibuya_en",
+      "lang": "en",
+      "title": "Tokyo Brew Spot 005: Your Ultimate Work-Friendly Cafe & Brunch Haven in Vibrant Shibuya, Tokyo",
+      "lat": 35.6581,
+      "lng": 139.7017,
+      "categories": [
+        "Work-Friendly",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_shibuya.jpg",
+      "address": "Tokyo, Shibuya",
+      "published": "2026-04-29",
+      "summary": "Discover Tokyo Brew Spot 005, a premier cafe in the heart of Shibuya, offering an exceptional brunch experience, lightning-fast Wi-Fi, and a genuinely welcoming atmosphere for international visitors. It's the perfect spot to fuel your day, catch up on work, or simply soak in the vibrant Tokyo energy.",
+      "agoda": "",
+      "link": "/item/tokyo_brew_spot_tokyo_shibuya_en"
+    },
+    {
+      "id": "tokyo_brew_spot_tokyo_ebisu_ko",
       "lang": "ko",
-      "title": "Sample Item 2: Korean Guide",
-      "lat": 35.6711,
-      "lng": 139.7662,
+      "title": "도쿄 에비스의 완벽한 아침을 선사하는 작업 공간: 도쿄 브루 스팟 010",
+      "lat": 35.6467,
+      "lng": 139.71,
       "categories": [
-        "Local Gem"
+        "Work-Friendly",
+        "Specialty"
       ],
-      "thumbnail": "/static/images/sample_item_2.jpg",
-      "address": "Tokyo, Chuo",
+      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_ebisu.jpg",
+      "address": "Tokyo, Ebisu",
       "published": "2026-04-29",
-      "summary": "Korean version draft for Sample Item 2, with practical highlights.",
-      "agoda": "https://agoda.com/...",
-      "link": "/item/sample_item_2_ko"
+      "summary": "도쿄 에비스에 위치한 도쿄 브루 스팟 010은 바쁜 도시 속에서 효율적인 작업과 진정한 휴식을 동시에 선사하는 현대적인 카페입니다. 안정적인 인터넷, 편안한 작업 공간, 그리고 아침 일찍 문을 여는 이 곳에서 당신만의 특별한 하루를 시작해보세요.",
+      "agoda": "",
+      "link": "/item/tokyo_brew_spot_tokyo_ebisu_ko"
     },
     {
-      "id": "sample_item_2_en",
+      "id": "tokyo_brew_spot_tokyo_marunouchi_en",
       "lang": "en",
-      "title": "Sample Item 2: Quick Guide",
-      "lat": 35.6711,
-      "lng": 139.7662,
+      "title": "Tokyo Brew Spot 001: Your Premier Specialty Coffee & Work Hub in Marunouchi, Tokyo",
+      "lat": 35.6812,
+      "lng": 139.7671,
       "categories": [
-        "Local Gem"
+        "Specialty",
+        "Work-Friendly"
       ],
-      "thumbnail": "/static/images/sample_item_2.jpg",
-      "address": "Tokyo, Chuo",
+      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_marunouchi.jpg",
+      "address": "Tokyo, Marunouchi",
       "published": "2026-04-29",
-      "summary": "A fast overview of Sample Item 2, including highlights and practical tips.",
-      "agoda": "https://agoda.com/...",
-      "link": "/item/sample_item_2_en"
+      "summary": "Discover Tokyo Brew Spot 001, Marunouchi's hidden gem for unparalleled specialty coffee, offering a serene yet vibrant atmosphere perfect for both savoring exquisite brews and productive work sessions. With reliable Wi-Fi and ample power outlets, it's an ideal urban retreat for locals and visitors alike seeking quality and convenience in the heart of Tokyo.",
+      "agoda": "",
+      "link": "/item/tokyo_brew_spot_tokyo_marunouchi_en"
     },
     {
-      "id": "sample_item_1_en",
+      "id": "tokyo_brew_spot_tokyo_ikebukuro_en",
       "lang": "en",
-      "title": "Sample Item 1: Quick Guide",
-      "lat": 35.6909,
-      "lng": 139.7018,
+      "title": "Discover Tokyo Brew Spot 007: Your Ultimate Guide to Ikebukuro's Specialty Coffee & Work-Friendly Haven",
+      "lat": 35.7289,
+      "lng": 139.7101,
       "categories": [
-        "Local Gem"
+        "Specialty",
+        "Work-Friendly"
       ],
-      "thumbnail": "/static/images/sample_item_1.jpg",
+      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_ikebukuro.jpg",
+      "address": "Tokyo, Ikebukuro",
+      "published": "2026-04-29",
+      "summary": "Uncover the inviting charm of Tokyo Brew Spot 007, Ikebukuro's premier cafe offering exceptional house-roasted coffee and spacious group tables. Perfectly situated for easy access, it's an ideal spot for both coffee connoisseurs and those seeking a productive environment in the heart of Tokyo.",
+      "agoda": "",
+      "link": "/item/tokyo_brew_spot_tokyo_ikebukuro_en"
+    },
+    {
+      "id": "tokyo_brew_spot_tokyo_ueno_en",
+      "lang": "en",
+      "title": "Tokyo Brew Spot 006: Ueno's Tranquil Haven for Pour-Over Coffee and Calm Reflection",
+      "lat": 35.7089,
+      "lng": 139.731,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_ueno.jpg",
+      "address": "Tokyo, Ueno",
+      "published": "2026-04-29",
+      "summary": "Discover Tokyo Brew Spot 006 in Ueno, a serene haven dedicated to the art of pour-over coffee. Offering a calm ambiance and scenic window seats, it's the perfect escape for connoisseurs and those seeking a peaceful workspace amidst the bustling city.",
+      "agoda": "",
+      "link": "/item/tokyo_brew_spot_tokyo_ueno_en"
+    },
+    {
+      "id": "tokyo_brew_spot_tokyo_shinjuku_ko",
+      "lang": "ko",
+      "title": "도쿄 신주쿠의 숨겨진 보석, 도쿄 브루 스팟 002: 스페셜티 커피와 노트북 작업의 완벽 조화",
+      "lat": 35.6895,
+      "lng": 139.7005,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_shinjuku.jpg",
       "address": "Tokyo, Shinjuku",
       "published": "2026-04-29",
-      "summary": "A fast overview of Sample Item 1, including highlights and practical tips.",
+      "summary": "신주쿠의 번잡함 속 고요한 안식처, 도쿄 브루 스팟 002는 최상급의 서드 웨이브 에스프레소와 함께 집중적인 작업이 가능한 조용한 공간을 제공합니다. 섬세하게 추출된 커피 한 잔과 함께 생산성을 높이고 싶은 분들을 위한 이상적인 카페입니다.",
       "agoda": "",
-      "link": "/item/sample_item_1_en"
+      "link": "/item/tokyo_brew_spot_tokyo_shinjuku_ko"
+    },
+    {
+      "id": "tokyo_brew_spot_tokyo_kichijoji_ko",
+      "lang": "ko",
+      "title": "도쿄 키치죠지 'Tokyo Brew Spot 008': 정원 테라스의 평화, 핸드드립 커피의 깊이, 가족 친화적인 카페",
+      "lat": 35.7004,
+      "lng": 139.5803,
+      "categories": [
+        "Specialty",
+        "Scenic"
+      ],
+      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_kichijoji.jpg",
+      "address": "Tokyo, Kichijoji",
+      "published": "2026-04-29",
+      "summary": "도쿄 키치죠지에 자리한 'Tokyo Brew Spot 008'은 싱그러운 정원 테라스, 장인의 손길로 내린 핸드드립 커피, 그리고 모든 연령대가 편안하게 즐길 수 있는 가족 친화적인 분위기가 완벽하게 어우러진 특별한 카페입니다. 도심 속에서 자연의 여유와 최상급 커피 한 잔의 행복을 동시에 만끽할 수 있는 이곳은 방문객들에게 잊지 못할 추억을 선사합니다.",
+      "agoda": "",
+      "link": "/item/tokyo_brew_spot_tokyo_kichijoji_ko"
+    },
+    {
+      "id": "tokyo_brew_spot_tokyo_ueno_ko",
+      "lang": "ko",
+      "title": "도쿄 우에노의 고요한 커피 안식처: 도쿄 브루 스팟 006 완벽 가이드",
+      "lat": 35.7089,
+      "lng": 139.731,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_ueno.jpg",
+      "address": "Tokyo, Ueno",
+      "published": "2026-04-29",
+      "summary": "우에노의 번잡함 속 숨겨진 보석, 도쿄 브루 스팟 006은 섬세한 핸드드립 커피와 평온한 분위기로 방문객을 맞이합니다. 고즈넉한 창가 좌석에서 도쿄의 정취를 느끼며 진정한 휴식을 경험해보세요. 커피 애호가와 조용한 시간을 찾는 이들에게 완벽한 도피처입니다.",
+      "agoda": "",
+      "link": "/item/tokyo_brew_spot_tokyo_ueno_ko"
+    },
+    {
+      "id": "tokyo_brew_spot_tokyo_ikebukuro_ko",
+      "lang": "ko",
+      "title": "도쿄 이케부쿠로 필수 코스: '도쿄 브루 스팟 007'에서 만나는 하우스 로스트 스페셜티 커피",
+      "lat": 35.7289,
+      "lng": 139.7101,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_ikebukuro.jpg",
+      "address": "Tokyo, Ikebukuro",
+      "published": "2026-04-29",
+      "summary": "도쿄 이케부쿠로 중심부에 위치한 '도쿄 브루 스팟 007'은 특별한 하우스 로스트 커피와 넓은 그룹 테이블을 제공하여, 혼자만의 여유로운 시간부터 단체 모임까지 완벽한 공간입니다. 뛰어난 접근성까지 갖춰 도쿄 여행 중 반드시 방문해야 할 스페셜티 카페로 손꼽힙니다.",
+      "agoda": "",
+      "link": "/item/tokyo_brew_spot_tokyo_ikebukuro_ko"
+    },
+    {
+      "id": "tokyo_brew_spot_tokyo_marunouchi_ko",
+      "lang": "ko",
+      "title": "도쿄 마루노우치 '도쿄 브루 스팟 001': 스페셜티 커피와 완벽한 업무 환경을 만나다",
+      "lat": 35.6812,
+      "lng": 139.7671,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_marunouchi.jpg",
+      "address": "Tokyo, Marunouchi",
+      "published": "2026-04-29",
+      "summary": "도쿄 마루노우치 중심에 위치한 '도쿄 브루 스팟 001'은 최고급 스페셜티 커피와 함께 안정적인 Wi-Fi, 넉넉한 전원 콘센트를 제공하여 여행객과 비즈니스 방문객 모두에게 완벽한 휴식 및 업무 공간을 선사합니다.",
+      "agoda": "",
+      "link": "/item/tokyo_brew_spot_tokyo_marunouchi_ko"
+    },
+    {
+      "id": "tokyo_brew_spot_tokyo_ebisu_en",
+      "lang": "en",
+      "title": "Tokyo Brew Spot 010: Your Ultimate Work-Friendly Cafe Sanctuary in Ebisu, Tokyo",
+      "lat": 35.6467,
+      "lng": 139.71,
+      "categories": [
+        "Work-Friendly",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_ebisu.jpg",
+      "address": "Tokyo, Ebisu",
+      "published": "2026-04-29",
+      "summary": "Discover Tokyo Brew Spot 010 in Ebisu, a premier cafe offering an unparalleled work-friendly environment with stable internet and early morning hours, perfect for digital nomads and early risers seeking productivity and exceptional coffee. This detailed guide unveils why it's Tokyo's best destination for focused work, creative brainstorming, and serene starts to your day, blending ergonomic design with artisanal brews in the heart of Ebisu.",
+      "agoda": "",
+      "link": "/item/tokyo_brew_spot_tokyo_ebisu_en"
+    },
+    {
+      "id": "tokyo_brew_spot_tokyo_shibuya_ko",
+      "lang": "ko",
+      "title": "도쿄 시부야의 보석, 도쿄 브루 스팟 005: 완벽한 브런치와 고속 Wi-Fi를 만끽하세요",
+      "lat": 35.6581,
+      "lng": 139.7017,
+      "categories": [
+        "Work-Friendly",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_shibuya.jpg",
+      "address": "Tokyo, Shibuya",
+      "published": "2026-04-29",
+      "summary": "도쿄 시부야에 위치한 도쿄 브루 스팟 005는 맛있는 브런치와 함께 고속 Wi-Fi를 제공하여, 여행객과 현지인 모두에게 완벽한 휴식처를 선사합니다. 편안한 분위기에서 여유로운 시간을 보내며, 도쿄의 활기찬 에너지를 만끽할 수 있습니다.",
+      "agoda": "",
+      "link": "/item/tokyo_brew_spot_tokyo_shibuya_ko"
+    },
+    {
+      "id": "tokyo_brew_spot_tokyo_roppongi_en",
+      "lang": "en",
+      "title": "Discover Tokyo Brew Spot 004: Roppongi's Premier Cozy, Late-Night Single Origin Cafe Experience",
+      "lat": 35.6655,
+      "lng": 139.7293,
+      "categories": [
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_roppongi.jpg",
+      "address": "Tokyo, Roppongi",
+      "published": "2026-04-29",
+      "summary": "Nestled in the vibrant heart of Roppongi, Tokyo Brew Spot 004 offers an unparalleled escape with its meticulously curated single-origin coffee selection. Experience the allure of a sophisticated cafe that embraces late hours and wraps you in a truly cozy, inviting ambiance, making it a must-visit destination for discerning coffee lovers.",
+      "agoda": "",
+      "link": "/item/tokyo_brew_spot_tokyo_roppongi_en"
+    },
+    {
+      "id": "tokyo_brew_spot_tokyo_harajuku_ko",
+      "lang": "ko",
+      "title": "도쿄 하라주쿠의 숨겨진 보석: 도쿄 브루 스팟 009 – 시그니처 라떼와 디저트의 천국",
+      "lat": 35.6702,
+      "lng": 139.7026,
+      "categories": [
+        "Specialty",
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_harajuku.jpg",
+      "address": "Tokyo, Harajuku",
+      "published": "2026-04-29",
+      "summary": "도쿄 하라주쿠의 중심에 자리한 도쿄 브루 스팟 009는 독특한 시그니처 라떼와 예술적인 디저트로 미각과 시각을 동시에 사로잡는 디저트 카페입니다. 인스타그래머블한 포토 스팟으로도 유명하여 특별한 순간을 기록하고 싶은 이들에게 완벽한 도쿄 여행의 필수 코스입니다.",
+      "agoda": "",
+      "link": "/item/tokyo_brew_spot_tokyo_harajuku_ko"
+    },
+    {
+      "id": "tokyo_brew_spot_tokyo_ginza_en",
+      "lang": "en",
+      "title": "Tokyo Brew Spot 003: Ginza's Stylish Sanctuary for Exquisite Dessert Pairings & Specialty Coffee in Tokyo",
+      "lat": 35.6718,
+      "lng": 139.7645,
+      "categories": [
+        "Dessert",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_ginza.jpg",
+      "address": "Tokyo, Ginza",
+      "published": "2026-04-29",
+      "summary": "Discover Tokyo Brew Spot 003, a stylish cafe in the heart of Ginza, Tokyo, offering an unparalleled experience in dessert pairings and specialty coffee. With its chic interior and an accessible English menu, this destination promises a sophisticated culinary escape for local connoisseurs and international travelers alike.",
+      "agoda": "",
+      "link": "/item/tokyo_brew_spot_tokyo_ginza_en"
     }
   ]
 }
