@@ -9,8 +9,25 @@ import { initGoogleMap, renderPhotoMarkers, filterMarkers, closeInfoWindow } fro
 
 // State
 let allItems    = [];
-let currentLang  = 'en';
+let currentLang  = document.documentElement.lang === 'ko' ? 'ko' : 'en';
 let currentTheme = 'all';
+
+const FILTER_LABELS = {
+    en: {
+        all: 'All',
+        specialty: '☕ Specialty',
+        dessert: '🍰 Dessert',
+        work: '💻 Work-Friendly',
+        scenic: '🌿 Scenic',
+    },
+    ko: {
+        all: '전체',
+        specialty: '☕ 스페셜티',
+        dessert: '🍰 디저트',
+        work: '💻 작업하기 좋은',
+        scenic: '🌿 경치 좋은',
+    },
+};
 
 async function loadItems(lang) {
     const res = await fetch(`/api/items?lang=${encodeURIComponent(lang)}`);
@@ -44,6 +61,7 @@ async function updateUI() {
     renderList(filtered);
     await renderPhotoMarkers(filtered);
     updateCounts();
+    updateFilterLabels();
 }
 
 // Data filtering
@@ -68,7 +86,7 @@ function renderList(data) {
     if (data.length === 0) {
         container.innerHTML = `
             <div style="grid-column:1/-1; text-align:center; padding:100px 0; color:#999;">
-                <p style="font-size:1.2rem;">No results found.</p>
+                <p style="font-size:1.2rem;">${currentLang === 'ko' ? '검색 결과가 없습니다.' : 'No results found.'}</p>
             </div>`;
         return;
     }
@@ -88,6 +106,16 @@ function renderList(data) {
             </div>
         </div>
     `).join('');
+}
+
+function updateFilterLabels() {
+    const labels = FILTER_LABELS[currentLang] || FILTER_LABELS.en;
+    document.querySelectorAll('.theme-button').forEach(btn => {
+        const theme = btn.dataset.theme;
+        const badge = btn.querySelector('.count-badge');
+        const text = labels[theme] || theme;
+        btn.innerHTML = `${text}${badge ? ` ${badge.outerHTML}` : ''}`;
+    });
 }
 
 // Category count badges
@@ -119,6 +147,7 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
         document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         currentLang = btn.dataset.lang;
+        document.documentElement.lang = currentLang;
         await loadItems(currentLang);
         closeInfoWindow();
         updateUI();
