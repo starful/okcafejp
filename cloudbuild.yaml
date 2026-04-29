@@ -37,7 +37,7 @@ steps:
       - '--allow-unauthenticated'
       - '--port=8080'
       - '--memory=1Gi'
-      - '--set-env-vars=SITE_URL=${_SITE_URL},ASSET_VERSION=${_ASSET_VERSION}'
+      - '--set-env-vars=SITE_URL=${_SITE_URL},ASSET_VERSION=${_ASSET_VERSION},MAPS_ID=${_MAPS_ID}'
       - '--set-secrets=MAPS_API_KEY=${_MAPS_API_SECRET}:latest,GEMINI_API_KEY=${_GEMINI_API_SECRET}:latest'
     waitFor: ['docker-push']
 
@@ -51,5 +51,6 @@ substitutions:
   _SERVICE_NAME: 'okcafejp'
   _SITE_URL: 'https://okcafejp.net'
   _ASSET_VERSION: '2026-04-29'
+  _MAPS_ID: '2938bb3f7f034d786512d278'
   _MAPS_API_SECRET: 'OKCAFEJP_GOOGLE_MAPS_API_KEY'
   _GEMINI_API_SECRET: 'GEMINI_API_KEY'
