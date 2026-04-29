@@ -22,7 +22,7 @@ def _load_data_key() -> str:
         return default_key
 
     try:
-        spec = importlib.util.spec_from_file_location("oktemplate_config", config_path)
+        spec = importlib.util.spec_from_file_location("okcafejp_config", config_path)
         if spec is None or spec.loader is None:
             return default_key
         module = importlib.util.module_from_spec(spec)

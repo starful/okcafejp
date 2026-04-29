@@ -1,11 +1,11 @@
-# OK Series Template
+# OKCafeJP
 
-Shared Flask + Google Maps + Gemini template for map-driven Japan curation sites.
+Map-driven Japan cafe discovery platform for EN/KO travelers, built on the OK Series stack.
 
 ## Project Structure
 
 ```text
-oktemplate/
+okcafejp/
 ├── app/
 │   ├── __init__.py
 │   ├── config.py
@@ -56,8 +56,8 @@ Open `http://localhost:8080`.
 1. Copy template:
 
 ```bash
-cp -r oktemplate okSomething
-cd okSomething
+cp -r okcafejp your-project-name
+cd your-project-name
 ```
 
 2. Update `app/config.py`:

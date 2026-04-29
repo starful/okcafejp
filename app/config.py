@@ -10,10 +10,10 @@ SITE_CONFIG = {
     # ----------------------------------------------------------
     # 1. Basic identity
     # ----------------------------------------------------------
-    "project_name":  "oktemplate",          # GCS prefix / Cloud Run service name
-    "site_name":     "OKTemplate",          # Display name (e.g. OKRamen, OKOnsen)
-    "site_url":      os.getenv("SITE_URL", "https://oktemplate.net"),
-    "tagline":       "Discover the Best of Japan",
+    "project_name":  "okcafejp",            # GCS prefix / Cloud Run service name
+    "site_name":     "OKCafeJP",            # Display name (e.g. OKRamen, OKOnsen)
+    "site_url":      os.getenv("SITE_URL", "https://okcafejp.net"),
+    "tagline":       "Discover Japan's Best Cafes for Travelers",
     "data_key":      "items",               # Top-level JSON key (items/courses/etc.)
 
     # ----------------------------------------------------------
@@ -26,9 +26,9 @@ SITE_CONFIG = {
     # ----------------------------------------------------------
     # 3. Icon & theme
     # ----------------------------------------------------------
-    "emoji":         "🗾",                   # Site emoji for header/footer
-    "accent_color":  "#e74c3c",             # CSS accent color
-    "bg_dot_color":  "#f39c12",             # Background dot color
+    "emoji":         "☕",                   # Site emoji for header/footer
+    "accent_color":  "#8b5e3c",             # CSS accent color
+    "bg_dot_color":  "#d6b48a",             # Background dot color
 
     # ----------------------------------------------------------
     # 4. Header filter buttons
@@ -94,6 +94,6 @@ SITE_CONFIG = {
     # ----------------------------------------------------------
     # 9. Footer
     # ----------------------------------------------------------
-    "footer_tagline":  "Curating the best of Japan.",
+    "footer_tagline":  "Curating the best cafes in Japan for EN/KO travelers.",
     "footer_year":     "2026",
 }

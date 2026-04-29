@@ -48,9 +48,9 @@ images:
 substitutions:
   _PROJECT_ID: 'starful-258005'
   _REGION: 'us-central1'
-  _REPO_NAME: 'oktemplate-repo'
-  _SERVICE_NAME: 'oktemplate'
-  _SITE_URL: 'https://oktemplate.net'
+  _REPO_NAME: 'okcafejp-repo'
+  _SERVICE_NAME: 'okcafejp'
+  _SITE_URL: 'https://okcafejp.net'
   _ASSET_VERSION: '2026-04-29'
   _MAPS_API_SECRET: 'MAPS_API_KEY'
   _GEMINI_API_SECRET: 'GEMINI_API_KEY'

@@ -1,5 +1,5 @@
 #!/bin/bash
-# OKTemplate deployment helper script.
+# OKCafeJP deployment helper script.
 set -euo pipefail
 
 GREEN='\033[0;32m'
@@ -9,8 +9,8 @@ BOLD='\033[1m'
 NC='\033[0m'
 
 PROJECT_ROOT="$(cd "$(dirname "$0")" && pwd)"
-PROJECT_NAME="${PROJECT_NAME:-oktemplate}"
-SERVICE_URL="${SERVICE_URL:-https://oktemplate.net}"
+PROJECT_NAME="${PROJECT_NAME:-okcafejp}"
+SERVICE_URL="${SERVICE_URL:-https://okcafejp.net}"
 GCS_BUCKET="${GCS_BUCKET:-gs://ok-project-assets/${PROJECT_NAME}}"
 LOCAL_IMAGES="app/static/images"
 GCP_PROJECT_ID="${GCP_PROJECT_ID:-starful-258005}"
@@ -45,8 +45,8 @@ Options
   --help           Show this help
 
 Environment overrides
-  PROJECT_NAME     Default: oktemplate
-  SERVICE_URL      Default: https://oktemplate.net
+  PROJECT_NAME     Default: okcafejp
+  SERVICE_URL      Default: https://okcafejp.net
   GCS_BUCKET       Default: gs://ok-project-assets/${PROJECT_NAME}
   GCP_PROJECT_ID   Default: starful-258005
   CONTENT_LIMIT    Default: 10
