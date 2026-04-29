@@ -106,7 +106,44 @@ def _clean_md(text):
     text = re.sub(r'^(##\s*)?yaml\n', '', text, flags=re.IGNORECASE)
     if '---' in text and not text.startswith('---'):
         text = '---' + text.split('---', 1)[1]
+
+    # Remove leaked generation footer + duplicated frontmatter/body blocks.
+    text = re.sub(
+        r'\nCharacter Count Check.*$',
+        '',
+        text,
+        flags=re.DOTALL,
+    )
+    dup_frontmatter = re.search(r'\n---\nlang:\s*(?:en|ko)\n', text, flags=re.IGNORECASE)
+    if dup_frontmatter:
+        text = text[:dup_frontmatter.start()]
     return text.strip()
+
+
+def _normalize_markdown_body(text):
+    """Normalize imperfect markdown from generated content.
+
+    - Split inline bullet tokens (e.g. "... * **Item** ...") into real list lines
+    - Ensure a blank line before list blocks so python-markdown parses them
+    """
+    if not text:
+        return text
+
+    # 1) Convert inline " * " bullet separators into newline bullets.
+    normalized = re.sub(r'(?<!\n)\s+\*\s{1,3}(?=\*\*|\w)', '\n* ', text)
+
+    # 2) Ensure a blank line exists before each list item line.
+    lines = normalized.splitlines()
+    out = []
+    list_re = re.compile(r'^\s*(?:[\*\-]\s+|\d+\.\s+)')
+    for line in lines:
+        if list_re.match(line):
+            if out:
+                prev = out[-1]
+                if prev.strip() and not list_re.match(prev):
+                    out.append('')
+        out.append(line)
+    return '\n'.join(out).strip()
 
 def _get_footer_stats(lang):
     items = CACHED_DATA.get(SITE_CONFIG['data_key'], [])
@@ -186,6 +223,8 @@ def guide_detail(guide_id):
     with open(path, 'r', encoding='utf-8') as f:
         raw = _clean_md(f.read())
     post  = frontmatter.loads(raw)
+    # Ensure header language toggle can build /guide/{base_id}_{lang} links.
+    post['id'] = guide_id
     body  = re.sub(r'---.*?---', '', post.content, flags=re.DOTALL)
     body  = body.replace('```markdown', '').replace('```', '').strip()
 
@@ -197,6 +236,7 @@ def guide_detail(guide_id):
     alt_en = f"{SITE_CONFIG['site_url']}/guide/{base_id}_en"
     alt_ko = f"{SITE_CONFIG['site_url']}/guide/{base_id}_ko"
 
+    body = _normalize_markdown_body(body)
     content_html = markdown.markdown(body, extensions=['tables', 'toc', 'fenced_code'])
     return render_template('guide_detail.html',
                            title=title, content=content_html, lang=lang,
@@ -219,7 +259,8 @@ def item_detail(item_id):
     if isinstance(post.get('categories'), str):
         post['categories'] = [c.strip() for c in post['categories'].split(',')]
 
-    content_html = markdown.markdown(post.content, extensions=['tables', 'fenced_code'])
+    content_md = _normalize_markdown_body(post.content)
+    content_html = markdown.markdown(content_md, extensions=['tables', 'fenced_code'])
     lang  = str(post.get('lang', 'en'))
     stats = _get_footer_stats(lang)
     return render_template(

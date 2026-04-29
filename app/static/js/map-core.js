@@ -151,8 +151,12 @@ export function closeInfoWindow() {
 
 // Internal helpers
 function _showInfoWindow(marker, item) {
+    const thumb = item.thumbnail
+        ? `<img src="${item.thumbnail}" alt="${item.title}" style="width:100%;height:120px;object-fit:cover;border-radius:10px;margin-bottom:8px;">`
+        : '';
     const content = `
         <div class="info-box-content">
+            ${thumb}
             <div class="info-box-title">${item.title}</div>
             <div class="info-box-address">📍 ${item.address || ''}</div>
             <a href="${item.link}" class="info-box-link">View Details →</a>

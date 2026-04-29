@@ -85,6 +85,12 @@ def guide_stem_from_topic_en(topic_en: str) -> str:
     return slug_for_url(topic_en)
 
 
+def normalize_display_name(name: str) -> str:
+    """콘텐츠 노출용 이름: 끝의 구식 번호 코드(예: 001) 제거."""
+    cleaned = re.sub(r"\s+0\d\d$", "", (name or "").strip())
+    return cleaned or (name or "").strip()
+
+
 def _generate_content_with_retry(client, model: str, prompt: str, max_attempts: int = 8):
     last_err: Exception | None = None
     for attempt in range(max_attempts):
@@ -114,16 +120,17 @@ def clean_ai_response(text: str) -> str:
 
 
 def _build_prompt(base_id: str, name: str, lat: str, lng: str, address: str, lang: str, features: str, agoda: str) -> str:
+    display_name = normalize_display_name(name)
     cat_list = ", ".join(PROMPT_CONFIG["categories"][lang])
     item_type = PROMPT_CONFIG["item_type"] if lang == "en" else PROMPT_CONFIG["item_type_ko"]
     min_len = PROMPT_CONFIG["min_length"]
     max_len = PROMPT_CONFIG["max_length"]
     return f"""
-You are an expert travel writer. Write a detailed, SEO-optimized guide for '{name}'.
+You are an expert travel writer. Write a detailed, SEO-optimized guide for '{display_name}'.
 The article body must be between {min_len} and {max_len} characters.
 
 [Target Info]
-- Name: {name}
+- Name: {display_name}
 - Type: {item_type}
 - Location: {address}
 - Features: {features}
@@ -135,7 +142,7 @@ Select 1-3 categories from: [{cat_list}]
 [Output Format - STRICT]
 ---
 lang: {lang}
-title: "Compelling SEO title with {name} and {address}"
+title: "Compelling SEO title with {display_name} and {address}"
 lat: {lat}
 lng: {lng}
 categories: ["Category1", "Category2"]
@@ -144,7 +151,7 @@ address: "{address}"
 date: "{datetime.now().strftime('%Y-%m-%d')}"
 agoda: "{agoda}"
 summary: "2-3 sentence hook on one line."
-image_prompt: "Single-line Imagen prompt in English for a realistic cafe photo of {name}, including composition, lighting, and details based on {features}."
+image_prompt: "Single-line Imagen prompt in English for a realistic cafe photo of {display_name}, including composition, lighting, and details based on {features}."
 ---
 
 [Article Structure]
@@ -158,6 +165,7 @@ IMPORTANT:
 - Do NOT use markdown code blocks.
 - Start directly with '---'.
 - Keep article body length between {min_len} and {max_len} characters.
+- Never include legacy numeric name codes like 001/002/003 in title or body.
 """
 
 
