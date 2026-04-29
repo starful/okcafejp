@@ -3,6 +3,7 @@ import { getThemeColor, findMainTheme } from './utils.js';
 let map;
 let allMarkers = [];
 let infoWindow;
+let useAdvancedMarkers = false;
 
 // Wait for Google Maps runtime
 async function waitForGoogleMaps() {
@@ -21,10 +22,11 @@ async function waitForGoogleMaps() {
 export async function initGoogleMap(mapId, center = { lat: 36.2, lng: 138.2 }, zoom = 6) {
     await waitForGoogleMaps();
     const { Map } = await google.maps.importLibrary("maps");
+    useAdvancedMarkers = Boolean(mapId);
     map = new Map(document.getElementById("map"), {
         zoom,
         center,
-        mapId,
+        ...(mapId ? { mapId } : {}),
         mapTypeControl:    false,
         fullscreenControl: false,
         streetViewControl: false,
@@ -37,7 +39,10 @@ export async function initGoogleMap(mapId, center = { lat: 36.2, lng: 138.2 }, z
 
 // Render photo markers
 export async function renderPhotoMarkers(items) {
-    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+    let AdvancedMarkerElement = null;
+    if (useAdvancedMarkers) {
+        ({ AdvancedMarkerElement } = await google.maps.importLibrary("marker"));
+    }
 
     allMarkers.forEach(m => m.map = null);
     allMarkers = [];
@@ -51,14 +56,24 @@ export async function renderPhotoMarkers(items) {
         el.className = 'item-marker';
         el.innerHTML = `<img src="${item.thumbnail}" alt="${item.title}" loading="lazy">`;
 
-        const marker = new AdvancedMarkerElement({
-            map,
-            position: { lat: parseFloat(item.lat), lng: parseFloat(item.lng) },
-            title: item.title,
-            content: el,
-        });
+        const marker = useAdvancedMarkers
+            ? new AdvancedMarkerElement({
+                map,
+                position: { lat: parseFloat(item.lat), lng: parseFloat(item.lng) },
+                title: item.title,
+                content: el,
+            })
+            : new google.maps.Marker({
+                map,
+                position: { lat: parseFloat(item.lat), lng: parseFloat(item.lng) },
+                title: item.title,
+                icon: {
+                    url: item.thumbnail,
+                    scaledSize: new google.maps.Size(52, 52),
+                },
+            });
 
-        marker.addListener('click', () => _showInfoWindow(marker, item));
+        _bindMarkerClick(marker, item);
         allMarkers.push(marker);
         bounds.extend(marker.position);
     });
@@ -68,7 +83,10 @@ export async function renderPhotoMarkers(items) {
 
 // Render dot markers
 export async function renderDotMarkers(items) {
-    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+    let AdvancedMarkerElement = null;
+    if (useAdvancedMarkers) {
+        ({ AdvancedMarkerElement } = await google.maps.importLibrary("marker"));
+    }
 
     allMarkers.forEach(m => m.map = null);
     allMarkers = [];
@@ -83,15 +101,29 @@ export async function renderDotMarkers(items) {
         el.className = 'marker-dot';
         el.style.backgroundColor = color;
 
-        const marker = new AdvancedMarkerElement({
-            map,
-            position: { lat: parseFloat(item.lat), lng: parseFloat(item.lng) },
-            title: item.title,
-            content: el,
-        });
+        const marker = useAdvancedMarkers
+            ? new AdvancedMarkerElement({
+                map,
+                position: { lat: parseFloat(item.lat), lng: parseFloat(item.lng) },
+                title: item.title,
+                content: el,
+            })
+            : new google.maps.Marker({
+                map,
+                position: { lat: parseFloat(item.lat), lng: parseFloat(item.lng) },
+                title: item.title,
+                icon: {
+                    path: google.maps.SymbolPath.CIRCLE,
+                    fillColor: color,
+                    fillOpacity: 1,
+                    strokeColor: '#fff',
+                    strokeWeight: 2,
+                    scale: 8,
+                },
+            });
 
         marker.itemData = item;
-        marker.addListener('click', () => _showInfoWindow(marker, item));
+        _bindMarkerClick(marker, item);
         allMarkers.push(marker);
         bounds.extend(marker.position);
     });
@@ -127,6 +159,14 @@ function _showInfoWindow(marker, item) {
         </div>`;
     infoWindow.setContent(content);
     infoWindow.open({ anchor: marker, map });
+}
+
+function _bindMarkerClick(marker, item) {
+    if (useAdvancedMarkers && typeof marker.addEventListener === 'function') {
+        marker.addEventListener('gmp-click', () => _showInfoWindow(marker, item));
+        return;
+    }
+    marker.addListener('click', () => _showInfoWindow(marker, item));
 }
 
 function _fitBounds(count, bounds) {
