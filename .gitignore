@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+.DS_Store
+app/content/
+app/static/images/*.jpg
+app/static/images/*.jpeg
+app/static/images/*.png
+!app/static/images/logo.png
+!app/static/images/favicon.ico
+!app/static/images/default.jpg

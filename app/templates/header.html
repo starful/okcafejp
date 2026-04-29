@@ -1,0 +1,53 @@
+<header>
+    <div class="container">
+        <!-- Header top: guide link / logo / language toggle -->
+        <div class="header-top">
+
+            <!-- Left: guide link -->
+            <div class="header-left">
+                <a href="/guide" style="font-weight:bold; color:var(--accent-color); font-size: 0.95rem;">📖 Guide</a>
+            </div>
+
+            <!-- Center: logo -->
+            <h1>
+                <a href="/">
+                    <img src="/static/images/logo.png" alt="{{ site.site_name }}" class="logo-img">
+                </a>
+            </h1>
+
+            <!-- Right: language selector -->
+            <div class="lang-selector">
+                {# Detail pages (with post.id) #}
+                {% if post and post.id %}
+                    {% set base_id = post.id.rsplit('_', 1)[0] %}
+                    {% set prefix = '/guide/' if 'guide' in request.path else '/item/' %}
+                    <a href="{{ prefix }}{{ base_id }}_en"
+                       class="lang-btn {% if post.lang == 'en' %}active{% endif %}">English</a>
+                    <a href="{{ prefix }}{{ base_id }}_ko"
+                       class="lang-btn {% if post.lang == 'ko' %}active{% endif %}">Korean</a>
+                {# Guide list page #}
+                {% elif request.path == '/guide' %}
+                    <a href="/guide?lang=en" class="lang-btn {% if lang == 'en' %}active{% endif %}">English</a>
+                    <a href="/guide?lang=ko" class="lang-btn {% if lang == 'ko' %}active{% endif %}">Korean</a>
+                {# Main/other pages: toggle via JS #}
+                {% else %}
+                    <button class="lang-btn active" data-lang="en">English</button>
+                    <button class="lang-btn" data-lang="ko">Korean</button>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Category filter buttons (home page only) -->
+        {% if request.path == '/' %}
+        <div class="theme-filter-buttons" data-group="category">
+            {% for btn in site.filter_buttons %}
+            <button class="theme-button {% if loop.first %}active{% endif %}"
+                    data-theme="{{ btn.theme }}">
+                {{ btn.label }}
+                <span class="count-badge" id="{{ btn.count_id }}">0</span>
+            </button>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</header>

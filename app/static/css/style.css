@@ -1,0 +1,280 @@
+/* =========================================
+   1. Variables & Global Settings
+   ========================================= */
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #e74c3c;       /* keep aligned with accent_color in config.py */
+    --accent-hover: #c0392b;
+    --bg-color: #fffaf0;
+    --card-bg: #ffffff;
+    --text-gray: #555;
+    --bg-dot-color: #f39c12;       /* keep aligned with bg_dot_color in config.py */
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6; margin: 0; color: var(--primary-color);
+    background-color: var(--bg-color);
+    background-image: radial-gradient(var(--bg-dot-color) 0.5px, transparent 0.5px);
+    background-size: 30px 30px;
+}
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+a { text-decoration: none; color: inherit; }
+
+/* =========================================
+   2. Header & Navigation
+   ========================================= */
+header {
+    background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(10px);
+    padding: 10px 0 5px 0;
+    position: sticky; top: 0; z-index: 1000;
+    border-bottom: 3px solid var(--accent-color);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.header-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 80px;
+}
+
+.header-left {
+    position: absolute;
+    left: 10px;
+    z-index: 10;
+}
+
+.logo-img {
+    height: 70px;
+    width: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+.logo-img:hover { transform: scale(1.05); }
+
+.lang-selector {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+    z-index: 10;
+}
+
+.lang-btn {
+    padding: 5px 12px; font-size: 0.8rem; font-weight: 700;
+    border: 1.5px solid #ddd; background: #fff; color: #777;
+    border-radius: 20px; cursor: pointer; text-decoration: none;
+}
+.lang-btn.active { background: #333; color: #fff; border-color: #333; }
+
+/* Category filter buttons */
+.theme-filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 0;
+    margin-top: 5px;
+}
+
+.theme-button {
+    padding: 8px 18px; font-size: 0.9rem; font-weight: 700;
+    border: 1.5px solid #eee; background-color: #fff; color: #555;
+    border-radius: 30px; cursor: pointer; transition: all 0.2s;
+    display: flex; align-items: center; gap: 6px; white-space: nowrap;
+}
+.theme-button.active {
+    background-color: var(--accent-color); color: white; border-color: var(--accent-color);
+    box-shadow: 0 4px 10px rgba(231, 76, 60, 0.2);
+}
+
+.count-badge {
+    background-color: #eee; color: #666; font-size: 0.75rem;
+    padding: 2px 8px; border-radius: 10px; font-weight: 800;
+}
+.theme-button.active .count-badge { background: rgba(255,255,255,0.3); color: #fff; }
+
+/* =========================================
+   3. Custom Map Marker
+   ========================================= */
+.item-marker {
+    width: 45px; height: 45px; border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+    overflow: hidden; background-color: #fff;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+.item-marker:hover {
+    transform: scale(1.4) translateY(-5px);
+    border-color: var(--accent-color); z-index: 9999 !important;
+}
+.item-marker img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Dot marker style (image-free variant) */
+.marker-dot {
+    width: 32px; height: 32px; border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+}
+
+/* =========================================
+   4. Guide Highlight Section
+   ========================================= */
+.guide-highlight-section {
+    border: 3px solid var(--accent-color);
+    padding: 30px 20px; border-radius: 20px; background-color: #fff;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 30px rgba(231, 76, 60, 0.1);
+}
+
+.guide-section-title {
+    color: var(--accent-color) !important;
+    font-size: 1.8rem; margin-bottom: 25px; text-align: center;
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    font-weight: 900;
+}
+
+.view-all-container { text-align: center; margin-top: 30px; }
+.btn-view-all {
+    display: inline-block; padding: 12px 35px;
+    background-color: var(--accent-color); color: white !important;
+    border-radius: 30px; font-weight: 800; transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+}
+.btn-view-all:hover { transform: translateY(-3px); background-color: var(--accent-hover); }
+
+/* =========================================
+   5. Grid & Card
+   ========================================= */
+.map-section { width: 100%; height: 60vh; min-height: 400px; background: #ddd; }
+#map { width: 100%; height: 100%; }
+.content-wrapper {
+    max-width: 1100px; margin: -40px auto 0;
+    padding: 0 20px 60px; position: relative; z-index: 10;
+}
+
+.intro-box {
+    background: #fff; padding: 25px; border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    margin-bottom: 40px; text-align: center;
+}
+.intro-box h2 { font-size: 1.8rem; margin-bottom: 12px; }
+
+.list-title {
+    font-size: 1.8rem; font-weight: 900; margin: 40px 0 25px;
+    color: var(--primary-color); text-align: center;
+}
+
+.onsen-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.onsen-card {
+    background: var(--card-bg); border-radius: 15px;
+    overflow: hidden; display: flex; flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none; color: inherit;
+}
+.onsen-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.card-thumb {
+    width: 100%; height: 200px; object-fit: cover; display: block;
+}
+.card-content { padding: 18px; flex: 1; display: flex; flex-direction: column; }
+.card-title { font-size: 1.1rem; font-weight: 800; margin: 0 0 8px; color: var(--primary-color); }
+.card-summary { font-size: 0.88rem; color: var(--text-gray); line-height: 1.5; flex: 1; margin: 0 0 12px; }
+.card-meta { font-size: 0.8rem; color: #aaa; display: flex; gap: 10px; flex-wrap: wrap; margin-top: auto; }
+
+/* =========================================
+   6. InfoWindow
+   ========================================= */
+.info-box-content { max-width: 220px; }
+.info-box-title { font-weight: bold; font-size: 15px; margin-bottom: 5px; }
+.info-box-address { font-size: 12px; color: #666; margin-bottom: 10px; }
+.info-box-link {
+    display: inline-block; background: var(--accent-color); color: white;
+    padding: 6px 14px; border-radius: 20px; font-size: 12px; font-weight: bold;
+}
+
+/* =========================================
+   7. Detail Page
+   ========================================= */
+.detail-container { max-width: 800px; margin: 40px auto; padding: 0 20px 60px; }
+.detail-header { margin-bottom: 25px; }
+.detail-title { font-size: 2rem; font-weight: 900; margin-bottom: 10px; line-height: 1.3; }
+.detail-meta { font-size: 0.9rem; color: #888; }
+.detail-img {
+    width: 100%; max-height: 450px; object-fit: cover;
+    border-radius: 15px; margin-bottom: 30px; display: block;
+}
+.detail-content { line-height: 1.9; color: #333; }
+.detail-content h2 { font-size: 1.5rem; border-left: 4px solid var(--accent-color); padding-left: 12px; margin-top: 40px; }
+.detail-content h3 { font-size: 1.2rem; margin-top: 30px; }
+.detail-content table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+.detail-content th, .detail-content td { border: 1px solid #eee; padding: 10px 14px; text-align: left; }
+.detail-content th { background: #f5f5f5; font-weight: 700; }
+
+.booking-box {
+    text-align: center; margin: 50px 0; padding: 30px;
+    background: #fff5f5; border-radius: 15px; border: 2px dashed var(--accent-color);
+}
+.booking-btn {
+    display: inline-block; background: var(--accent-color); color: white;
+    padding: 15px 30px; font-weight: bold; border-radius: 30px;
+    text-decoration: none; margin-top: 10px;
+}
+
+.back-btn {
+    display: inline-block; background: var(--primary-color); color: white;
+    padding: 14px 35px; border-radius: 30px; font-weight: bold;
+    transition: all 0.3s;
+}
+.back-btn:hover { transform: translateY(-3px); opacity: 0.85; }
+
+/* =========================================
+   8. Footer
+   ========================================= */
+footer {
+    background: #fff; border-top: 1px solid #eee;
+    padding: 50px 20px; text-align: center;
+}
+
+.footer-status {
+    display: flex; justify-content: center; gap: 15px;
+    flex-wrap: wrap; margin-bottom: 30px;
+}
+.status-badge {
+    background: #f5f5f5; padding: 8px 18px; border-radius: 20px;
+    font-size: 0.85rem; font-weight: 600;
+}
+.status-badge.highlight { background: var(--accent-color); color: white; }
+
+.footer-content { color: #888; font-size: 0.9rem; }
+.footer-links { margin: 10px 0; }
+.footer-links a { color: #555; margin: 0 8px; }
+.copyright { font-size: 0.8rem; margin-top: 10px; }
+
+/* =========================================
+   9. Responsive
+   ========================================= */
+@media (max-width: 768px) {
+    .header-top { height: 65px; }
+    .logo-img { height: 55px; }
+    .detail-title { font-size: 1.5rem; }
+    .map-section { height: 45vh; min-height: 280px; }
+    .onsen-grid { grid-template-columns: 1fr; }
+    .content-wrapper { margin-top: -20px; padding: 0 15px 40px; }
+    .guide-section-title { font-size: 1.4rem; }
+}

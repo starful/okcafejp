@@ -1,0 +1,56 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    id: 'docker-pull'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - 'docker pull us-central1-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/${_SERVICE_NAME}:latest || exit 0'
+
+  - name: 'gcr.io/cloud-builders/docker'
+    id: 'docker-build'
+    args:
+      - 'build'
+      - '-t'
+      - 'us-central1-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/${_SERVICE_NAME}'
+      - '--cache-from'
+      - 'us-central1-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/${_SERVICE_NAME}:latest'
+      - '.'
+    waitFor: ['docker-pull']
+
+  - name: 'gcr.io/cloud-builders/docker'
+    id: 'docker-push'
+    args:
+      - 'push'
+      - 'us-central1-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/${_SERVICE_NAME}'
+    waitFor: ['docker-build']
+
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    id: 'deploy'
+    entrypoint: 'gcloud'
+    args:
+      - 'run'
+      - 'deploy'
+      - '${_SERVICE_NAME}'
+      - '--image=us-central1-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/${_SERVICE_NAME}'
+      - '--region=${_REGION}'
+      - '--platform=managed'
+      - '--allow-unauthenticated'
+      - '--port=8080'
+      - '--memory=1Gi'
+      - '--set-env-vars=SITE_URL=${_SITE_URL},ASSET_VERSION=${_ASSET_VERSION}'
+      - '--remove-env-vars=MAPS_API_KEY,GEMINI_API_KEY'
+      - '--set-secrets=MAPS_API_KEY=${_MAPS_API_SECRET}:latest,GEMINI_API_KEY=${_GEMINI_API_SECRET}:latest'
+    waitFor: ['docker-push']
+
+images:
+  - 'us-central1-docker.pkg.dev/${_PROJECT_ID}/${_REPO_NAME}/${_SERVICE_NAME}'
+
+substitutions:
+  _PROJECT_ID: 'starful-258005'
+  _REGION: 'us-central1'
+  _REPO_NAME: 'oktemplate-repo'
+  _SERVICE_NAME: 'oktemplate'
+  _SITE_URL: 'https://oktemplate.net'
+  _ASSET_VERSION: '2026-04-29'
+  _MAPS_API_SECRET: 'MAPS_API_KEY'
+  _GEMINI_API_SECRET: 'GEMINI_API_KEY'

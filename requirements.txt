@@ -1,0 +1,9 @@
+flask
+flask-compress
+gunicorn
+python-frontmatter
+markdown
+requests
+Pillow
+python-dotenv
+google-genai

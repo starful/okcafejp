@@ -1,0 +1,70 @@
+{
+  "last_updated": "2026.04.29",
+  "total_count": 4,
+  "items": [
+    {
+      "id": "sample_item_1_ko",
+      "lang": "ko",
+      "title": "Sample Item 1: Korean Guide",
+      "lat": 35.6909,
+      "lng": 139.7018,
+      "categories": [
+        "Local Gem"
+      ],
+      "thumbnail": "/static/images/sample_item_1.jpg",
+      "address": "Tokyo, Shinjuku",
+      "published": "2026-04-29",
+      "summary": "Korean version draft for Sample Item 1, with practical highlights.",
+      "agoda": "",
+      "link": "/item/sample_item_1_ko"
+    },
+    {
+      "id": "sample_item_2_ko",
+      "lang": "ko",
+      "title": "Sample Item 2: Korean Guide",
+      "lat": 35.6711,
+      "lng": 139.7662,
+      "categories": [
+        "Local Gem"
+      ],
+      "thumbnail": "/static/images/sample_item_2.jpg",
+      "address": "Tokyo, Chuo",
+      "published": "2026-04-29",
+      "summary": "Korean version draft for Sample Item 2, with practical highlights.",
+      "agoda": "https://agoda.com/...",
+      "link": "/item/sample_item_2_ko"
+    },
+    {
+      "id": "sample_item_2_en",
+      "lang": "en",
+      "title": "Sample Item 2: Quick Guide",
+      "lat": 35.6711,
+      "lng": 139.7662,
+      "categories": [
+        "Local Gem"
+      ],
+      "thumbnail": "/static/images/sample_item_2.jpg",
+      "address": "Tokyo, Chuo",
+      "published": "2026-04-29",
+      "summary": "A fast overview of Sample Item 2, including highlights and practical tips.",
+      "agoda": "https://agoda.com/...",
+      "link": "/item/sample_item_2_en"
+    },
+    {
+      "id": "sample_item_1_en",
+      "lang": "en",
+      "title": "Sample Item 1: Quick Guide",
+      "lat": 35.6909,
+      "lng": 139.7018,
+      "categories": [
+        "Local Gem"
+      ],
+      "thumbnail": "/static/images/sample_item_1.jpg",
+      "address": "Tokyo, Shinjuku",
+      "published": "2026-04-29",
+      "summary": "A fast overview of Sample Item 1, including highlights and practical tips.",
+      "agoda": "",
+      "link": "/item/sample_item_1_en"
+    }
+  ]
+}

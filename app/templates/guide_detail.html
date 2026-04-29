@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga_id }}"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ site.ga_id }}');
+    </script>
+
+    <title>{{ title }} - {{ site.site_name }} Guide</title>
+    <meta name="description" content="{{ post.summary }}">
+    <link rel="canonical" href="{{ canonical }}" />
+    <link rel="alternate" hreflang="en" href="{{ alt_en }}" />
+    <link rel="alternate" hreflang="ko" href="{{ alt_ko }}" />
+    <link rel="alternate" hreflang="x-default" href="{{ alt_en }}" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ post.summary }}">
+    <meta property="og:image" content="{{ image_url_abs }}">
+    <meta property="og:url" content="{{ canonical }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ title }}">
+    <meta name="twitter:description" content="{{ post.summary }}">
+    <meta name="twitter:image" content="{{ image_url_abs }}">
+
+    <!-- Article Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "{{ title }}",
+      "image": "{{ image_url_abs }}",
+      "datePublished": "{{ post.date }}",
+      "description": "{{ post.summary }}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "{{ site.site_name }}",
+        "logo": {"@type": "ImageObject", "url": "{{ site.site_url }}/static/images/logo.png"}
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "{{ site.site_url }}/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "{{ site.site_url }}/guide"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "{{ title }}",
+          "item": "{{ canonical }}"
+        }
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    {% include 'header.html' %}
+
+    <article class="detail-container">
+        <div class="detail-header">
+            <h1 class="detail-title">{{ title }}</h1>
+            <p style="color:#888;">📅 {{ post.date }}</p>
+        </div>
+
+        <img src="{{ image_url }}" alt="{{ title }}" class="detail-img">
+
+        <div class="detail-content">
+            {{ content | safe }}
+        </div>
+
+        <!-- Post-guide CTA -->
+        <div style="text-align: center; margin-top: 50px; padding: 30px; background: var(--bg-color); border-radius: 15px;">
+            <h3>Ready to explore? Find {{ site.site_name }} near you!</h3>
+            <a href="/" class="back-btn">🗺️ Explore the Map</a>
+        </div>
+    </article>
+
+    {% include 'footer.html' %}
+</body>
+</html>

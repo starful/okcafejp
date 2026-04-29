@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Guides - {{ site.site_name }}</title>
+    <meta name="description" content="Browse all {{ site.site_name }} guides in {{ lang }}.">
+    <link rel="canonical" href="{{ canonical }}" />
+    <link rel="alternate" hreflang="en" href="{{ site.site_url }}/guide" />
+    <link rel="alternate" hreflang="ko" href="{{ site.site_url }}/guide?lang=ko" />
+    <link rel="alternate" hreflang="x-default" href="{{ site.site_url }}/guide" />
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="All Guides - {{ site.site_name }}">
+    <meta property="og:description" content="Browse all {{ site.site_name }} guides in {{ lang }}.">
+    <meta property="og:url" content="{{ canonical }}">
+    <meta property="og:image" content="{{ site.site_url }}/static/images/logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    {% include 'header.html' %}
+
+    <div class="content-wrapper" style="margin-top: 40px;">
+        <h2 class="list-title" style="text-align: center;">📖 All {{ site.site_name }} Guides</h2>
+
+        <div class="onsen-grid">
+            {% for guide in guides.get(lang, []) %}
+            <a href="/guide/{{ guide.id }}" class="onsen-card">
+                <img src="{{ guide.thumbnail }}" alt="{{ guide.title }}" class="card-thumb">
+                <div class="card-content">
+                    <h3 class="card-title">{{ guide.title }}</h3>
+                    <p class="card-summary">{{ guide.summary }}</p>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="/" class="back-btn">🗺️ Back to Map</a>
+        </div>
+    </div>
+
+    {% include 'footer.html' %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "{{ site.site_name }} guides",
+      "itemListElement": [
+        {% for guide in guides.get(lang, []) %}
+        {
+          "@type": "ListItem",
+          "position": {{ loop.index }},
+          "url": "{{ site.site_url }}/guide/{{ guide.id }}",
+          "name": "{{ guide.title }}"
+        }{% if not loop.last %},{% endif %}
+        {% endfor %}
+      ]
+    }
+    </script>
+</body>
+</html>
