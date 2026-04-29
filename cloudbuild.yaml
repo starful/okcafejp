@@ -38,7 +38,6 @@ steps:
       - '--port=8080'
       - '--memory=1Gi'
       - '--set-env-vars=SITE_URL=${_SITE_URL},ASSET_VERSION=${_ASSET_VERSION}'
-      - '--remove-env-vars=MAPS_API_KEY,GEMINI_API_KEY'
       - '--set-secrets=MAPS_API_KEY=${_MAPS_API_SECRET}:latest,GEMINI_API_KEY=${_GEMINI_API_SECRET}:latest'
     waitFor: ['docker-push']
 
