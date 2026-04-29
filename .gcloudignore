@@ -1,0 +1,11 @@
+#
+# Cloud Build source upload rules
+# Keep git metadata excluded, but include runtime content markdown files.
+#
+.git
+.gitignore
+.gcloudignore
+
+# Include generated markdown content required at runtime.
+!app/content/
+!app/content/**
