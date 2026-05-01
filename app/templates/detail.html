@@ -21,7 +21,7 @@
     <!-- SEO -->
     <title>{{ post.title }} - {{ site.site_name }}</title>
     <meta name="description" content="{{ post.summary }}">
-    <meta name="keywords" content="{{ site.site_name }}, {{ post.categories|join(', ') }}, {{ post.address }}, Japan">
+    <meta name="keywords" content="{{ site.site_name }}, {{ post.venue_name or post.title }}, {{ post.categories|join(', ') }}, {{ post.address }}, Japan">
 
     <link rel="canonical" href="{{ site.site_url }}/item/{{ post.id }}" />
     {% if post.lang == 'en' %}
@@ -47,7 +47,7 @@
     {
       "@context": "https://schema.org",
       "@type": "{{ site.schema_type }}",
-      "name": "{{ post.title }}",
+      "name": "{{ post.venue_name or post.title }}",
       "image": "{{ post.thumbnail }}",
       "address": {
         "@type": "PostalAddress",
@@ -70,13 +70,22 @@
 
     <article class="detail-container">
         <div class="detail-header">
-            <h1 class="detail-title">{{ post.title }}</h1>
+            <h1 class="detail-title">{{ post.venue_name or post.title }}</h1>
             <div class="detail-meta">
                 📍 {{ post.address }} | 🏷️ {{ post.categories|join(', ') }} | 📅 {{ post.date }}
             </div>
+            {% if post.maps_url %}
+            <p class="detail-maps"><a href="{{ post.maps_url }}" target="_blank" rel="noopener noreferrer">Open in Google Maps (search)</a></p>
+            {% endif %}
+            {% if post.editorial_note %}
+            <p class="detail-trust-note">{{ post.editorial_note }}</p>
+            {% endif %}
+            {% if post.illustration_note %}
+            <p class="detail-trust-note detail-trust-note--muted">{{ post.illustration_note }}</p>
+            {% endif %}
         </div>
 
-        <img src="{{ post.thumbnail }}" alt="{{ post.title }} in {{ post.address }}" class="detail-img">
+        <img src="{{ post.thumbnail }}" alt="{{ post.venue_name or post.title }} — {{ post.address }}" class="detail-img">
 
         <div class="detail-content">
             {{ content | safe }}

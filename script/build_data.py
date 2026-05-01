@@ -86,10 +86,12 @@ def main():
                 continue
 
             item_id = filename.replace('.md', '')
+            venue_name = str(post.get('venue_name', '') or '').strip()
             items.append({
                 "id":          item_id,
                 "lang":        str(post.get('lang', 'en')),
                 "title":       str(post.get('title', 'Untitled')),
+                "venue_name":  venue_name,
                 "lat":         lat,
                 "lng":         lng,
                 "categories":  cats,

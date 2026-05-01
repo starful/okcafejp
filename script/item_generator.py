@@ -1,12 +1,17 @@
 """
 OK Series shared item content generator.
 """
+import argparse
+import glob
 import os
 import csv
 import re
 import time
 import concurrent.futures
+import urllib.parse
 from datetime import datetime
+
+import frontmatter
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -91,6 +96,58 @@ def normalize_display_name(name: str) -> str:
     return cleaned or (name or "").strip()
 
 
+def build_maps_search_url(lat: float, lng: float, label: str = "") -> str:
+    """Open Google Maps search near coordinates (not an official place permalink)."""
+    label = (label or "").strip()
+    if label:
+        q = f"{label} @ {lat},{lng}"
+    else:
+        q = f"{lat},{lng}"
+    return "https://www.google.com/maps/search/?api=1&query=" + urllib.parse.quote(q, safe="")
+
+
+def _trust_copy(lang: str) -> tuple[str, str]:
+    """(editorial_note, illustration_note) for the given article lang."""
+    if lang == "ko":
+        return (
+            "본 글은 여행 계획용 에디토리얼 콘텐츠입니다. 매장 공식 페이지가 아니므로 영업 시간·위치·메뉴·가격은 방문 전 지도 링크 또는 현지에서 반드시 확인해 주세요.",
+            "상단 이미지는 이해를 돕기 위한 AI 생성 예시 이미지이며, 실제 매장의 인테리어·메뉴와 다를 수 있습니다.",
+        )
+    return (
+        "This page is editorial trip-planning content, not the venue's official site. Always confirm hours, access, menus, and prices on site or via Maps before visiting.",
+        "The lead image is an AI-generated illustration and may not show this venue's real interior or offerings.",
+    )
+
+
+def finalize_item_markdown(path: str, csv_venue_name: str | None = None) -> None:
+    """Merge venue_name (optional), maps_url, and transparency notes into item frontmatter."""
+    with open(path, "r", encoding="utf-8") as f:
+        raw = f.read()
+    raw = clean_ai_response(raw)
+    post = frontmatter.loads(raw)
+    if csv_venue_name is not None:
+        post["venue_name"] = normalize_display_name(csv_venue_name)
+    lang = str(post.get("lang") or "en")
+    try:
+        lat = float(post.get("lat") or 0)
+        lng = float(post.get("lng") or 0)
+    except (TypeError, ValueError):
+        lat, lng = 0.0, 0.0
+    label = str(post.get("venue_name") or "").strip()
+    if lat != 0.0 and lng != 0.0:
+        post["maps_url"] = build_maps_search_url(lat, lng, label)
+    ed, ill = _trust_copy(lang)
+    post["editorial_note"] = ed
+    post["illustration_note"] = ill
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(frontmatter.dumps(post))
+
+
+def ensure_venue_name_in_md(path: str, csv_name: str) -> None:
+    """Set venue_name from CSV and refresh trust metadata."""
+    finalize_item_markdown(path, csv_name)
+
+
 def _generate_content_with_retry(client, model: str, prompt: str, max_attempts: int = 8):
     last_err: Exception | None = None
     for attempt in range(max_attempts):
@@ -117,6 +174,18 @@ def clean_ai_response(text: str) -> str:
     if "---" in text and not text.startswith("---"):
         text = "---" + text.split("---", 1)[1]
     return text.strip()
+
+
+def ensure_venue_name_in_md(path: str, csv_name: str) -> None:
+    """Set frontmatter venue_name from CSV (short display name). SEO title stays in title."""
+    display = normalize_display_name(csv_name)
+    with open(path, "r", encoding="utf-8") as f:
+        raw = f.read()
+    raw = clean_ai_response(raw)
+    post = frontmatter.loads(raw)
+    post["venue_name"] = display
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(frontmatter.dumps(post))
 
 
 def _build_prompt(base_id: str, name: str, lat: str, lng: str, address: str, lang: str, features: str, agoda: str) -> str:
@@ -166,6 +235,8 @@ IMPORTANT:
 - Start directly with '---'.
 - Keep article body length between {min_len} and {max_len} characters.
 - Never include legacy numeric name codes like 001/002/003 in title or body.
+- Do NOT invent phone numbers, URLs, prices, menus, or opening hours. If unsure, use cautious wording ("often", "typically") and steer readers to verify on site.
+- This is not the venue's official listing; avoid claiming verification or partnership unless true.
 """
 
 
@@ -196,18 +267,23 @@ def generate_item_article(base_id: str, name: str, lat: str, lng: str, address: 
             print(f"❌ [Failed] {filename}: too short ({len(final_text)} chars)")
             return
         os.makedirs(CONTENT_DIR, exist_ok=True)
-        with open(os.path.join(CONTENT_DIR, filename), "w", encoding="utf-8") as f:
+        out_path = os.path.join(CONTENT_DIR, filename)
+        with open(out_path, "w", encoding="utf-8") as f:
             f.write(final_text)
+        finalize_item_markdown(out_path, name)
         print(f"✅ [Done] {filename} ({len(final_text):,} chars)")
     except Exception as e:
         print(f"❌ [Failed] {filename}: {e}")
 
 
-def run_generator(limit: int = 10):
+def run_generator(limit: int | None = 10):
+    """limit=None or limit<=0 means process every row in items.csv."""
     csv_path = os.path.join(SCRIPT_DIR, "csv", "items.csv")
     if not os.path.exists(csv_path):
         print(f"❌ CSV not found: {csv_path}")
         return
+
+    max_rows = None if limit is None or limit <= 0 else limit
 
     parsed: list[tuple[str, str, str, str, str, str]] = []
     with open(csv_path, mode="r", encoding="utf-8-sig") as f:
@@ -227,7 +303,7 @@ def run_generator(limit: int = 10):
                     row.get("Agoda", ""),
                 )
             )
-            if len(parsed) >= limit:
+            if max_rows is not None and len(parsed) >= max_rows:
                 break
 
     if not parsed:
@@ -256,5 +332,47 @@ def run_generator(limit: int = 10):
         ex.map(lambda p: generate_item_article(*p), tasks)
 
 
+def enrich_trust_metadata_all_items() -> int:
+    """Add / refresh maps_url + editorial notes on all item markdown in content root."""
+    n = 0
+    for pattern in ("*_en.md", "*_ko.md"):
+        for path in sorted(glob.glob(os.path.join(CONTENT_DIR, pattern))):
+            finalize_item_markdown(path, csv_venue_name=None)
+            n += 1
+    print(f"✅ Trust metadata refreshed on {n} item files")
+    return n
+
+
+def _parse_cli_and_run() -> None:
+    parser = argparse.ArgumentParser(description="Generate item markdown from script/csv/items.csv (Gemini).")
+    parser.add_argument(
+        "--enrich-trust",
+        action="store_true",
+        help="Only refresh maps_url + editorial/illustration notes on existing item *.md (no Gemini).",
+    )
+    parser.add_argument(
+        "--limit",
+        type=int,
+        default=None,
+        help="Max rows from items.csv (0 or negative = all rows). If omitted, uses env CONTENT_LIMIT, else all rows.",
+    )
+    args = parser.parse_args()
+    if args.enrich_trust:
+        enrich_trust_metadata_all_items()
+        return
+    if args.limit is not None:
+        lim = args.limit
+    else:
+        raw = os.environ.get("CONTENT_LIMIT", "").strip()
+        if not raw:
+            lim = 0
+        else:
+            try:
+                lim = int(raw)
+            except ValueError:
+                lim = 0
+    run_generator(limit=lim)
+
+
 if __name__ == "__main__":
-    run_generator(limit=10)
+    _parse_cli_and_run()

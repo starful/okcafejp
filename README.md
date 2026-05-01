@@ -22,6 +22,7 @@ okcafejp/
 │   ├── guide_generator.py
 │   ├── build_data.py
 │   ├── fetch_images.py
+│   ├── fetch_items_from_places.py
 │   ├── optimize_images.py
 │   ├── quickstart.py
 │   └── csv/
@@ -50,6 +51,26 @@ python run.py
 ```
 
 Open `http://localhost:8080`.
+
+## Populate `items.csv` from Google Places
+
+Use seed **Lat**, **Lng**, and **Address** (neighbourhood hint) from `script/csv/items.csv` (the `Name` column is ignored). The script calls **Places API (New)** and writes **real business names**, coordinates, and `formattedAddress` from Google.
+
+1. In [Google Cloud Console](https://console.cloud.google.com/), enable **Places API (New)** for the project that owns the key.
+2. Set `GOOGLE_PLACES_API_KEY` in `.env`.
+3. Run (writes `script/csv/items_from_places.csv` by default):
+
+```bash
+python script/fetch_items_from_places.py --input script/csv/items.csv
+```
+
+Overwrite `items.csv` after reviewing the output (a backup is created next to the file):
+
+```bash
+python script/fetch_items_from_places.py --input script/csv/items.csv --in-place
+```
+
+Then regenerate site data: `python script/build_data.py` (and item markdown if you use the generator).
 
 ## New Project Setup
 

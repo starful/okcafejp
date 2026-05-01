@@ -1,9 +1,51 @@
 import { getThemeColor, findMainTheme } from './utils.js';
 
+/** Short venue label for map/cards; falls back to SEO title. */
+export function itemDisplayName(item) {
+    const v = item?.venue_name;
+    if (v != null && String(v).trim()) return String(v).trim();
+    return item?.title || '';
+}
+
 let map;
 let allMarkers = [];
 let infoWindow;
 let useAdvancedMarkers = false;
+
+/** Legacy Marker: square scaledSize icons look boxy; clip thumbnail to a circle (same look as .item-marker). */
+function circularIconDataUrl(imageUrl, size = 52) {
+    return new Promise((resolve) => {
+        const img = new Image();
+        if (/^https?:\/\//i.test(imageUrl)) {
+            img.crossOrigin = 'anonymous';
+        }
+        img.onload = () => {
+            try {
+                const canvas = document.createElement('canvas');
+                canvas.width = size;
+                canvas.height = size;
+                const ctx = canvas.getContext('2d');
+                if (!ctx) {
+                    resolve(imageUrl);
+                    return;
+                }
+                const r = size / 2;
+                ctx.save();
+                ctx.beginPath();
+                ctx.arc(r, r, r - 1, 0, Math.PI * 2);
+                ctx.closePath();
+                ctx.clip();
+                ctx.drawImage(img, 0, 0, size, size);
+                ctx.restore();
+                resolve(canvas.toDataURL('image/png'));
+            } catch {
+                resolve(imageUrl);
+            }
+        };
+        img.onerror = () => resolve(imageUrl);
+        img.src = imageUrl;
+    });
+}
 
 // Wait for Google Maps runtime
 async function waitForGoogleMaps() {
@@ -49,33 +91,46 @@ export async function renderPhotoMarkers(items) {
 
     const bounds = new google.maps.LatLngBounds();
 
-    items.forEach(item => {
-        if (!item.lat || !item.lng) return;
+    const tasks = items
+        .filter(item => item.lat && item.lng)
+        .map(async (item) => {
+            const pos = { lat: parseFloat(item.lat), lng: parseFloat(item.lng) };
+            const label = itemDisplayName(item);
 
-        const el = document.createElement('div');
-        el.className = 'item-marker';
-        el.innerHTML = `<img src="${item.thumbnail}" alt="${item.title}" loading="lazy">`;
+            const el = document.createElement('div');
+            el.className = 'item-marker';
+            el.innerHTML = `<img src="${item.thumbnail}" alt="${label}" loading="lazy">`;
 
-        const marker = useAdvancedMarkers
-            ? new AdvancedMarkerElement({
-                map,
-                position: { lat: parseFloat(item.lat), lng: parseFloat(item.lng) },
-                title: item.title,
-                content: el,
-            })
-            : new google.maps.Marker({
-                map,
-                position: { lat: parseFloat(item.lat), lng: parseFloat(item.lng) },
-                title: item.title,
-                icon: {
-                    url: item.thumbnail,
-                    scaledSize: new google.maps.Size(52, 52),
-                },
-            });
+            let marker;
+            if (useAdvancedMarkers) {
+                marker = new AdvancedMarkerElement({
+                    map,
+                    position: pos,
+                    title: label,
+                    content: el,
+                });
+            } else {
+                const url = await circularIconDataUrl(item.thumbnail, 52);
+                marker = new google.maps.Marker({
+                    map,
+                    position: pos,
+                    title: label,
+                    icon: {
+                        url,
+                        scaledSize: new google.maps.Size(52, 52),
+                        anchor: new google.maps.Point(26, 26),
+                    },
+                });
+            }
 
-        _bindMarkerClick(marker, item);
+            _bindMarkerClick(marker, item);
+            return { marker, pos };
+        });
+
+    const results = await Promise.all(tasks);
+    results.forEach(({ marker, pos }) => {
         allMarkers.push(marker);
-        bounds.extend(marker.position);
+        bounds.extend(pos);
     });
 
     _fitBounds(items.length, bounds);
@@ -101,17 +156,18 @@ export async function renderDotMarkers(items) {
         el.className = 'marker-dot';
         el.style.backgroundColor = color;
 
+        const label = itemDisplayName(item);
         const marker = useAdvancedMarkers
             ? new AdvancedMarkerElement({
                 map,
                 position: { lat: parseFloat(item.lat), lng: parseFloat(item.lng) },
-                title: item.title,
+                title: label,
                 content: el,
             })
             : new google.maps.Marker({
                 map,
                 position: { lat: parseFloat(item.lat), lng: parseFloat(item.lng) },
-                title: item.title,
+                title: label,
                 icon: {
                     path: google.maps.SymbolPath.CIRCLE,
                     fillColor: color,
@@ -151,13 +207,14 @@ export function closeInfoWindow() {
 
 // Internal helpers
 function _showInfoWindow(marker, item) {
+    const label = itemDisplayName(item);
     const thumb = item.thumbnail
-        ? `<img src="${item.thumbnail}" alt="${item.title}" style="width:100%;height:120px;object-fit:cover;border-radius:10px;margin-bottom:8px;">`
+        ? `<img src="${item.thumbnail}" alt="${label}" style="width:100%;height:120px;object-fit:cover;border-radius:10px;margin-bottom:8px;">`
         : '';
     const content = `
         <div class="info-box-content">
             ${thumb}
-            <div class="info-box-title">${item.title}</div>
+            <div class="info-box-title">${label}</div>
             <div class="info-box-address">📍 ${item.address || ''}</div>
             <a href="${item.link}" class="info-box-link">View Details →</a>
         </div>`;

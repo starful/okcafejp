@@ -94,10 +94,10 @@
                     {% for item in initial_items %}
                     <div class="onsen-card">
                         <a href="{{ item.link }}">
-                            <img src="{{ item.thumbnail }}" class="card-thumb" alt="{{ item.title }}" loading="lazy">
+                            <img src="{{ item.thumbnail }}" class="card-thumb" alt="{{ item.venue_name or item.title }}" loading="lazy">
                         </a>
                         <div class="card-content">
-                            <h3 class="card-title"><a href="{{ item.link }}">{{ item.title }}</a></h3>
+                            <h3 class="card-title"><a href="{{ item.link }}">{{ item.venue_name or item.title }}</a></h3>
                             <p class="card-summary">{{ item.summary }}</p>
                             <div class="card-meta">
                                 <span>📍 {{ item.address or '' }}</span>
@@ -163,7 +163,7 @@
           "@type": "ListItem",
           "position": {{ loop.index }},
           "url": "{{ site.site_url }}{{ item.link }}",
-          "name": "{{ item.title }}"
+          "name": "{{ item.venue_name or item.title }}"
         }{% if not loop.last %},{% endif %}
         {% endfor %}
       ]

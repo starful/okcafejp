@@ -1,4 +1,6 @@
 .env
+.pytest_cache/
+.pipeline*.log
 __pycache__/
 *.pyc
 .DS_Store

@@ -18,7 +18,7 @@ GCP_PROJECT_ID="${GCP_PROJECT_ID:-starful-258005}"
 MODE="full"
 DO_GIT=false
 DO_CLOUD_DEPLOY=false
-CONTENT_LIMIT="${CONTENT_LIMIT:-10}"
+CONTENT_LIMIT="${CONTENT_LIMIT:-0}"
 GUIDE_LIMIT="${GUIDE_LIMIT:-3}"
 
 print_step() {
@@ -49,7 +49,7 @@ Environment overrides
   SERVICE_URL      Default: https://okcafejp.net
   GCS_BUCKET       Default: gs://ok-project-assets/${PROJECT_NAME}
   GCP_PROJECT_ID   Default: starful-258005
-  CONTENT_LIMIT    Default: 10
+  CONTENT_LIMIT    Default: 0 (all items.csv rows; set e.g. 10 to cap)
   GUIDE_LIMIT      Default: 3
 EOF
 }
@@ -70,10 +70,9 @@ sync_cloud_images_to_local() {
 
 generate_content() {
     print_step "STEP B: Generate content markdown"
-    print_info "Script-level limits are controlled inside generator implementations."
-    print_info "Requested limits: content=${CONTENT_LIMIT}, guide=${GUIDE_LIMIT}"
+    print_info "Guide limit: GUIDE_LIMIT=${GUIDE_LIMIT} (guide_generator). Item rows: CONTENT_LIMIT=${CONTENT_LIMIT} (0=all)."
     python3 script/guide_generator.py
-    python3 script/item_generator.py
+    python3 script/item_generator.py --limit "${CONTENT_LIMIT}"
     print_ok "Content generation completed"
 }
 

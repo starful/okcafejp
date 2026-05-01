@@ -5,7 +5,7 @@
  */
 
 import { CATEGORY_MAP } from './config.js';
-import { initGoogleMap, renderPhotoMarkers, filterMarkers, closeInfoWindow } from './map-core.js';
+import { initGoogleMap, renderPhotoMarkers, filterMarkers, closeInfoWindow, itemDisplayName } from './map-core.js';
 
 // State
 let allItems    = [];
@@ -91,13 +91,15 @@ function renderList(data) {
         return;
     }
 
-    container.innerHTML = data.map(item => `
+    container.innerHTML = data.map(item => {
+        const label = itemDisplayName(item);
+        return `
         <div class="onsen-card">
             <a href="${item.link}">
-                <img src="${item.thumbnail}" class="card-thumb" alt="${item.title}" loading="lazy">
+                <img src="${item.thumbnail}" class="card-thumb" alt="${label}" loading="lazy">
             </a>
             <div class="card-content">
-                <h3 class="card-title"><a href="${item.link}">${item.title}</a></h3>
+                <h3 class="card-title"><a href="${item.link}">${label}</a></h3>
                 <p class="card-summary">${item.summary}</p>
                 <div class="card-meta">
                     <span>📍 ${item.address || ''}</span>
@@ -105,7 +107,8 @@ function renderList(data) {
                 </div>
             </div>
         </div>
-    `).join('');
+    `;
+    }).join('');
 }
 
 function updateFilterLabels() {

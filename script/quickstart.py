@@ -9,7 +9,7 @@ import os
 from datetime import datetime
 
 from build_data import main as build_json
-from item_generator import build_item_slug, guide_stem_from_topic_en, uniquify_slugs
+from item_generator import build_item_slug, finalize_item_markdown, guide_stem_from_topic_en, uniquify_slugs
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 BASE_DIR = os.path.dirname(SCRIPT_DIR)
@@ -135,6 +135,7 @@ def generate_items(force: bool) -> int:
             content = _item_markdown(name, safe_name, lat, lng, address, features, agoda, lang)
             if _write_if_needed(out_path, content, force):
                 created += 1
+            finalize_item_markdown(out_path, name)
     if skipped_invalid_coords:
         print(f"⚠️ Skipped items.csv rows due to invalid coordinates: {skipped_invalid_coords}")
     return created

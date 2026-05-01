@@ -1,344 +1,2015 @@
 {
-  "last_updated": "2026.04.29",
-  "total_count": 20,
+  "last_updated": "2026.05.01",
+  "total_count": 111,
   "items": [
     {
-      "id": "tokyo_brew_spot_tokyo_ginza_ko",
+      "id": "demachi_kamogawa_cafe_kyoto_demachiyanagi_ko",
       "lang": "ko",
-      "title": "도쿄 긴자 필수 방문지: 도쿄 브루 스팟에서 만나는 특별한 디저트 페어링과 스타일리시한 휴식",
+      "title": "교토 데마치야나기 명소: 데마치 카모가와 카페의 스페셜티 하우스 로스트와 아늑한 단체석",
+      "venue_name": "Demachi Kamogawa Cafe",
+      "lat": 35.0377,
+      "lng": 135.7729,
+      "categories": [
+        "Specialty",
+        "Roastery",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/demachi_kamogawa_cafe_kyoto_demachiyanagi.jpg",
+      "address": "Kyoto, Demachiyanagi",
+      "published": "2026-05-01",
+      "summary": "교토 데마치야나기의 중심에서 진정한 커피 미학을 경험할 수 있는 데마치 카모가와 카페를 소개합니다. 직접 로스팅한 스페셜티 커피와 여유로운 단체 테이블, 편리한 접근성까지 갖춰, 여행자와 현지인 모두에게 완벽한 휴식처를 제공합니다. 이곳에서 흐르는 시간은 특별한 기억으로 채워질 것입니다.",
+      "agoda": "",
+      "link": "/item/demachi_kamogawa_cafe_kyoto_demachiyanagi_ko"
+    },
+    {
+      "id": "sun_city_espresso_ikebukuro_tokyo_ikebukuro_en",
+      "lang": "en",
+      "title": "Sun City Espresso Ikebukuro: Discover Tokyo's Premier Specialty Coffee Hub in Ikebukuro",
+      "venue_name": "Sun City Espresso Ikebukuro",
+      "lat": 35.7289,
+      "lng": 139.7101,
+      "categories": [
+        "Specialty",
+        "Roastery",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/sun_city_espresso_ikebukuro_tokyo_ikebukuro.jpg",
+      "address": "Tokyo, Ikebukuro",
+      "published": "2026-05-01",
+      "summary": "Nestled in the bustling heart of Tokyo's Ikebukuro district, Sun City Espresso offers an unparalleled specialty coffee experience, boasting expertly crafted house roasts and spacious group tables, all within easy reach of urban explorers and local connoisseurs alike.",
+      "agoda": "",
+      "link": "/item/sun_city_espresso_ikebukuro_tokyo_ikebukuro_en"
+    },
+    {
+      "id": "haneda_route_cafe_tokyo_ota_en",
+      "lang": "en",
+      "title": "Haneda Route Cafe: Your Essential Gateway & Work Oasis in Tokyo, Ota",
+      "venue_name": "Haneda Route Cafe",
+      "lat": 35.6131,
+      "lng": 139.7774,
+      "categories": [
+        "Work-Friendly",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/haneda_route_cafe_tokyo_ota.jpg",
+      "address": "Tokyo, Ota",
+      "published": "2026-05-01",
+      "summary": "Discover Haneda Route Cafe in Tokyo, Ota, an indispensable haven for travelers and remote workers alike. Offering spacious comfort, seamless English support, and premium refreshments, it’s the perfect stop en route to or from Haneda Airport.",
+      "agoda": "",
+      "link": "/item/haneda_route_cafe_tokyo_ota_en"
+    },
+    {
+      "id": "komachi_kissaten_asakusa_tokyo_asakusa_ko",
+      "lang": "ko",
+      "title": "아사쿠사의 시간 여행: 고마치 킷사텐 아사쿠사에서 만나는 도쿄의 레트로 감성",
+      "venue_name": "Komachi Kissaten Asakusa",
+      "lat": 35.6992,
+      "lng": 139.8135,
+      "categories": [
+        "Vintage",
+        "Specialty",
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/komachi_kissaten_asakusa_tokyo_asakusa.jpg",
+      "address": "Tokyo, Asakusa",
+      "published": "2026-05-01",
+      "summary": "도쿄 아사쿠사의 번화가 속에서 시간을 거슬러 올라가는 듯한 매력을 선사하는 고마치 킷사텐 아사쿠사는 정통 킷사텐 스타일의 레트로 인테리어와 함께 현지 특유의 맛있는 간식을 경험할 수 있는 특별한 공간입니다. 이곳에서 바쁜 일상 속 작은 여유와 함께 아사쿠사만의 독특한 감성을 오롯이 느껴보세요.",
+      "agoda": "",
+      "link": "/item/komachi_kissaten_asakusa_tokyo_asakusa_ko"
+    },
+    {
+      "id": "higashiyama_stone_path_cafe_kyoto_higashiyama_en",
+      "lang": "en",
+      "title": "Unwind in Kyoto: Higashiyama Stone Path Cafe – Your Guide to Specialty Coffee & Cozy Late Nights in Historic Higashiyama",
+      "venue_name": "Higashiyama Stone Path Cafe",
+      "lat": 35.0302,
+      "lng": 135.7783,
+      "categories": [
+        "Specialty",
+        "Scenic"
+      ],
+      "thumbnail": "/static/images/higashiyama_stone_path_cafe_kyoto_higashiyama.jpg",
+      "address": "Kyoto, Higashiyama",
+      "published": "2026-05-01",
+      "summary": "Discover Higashiyama Stone Path Cafe, a true sanctuary in Kyoto's historic Higashiyama district, offering an unparalleled specialty coffee experience. This charming cafe blends the allure of single-origin beans with a uniquely cozy, late-night ambiance, perfect for unwinding after a day of exploring Kyoto's ancient wonders.",
+      "agoda": "",
+      "link": "/item/higashiyama_stone_path_cafe_kyoto_higashiyama_en"
+    },
+    {
+      "id": "nakatsu_morning_roastery_osaka_nakatsu_en",
+      "lang": "en",
+      "title": "Nakatsu Morning Roastery: Your Essential Guide to Osaka Nakatsu's Premier Early Bird Coffee Haven",
+      "venue_name": "Nakatsu Morning Roastery",
+      "lat": 34.7074,
+      "lng": 135.4898,
+      "categories": [
+        "Roastery",
+        "Work-Friendly",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/nakatsu_morning_roastery_osaka_nakatsu.jpg",
+      "address": "Osaka, Nakatsu",
+      "published": "2026-05-01",
+      "summary": "Kickstart your day in Osaka's bustling Nakatsu district at Nakatsu Morning Roastery, a specialty cafe renowned for its early opening, freshly roasted beans, and quick, quality grab-and-go options perfect for busy professionals and early risers.",
+      "agoda": "",
+      "link": "/item/nakatsu_morning_roastery_osaka_nakatsu_en"
+    },
+    {
+      "id": "fukushima_taproom_cafe_osaka_fukushima_ko",
+      "lang": "ko",
+      "title": "오사카 후쿠시마의 고요한 안식처 | 후쿠시마 탭룸 카페: 전문 핸드드립과 창가 풍경",
+      "venue_name": "Fukushima Taproom Cafe",
+      "lat": 34.6922,
+      "lng": 135.4911,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/fukushima_taproom_cafe_osaka_fukushima.jpg",
+      "address": "Osaka, Fukushima",
+      "published": "2026-05-01",
+      "summary": "오사카 후쿠시마에 위치한 후쿠시마 탭룸 카페는 전문적인 핸드드립 커피와 고요하고 편안한 분위기를 자랑합니다. 창가 좌석에서 여유로운 시간을 보내며 깊이 있는 커피의 맛과 향을 경험해 보세요.",
+      "agoda": "",
+      "link": "/item/fukushima_taproom_cafe_osaka_fukushima_ko"
+    },
+    {
+      "id": "nomad_desk_nishi_shinjuku_tokyo_nishi_shinjuku_en",
+      "lang": "en",
+      "title": "Nomad Desk Nishi-Shinjuku: Your Premier Work-Friendly Cafe in Tokyo's Bustling Nishi-Shinjuku",
+      "venue_name": "Nomad Desk Nishi-Shinjuku",
+      "lat": 35.6938,
+      "lng": 139.7034,
+      "categories": [
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/nomad_desk_nishi_shinjuku_tokyo_nishi_shinjuku.jpg",
+      "address": "Tokyo, Nishi-Shinjuku",
+      "published": "2026-05-01",
+      "summary": "Discover Nomad Desk Nishi-Shinjuku, a premier work-friendly cafe in the heart of Tokyo's Nishi-Shinjuku district, offering an ideal environment for productivity with abundant charging stations and comfortable long-stay options for digital nomads and remote workers alike.",
+      "agoda": "",
+      "link": "/item/nomad_desk_nishi_shinjuku_tokyo_nishi_shinjuku_en"
+    },
+    {
+      "id": "shinsaibashi_parlor_osaka_shinsaibashi_en",
+      "lang": "en",
+      "title": "Shinsaibashi Parlor: Your Ultimate Guide to Brunch, Wi-Fi & Culture in Osaka's Vibrant Shinsaibashi",
+      "venue_name": "Shinsaibashi Parlor",
+      "lat": 34.6766,
+      "lng": 135.4979,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/shinsaibashi_parlor_osaka_shinsaibashi.jpg",
+      "address": "Osaka, Shinsaibashi",
+      "published": "2026-05-01",
+      "summary": "Discover Shinsaibashi Parlor, an inviting Osaka cafe offering delectable brunch, lightning-fast Wi-Fi, and a welcoming atmosphere for every traveler exploring the vibrant Shinsaibashi district.",
+      "agoda": "",
+      "link": "/item/shinsaibashi_parlor_osaka_shinsaibashi_en"
+    },
+    {
+      "id": "skytree_blend_sumida_tokyo_sumida_ko",
+      "lang": "ko",
+      "title": "도쿄 스미다의 보석, 스카이트리 블렌드 스미다: 환상적인 스카이트리 뷰와 특별한 하우스 블렌드의 만남",
+      "venue_name": "Skytree Blend Sumida",
+      "lat": 35.7107,
+      "lng": 139.8107,
+      "categories": [
+        "Scenic",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/skytree_blend_sumida_tokyo_sumida.jpg",
+      "address": "Tokyo, Sumida",
+      "published": "2026-05-01",
+      "summary": "도쿄 스미다에 위치한 스카이트리 블렌드 스미다는 도쿄 스카이트리의 웅장한 전경을 감상하며 특별한 하우스 블렌드 커피를 즐길 수 있는 특별한 카페입니다. 가족 단위 방문객을 위한 넓은 테이블까지 갖춰 편안하고 잊지 못할 경험을 선사합니다.",
+      "agoda": "",
+      "link": "/item/skytree_blend_sumida_tokyo_sumida_ko"
+    },
+    {
+      "id": "nishi_yodogawa_coffee_lab_osaka_nishi_ko",
+      "lang": "ko",
+      "title": "오사카 니시 요도가와 커피 랩: 일과 휴식이 공존하는 스페셜티 커피의 성지",
+      "venue_name": "Nishi Yodogawa Coffee Lab",
+      "lat": 34.6723,
+      "lng": 135.4842,
+      "categories": [
+        "Work-Friendly",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/nishi_yodogawa_coffee_lab_osaka_nishi.jpg",
+      "address": "Osaka, Nishi",
+      "published": "2026-05-01",
+      "summary": "오사카 니시 요도가와 커피 랩은 단순히 커피를 마시는 곳을 넘어, 안정적인 인터넷과 쾌적한 작업 공간을 제공하며 아침 일찍 문을 여는 워크-프렌들리 스페셜티 카페입니다. 최고급 원두로 내린 커피와 함께 생산적인 시간을 보내고 싶은 분들께 완벽한 오아시스입니다.",
+      "agoda": "",
+      "link": "/item/nishi_yodogawa_coffee_lab_osaka_nishi_ko"
+    },
+    {
+      "id": "tsuki_coffee_abeno_osaka_abeno_en",
+      "lang": "en",
+      "title": "Tsuki Coffee Abeno: Your Ultimate Guide to Osaka's Premier Dessert & Signature Latte Cafe in Abeno",
+      "venue_name": "Tsuki Coffee Abeno",
+      "lat": 34.6462,
+      "lng": 135.5148,
+      "categories": [
+        "Specialty",
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/tsuki_coffee_abeno_osaka_abeno.jpg",
+      "address": "Osaka, Abeno",
+      "published": "2026-05-01",
+      "summary": "Discover Tsuki Coffee Abeno, an enchanting dessert cafe in Osaka's vibrant Abeno district, renowned for its exquisite signature lattes and picture-perfect ambiance. A must-visit destination for coffee aficionados and sweet treat lovers seeking an unforgettable culinary and visual experience in the heart of Osaka.",
+      "agoda": "",
+      "link": "/item/tsuki_coffee_abeno_osaka_abeno_en"
+    },
+    {
+      "id": "juso_night_owl_espresso_osaka_juso_ko",
+      "lang": "ko",
+      "title": "오사카 주소의 밤을 깨우는 생산성 허브: 주소 나이트 아울 에스프레소 완벽 가이드",
+      "venue_name": "Juso Night Owl Espresso",
+      "lat": 34.714,
+      "lng": 135.5314,
+      "categories": [
+        "Work-Friendly",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/juso_night_owl_espresso_osaka_juso.jpg",
+      "address": "Osaka, Juso",
+      "published": "2026-05-01",
+      "summary": "오사카 주소에 위치한 주소 나이트 아울 에스프레소는 단순한 카페를 넘어, 장시간 집중 작업과 편안한 휴식을 동시에 제공하는 워크프렌들리 공간입니다. 풍부한 충전 스테이션과 쾌적한 환경으로 디지털 노마드와 학생들에게 완벽한 선택지를 선사합니다.",
+      "agoda": "",
+      "link": "/item/juso_night_owl_espresso_osaka_juso_ko"
+    },
+    {
+      "id": "ueno_parkside_drip_tokyo_ueno_ko",
+      "lang": "ko",
+      "title": "도쿄 우에노 공원 옆, 고요한 핸드드립의 미학: 우에노 파크사이드 드립 완벽 가이드",
+      "venue_name": "Ueno Parkside Drip",
+      "lat": 35.7089,
+      "lng": 139.731,
+      "categories": [
+        "Specialty",
+        "Scenic"
+      ],
+      "thumbnail": "/static/images/ueno_parkside_drip_tokyo_ueno.jpg",
+      "address": "Tokyo, Ueno",
+      "published": "2026-05-01",
+      "summary": "도쿄 우에노의 번화함 속에서 고요한 안식처를 찾는다면, 우에노 파크사이드 드립은 우에노 공원 바로 옆에서 특별한 핸드드립 커피 경험을 선사합니다. 탁 트인 창가 좌석에서 계절의 변화를 느끼며 섬세하게 내린 한 잔의 커피로 진정한 평온을 만끽해 보세요.",
+      "agoda": "",
+      "link": "/item/ueno_parkside_drip_tokyo_ueno_ko"
+    },
+    {
+      "id": "nanzenji_philosopher_drip_kyoto_nanzenji_ko",
+      "lang": "ko",
+      "title": "교토 난젠지 필로소퍼 드립: 철학자의 길 끝, 고즈넉한 풍경 속 스페셜티 커피 경험",
+      "venue_name": "Nanzenji Philosopher Drip",
+      "lat": 35.027,
+      "lng": 135.7894,
+      "categories": [
+        "Scenic",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/nanzenji_philosopher_drip_kyoto_nanzenji.jpg",
+      "address": "Kyoto, Nanzenji",
+      "published": "2026-05-01",
+      "summary": "교토 난젠지 철학자의 길을 따라 걷다 만나는 고요한 안식처, 난젠지 필로소퍼 드립에서 아름다운 풍경과 함께 최상의 에스프레소 토닉을 즐기며 여유로운 음악 속에서 진정한 휴식을 경험하세요.",
+      "agoda": "",
+      "link": "/item/nanzenji_philosopher_drip_kyoto_nanzenji_ko"
+    },
+    {
+      "id": "kawaramachi_folding_cafe_kyoto_kawaramachi_en",
+      "lang": "en",
+      "title": "Kawaramachi Folding Cafe: Kyoto's Ultimate Hub for Specialty Coffee & Focused Work in Kawaramachi",
+      "venue_name": "Kawaramachi Folding Cafe",
+      "lat": 35.0037,
+      "lng": 135.7708,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/kawaramachi_folding_cafe_kyoto_kawaramachi.jpg",
+      "address": "Kyoto, Kawaramachi",
+      "published": "2026-05-01",
+      "summary": "Escape the urban hum at Kawaramachi Folding Cafe, a Kyoto sanctuary where exceptional third-wave espresso meets a tranquil, laptop-friendly environment perfect for deep work or peaceful reflection. This Kawaramachi gem offers a unique blend of artisanal brews and quiet comfort, making it an essential stop for coffee aficionados and digital nomads alike.",
+      "agoda": "",
+      "link": "/item/kawaramachi_folding_cafe_kyoto_kawaramachi_en"
+    },
+    {
+      "id": "gion_yasaka_blend_kyoto_gion_ko",
+      "lang": "ko",
+      "title": "교토 기온 야사카 블렌드: 스페셜티 커피의 깊이와 작업 친화적 공간의 조화",
+      "venue_name": "Gion Yasaka Blend",
+      "lat": 35.0116,
+      "lng": 135.7681,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/gion_yasaka_blend_kyoto_gion.jpg",
+      "address": "Kyoto, Gion",
+      "published": "2026-05-01",
+      "summary": "교토 기온의 번화함 속에 숨겨진 보석 같은 카페, 기온 야사카 블렌드에서 최고급 스페셜티 커피와 함께 여유로운 시간을 만끽하세요. 빠르고 안정적인 Wi-Fi와 편리한 전원 콘센트 덕분에 여행 중에도 편안하게 작업을 이어갈 수 있는 이상적인 공간입니다.",
+      "agoda": "",
+      "link": "/item/gion_yasaka_blend_kyoto_gion_ko"
+    },
+    {
+      "id": "shibuya_morning_club_tokyo_shibuya_en",
+      "lang": "en",
+      "title": "Shibuya Morning Club: Tokyo's Essential Guide to Specialty Brunch & Work-Friendly Cafe in Shibuya",
+      "venue_name": "Shibuya Morning Club",
+      "lat": 35.6581,
+      "lng": 139.7017,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/shibuya_morning_club_tokyo_shibuya.jpg",
+      "address": "Tokyo, Shibuya",
+      "published": "2026-05-01",
+      "summary": "Shibuya Morning Club offers Tokyo's best blend of specialty brunch and lightning-fast Wi-Fi in a welcoming, tourist-friendly atmosphere. Experience a perfect start to your day, whether for work or leisure, right in the heart of bustling Shibuya.",
+      "agoda": "",
+      "link": "/item/shibuya_morning_club_tokyo_shibuya_en"
+    },
+    {
+      "id": "harmonica_coffee_terrace_tokyo_kichijoji_ko",
+      "lang": "ko",
+      "title": "도쿄 키치죠지 하모니카 커피 테라스: 정원 테라스에서 즐기는 스페셜티 핸드드립 커피의 모든 것",
+      "venue_name": "Harmonica Coffee Terrace",
+      "lat": 35.7004,
+      "lng": 139.5803,
+      "categories": [
+        "Specialty",
+        "Scenic"
+      ],
+      "thumbnail": "/static/images/harmonica_coffee_terrace_tokyo_kichijoji.jpg",
+      "address": "Tokyo, Kichijoji",
+      "published": "2026-05-01",
+      "summary": "도쿄 키치죠지의 숨겨진 보석, 하모니카 커피 테라스는 아름다운 정원 테라스에서 숙련된 바리스타가 정성껏 내린 핸드드립 스페셜티 커피를 맛볼 수 있는 특별한 공간입니다. 가족 단위 방문객에게도 완벽한 이곳에서 진정한 휴식과 미식 경험을 동시에 누려보세요.",
+      "agoda": "",
+      "link": "/item/harmonica_coffee_terrace_tokyo_kichijoji_ko"
+    },
+    {
+      "id": "patisserie_bloom_ginza_tokyo_ginza_ko",
+      "lang": "ko",
+      "title": "긴자 도쿄 미식의 정점: 파티세리 블룸 긴자에서 경험하는 예술적인 디저트 페어링과 세련된 휴식",
+      "venue_name": "Patisserie Bloom Ginza",
       "lat": 35.6718,
       "lng": 139.7645,
       "categories": [
         "Dessert",
         "Specialty"
       ],
-      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_ginza.jpg",
+      "thumbnail": "/static/images/patisserie_bloom_ginza_tokyo_ginza.jpg",
       "address": "Tokyo, Ginza",
-      "published": "2026-04-29",
-      "summary": "도쿄 긴자 중심에 자리한 도쿄 브루 스팟은 단순한 카페를 넘어, 세련된 인테리어와 미학적으로 완벽한 디저트 페어링으로 오감을 만족시키는 특별한 공간입니다. 영어 메뉴 덕분에 해외 방문객도 편안하게 최고의 경험을 즐길 수 있어, 도쿄 여행의 필수 코스로 자리매김하고 있습니다.",
+      "published": "2026-05-01",
+      "summary": "긴자 중심에 자리한 파티세리 블룸 긴자는 단순한 카페를 넘어 미식 경험을 선사하는 특별한 공간입니다. 이곳에서는 예술적인 디저트와 완벽하게 어우러지는 음료 페어링을 통해 오감을 만족시키는 품격 있는 시간을 만끽할 수 있습니다. 세련된 인테리어와 편리한 영어 메뉴로 도쿄 여행의 하이라이트를 장식할 수 있습니다.",
       "agoda": "",
-      "link": "/item/tokyo_brew_spot_tokyo_ginza_ko"
+      "link": "/item/patisserie_bloom_ginza_tokyo_ginza_ko"
     },
     {
-      "id": "tokyo_brew_spot_tokyo_harajuku_en",
+      "id": "toyosu_blue_table_tokyo_toyosu_en",
       "lang": "en",
-      "title": "Tokyo Brew Spot: Harajuku's Ultimate Dessert Cafe & Signature Latte Photo Haven",
-      "lat": 35.6702,
-      "lng": 139.7026,
+      "title": "Toyosu Blue Table: Your Ultimate Guide to Tokyo's Serene Waterfront Cafe Oasis in Toyosu",
+      "venue_name": "Toyosu Blue Table",
+      "lat": 35.6244,
+      "lng": 139.7757,
+      "categories": [
+        "Specialty",
+        "Scenic"
+      ],
+      "thumbnail": "/static/images/toyosu_blue_table_tokyo_toyosu.jpg",
+      "address": "Tokyo, Toyosu",
+      "published": "2026-05-01",
+      "summary": "Discover Toyosu Blue Table, a hidden gem nestled in Tokyo's vibrant Toyosu district, offering breathtaking waterfront views, expertly crafted espresso tonics, and an unparalleled ambiance of relaxed serenity perfect for escaping the urban bustle.",
+      "agoda": "",
+      "link": "/item/toyosu_blue_table_tokyo_toyosu_en"
+    },
+    {
+      "id": "eiga_village_coffee_uzumasa_kyoto_uzumasa_en",
+      "lang": "en",
+      "title": "Eiga Village Coffee Uzumasa: Your Essential Transit Hub Cafe for Fast Service and Divine Pastries in Kyoto",
+      "venue_name": "Eiga Village Coffee Uzumasa",
+      "lat": 35.0195,
+      "lng": 135.7358,
+      "categories": [
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/eiga_village_coffee_uzumasa_kyoto_uzumasa.jpg",
+      "address": "Kyoto, Uzumasa",
+      "published": "2026-05-01",
+      "summary": "Eiga Village Coffee Uzumasa stands as a beacon of efficiency and deliciousness in Kyoto's vibrant Uzumasa district, serving as the perfect transit hub cafe where fast service meets an irresistible array of freshly baked pastries, ideal for travelers and locals alike seeking a quick yet satisfying culinary stop amidst their bustling day.",
+      "agoda": "",
+      "link": "/item/eiga_village_coffee_uzumasa_kyoto_uzumasa_en"
+    },
+    {
+      "id": "fushimi_sake_alley_coffee_kyoto_fushimi_ko",
+      "lang": "ko",
+      "title": "교토 후시미의 숨겨진 보석: 후시미 사케 앨리 커피에서 만나는 가성비 드립과 아늑한 작업 공간",
+      "venue_name": "Fushimi Sake Alley Coffee",
+      "lat": 35.0132,
+      "lng": 135.791,
+      "categories": [
+        "Work-Friendly",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/fushimi_sake_alley_coffee_kyoto_fushimi.jpg",
+      "address": "Kyoto, Fushimi",
+      "published": "2026-05-01",
+      "summary": "후시미 사케 앨리 커피는 교토 후시미의 역사적인 사케 지구에 자리 잡은 아늑한 카페로, 합리적인 가격의 드립 커피와 공부 및 작업에 최적화된 편안한 좌석, 그리고 따뜻한 동네 분위기를 자랑합니다. 여행객과 현지인 모두에게 완벽한 휴식처이자 영감을 주는 공간입니다.",
+      "agoda": "",
+      "link": "/item/fushimi_sake_alley_coffee_kyoto_fushimi_ko"
+    },
+    {
+      "id": "kitayama_garden_coffee_kyoto_kitayama_en",
+      "lang": "en",
+      "title": "Discover Kitayama Garden Coffee: A Scenic Dessert Cafe Gem in Kyoto's Kitayama District",
+      "venue_name": "Kitayama Garden Coffee",
+      "lat": 35.0512,
+      "lng": 135.7632,
+      "categories": [
+        "Specialty",
+        "Dessert",
+        "Scenic"
+      ],
+      "thumbnail": "/static/images/kitayama_garden_coffee_kyoto_kitayama.jpg",
+      "address": "Kyoto, Kitayama",
+      "published": "2026-05-01",
+      "summary": "Nestled in the serene Kitayama district of Kyoto, Kitayama Garden Coffee offers an exquisite escape where specialty coffee meets artisanal desserts in a breathtaking garden setting. Renowned for its signature lattes and photogenic plating, this cafe is a must-visit for those seeking a tranquil, aesthetically rich experience. Indulge your senses and capture unforgettable moments amidst Kyoto's sophisticated charm.",
+      "agoda": "",
+      "link": "/item/kitayama_garden_coffee_kyoto_kitayama_en"
+    },
+    {
+      "id": "kiyomizu_slope_beans_kyoto_kiyomizu_ko",
+      "lang": "ko",
+      "title": "교토 기요미즈데라 인근 '기요미즈 슬로프 빈즈': 집중과 휴식을 위한 완벽한 코워킹 카페",
+      "venue_name": "Kiyomizu Slope Beans",
+      "lat": 35.0058,
+      "lng": 135.7812,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/kiyomizu_slope_beans_kyoto_kiyomizu.jpg",
+      "address": "Kyoto, Kiyomizu",
+      "published": "2026-05-01",
+      "summary": "교토 기요미즈데라로 향하는 길목에 자리한 '기요미즈 슬로프 빈즈'는 단순한 카페를 넘어, 스페셜티 커피와 함께 생산성과 여유를 동시에 선사하는 독특한 공간입니다. 여행객에게는 편안한 휴식처를, 디지털 노마드에게는 최적의 업무 환경을 제공하며 교토에서의 특별한 경험을 완성합니다.",
+      "agoda": "",
+      "link": "/item/kiyomizu_slope_beans_kyoto_kiyomizu_ko"
+    },
+    {
+      "id": "shin_osaka_transit_roasters_osaka_shin_osaka_en",
+      "lang": "en",
+      "title": "Shin-Osaka Transit Roasters: Your Essential Guide to Specialty Coffee & Pastries in Osaka, Shin-Osaka",
+      "venue_name": "Shin-Osaka Transit Roasters",
+      "lat": 34.7198,
+      "lng": 135.5029,
+      "categories": [
+        "Roastery",
+        "Specialty",
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/shin_osaka_transit_roasters_osaka_shin_osaka.jpg",
+      "address": "Osaka, Shin-Osaka",
+      "published": "2026-05-01",
+      "summary": "Shin-Osaka Transit Roasters is a beacon of specialty coffee and delectable pastries nestled within the bustling Shin-Osaka transport hub, offering a swift yet satisfying culinary escape for travelers and locals alike, making every visit a moment of refined indulgence.",
+      "agoda": "",
+      "link": "/item/shin_osaka_transit_roasters_osaka_shin_osaka_en"
+    },
+    {
+      "id": "azabu_hill_roasters_tokyo_azabu_ko",
+      "lang": "ko",
+      "title": "아자부 힐 로스터스: 도쿄 아자부의 프리미엄 커피, 데이트 무드, 그리고 장인 디저트",
+      "venue_name": "Azabu Hill Roasters",
+      "lat": 35.6664,
+      "lng": 139.732,
+      "categories": [
+        "Specialty",
+        "Dessert",
+        "Roastery"
+      ],
+      "thumbnail": "/static/images/azabu_hill_roasters_tokyo_azabu.jpg",
+      "address": "Tokyo, Azabu",
+      "published": "2026-05-01",
+      "summary": "도쿄 아자부의 중심에 자리한 아자부 힐 로스터스는 단순한 카페를 넘어, 최고급 원두의 향연과 로맨틱한 데이트 분위기, 그리고 미각을 사로잡는 장인 디저트가 완벽하게 조화를 이루는 프리미엄 커피 경험을 선사합니다.",
+      "agoda": "",
+      "link": "/item/azabu_hill_roasters_tokyo_azabu_ko"
+    },
+    {
+      "id": "sakuragawa_alley_coffee_osaka_sakuragawa_ko",
+      "lang": "ko",
+      "title": "오사카 사쿠라가와 골목의 숨겨진 보석: 사쿠라가와 앨리 커피 완벽 가이드",
+      "venue_name": "Sakuragawa Alley Coffee",
+      "lat": 34.6629,
+      "lng": 135.4871,
+      "categories": [
+        "Specialty",
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/sakuragawa_alley_coffee_osaka_sakuragawa.jpg",
+      "address": "Osaka, Sakuragawa",
+      "published": "2026-05-01",
+      "summary": "오사카 사쿠라가와에 위치한 사쿠라가와 앨리 커피는 고품격 원두 커피와 장인의 손길로 만든 디저트, 로맨틱한 분위기로 특별한 순간을 선사합니다. 데이트 코스로 완벽하며, 바쁜 도시 속에서 아늑한 휴식을 찾으시는 분들에게 이상적인 공간입니다.",
+      "agoda": "",
+      "link": "/item/sakuragawa_alley_coffee_osaka_sakuragawa_ko"
+    },
+    {
+      "id": "kyotoeki_porta_blend_kyoto_kyoto_station_en",
+      "lang": "en",
+      "title": "Kyotoeki Porta Blend: Your Essential Early Morning Oasis at Kyoto Station",
+      "venue_name": "Kyotoeki Porta Blend",
+      "lat": 35.0007,
+      "lng": 135.7514,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/kyotoeki_porta_blend_kyoto_kyoto_station.jpg",
+      "address": "Kyoto, Kyoto Station",
+      "published": "2026-05-01",
+      "summary": "Strategically located within Kyoto Station, Kyotoeki Porta Blend is the essential pitstop for early risers and busy travelers seeking a swift, quality coffee fix to kickstart their day. Opening early, this efficient cafe ensures you grab your perfect blend and a quick bite without missing a beat, embodying convenience and consistent quality.",
+      "agoda": "",
+      "link": "/item/kyotoeki_porta_blend_kyoto_kyoto_station_en"
+    },
+    {
+      "id": "shinjuku_south_latte_lab_tokyo_shinjuku_en",
+      "lang": "en",
+      "title": "Shinjuku South Latte Lab: Tokyo's Premier Third-Wave Coffee Haven for Focus and Flavor in Shinjuku",
+      "venue_name": "Shinjuku South Latte Lab",
+      "lat": 35.6895,
+      "lng": 139.7005,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/shinjuku_south_latte_lab_tokyo_shinjuku.jpg",
+      "address": "Tokyo, Shinjuku",
+      "published": "2026-05-01",
+      "summary": "Shinjuku South Latte Lab offers a unique blend of exceptional third-wave coffee craftsmanship, tranquil seating, and a highly conducive environment for remote work and focused productivity in the heart of bustling Shinjuku, Tokyo.",
+      "agoda": "",
+      "link": "/item/shinjuku_south_latte_lab_tokyo_shinjuku_en"
+    },
+    {
+      "id": "osaka_castle_moat_cafe_osaka_morinomiya_en",
+      "lang": "en",
+      "title": "Discover Serenity: Osaka Castle Moat Cafe – Your Scenic Escape in Osaka, Morinomiya",
+      "venue_name": "Osaka Castle Moat Cafe",
+      "lat": 34.6785,
+      "lng": 135.5289,
+      "categories": [
+        "Scenic",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/osaka_castle_moat_cafe_osaka_morinomiya.jpg",
+      "address": "Osaka, Morinomiya",
+      "published": "2026-05-01",
+      "summary": "Nestled by the historic ramparts, Osaka Castle Moat Cafe offers a unique blend of refined coffee culture and breathtaking natural beauty in Osaka's vibrant Morinomiya district. It's the ideal spot for travelers seeking a tranquil respite with exceptional beverages amidst one of Japan's most iconic landmarks.",
+      "agoda": "",
+      "link": "/item/osaka_castle_moat_cafe_osaka_morinomiya_en"
+    },
+    {
+      "id": "nishijin_silk_latte_kyoto_nishijin_ko",
+      "lang": "ko",
+      "title": "니시진 실크 라떼: 교토 니시진에서 즐기는 여유로운 브런치와 초고속 Wi-Fi",
+      "venue_name": "Nishijin Silk Latte",
+      "lat": 35.0153,
+      "lng": 135.7474,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/nishijin_silk_latte_kyoto_nishijin.jpg",
+      "address": "Kyoto, Nishijin",
+      "published": "2026-05-01",
+      "summary": "교토 니시진 지역에 위치한 '니시진 실크 라떼'는 전통과 현대적 감각이 조화된 특별한 카페입니다. 시그니처 실크 라떼와 맛있는 브런치 세트, 그리고 빠른 Wi-Fi를 갖춰 여행자와 현지인 모두에게 완벽한 휴식과 작업 공간을 제공합니다. 고풍스러운 니시진 지역에서 잠시 쉬어가며 특별한 경험을 만끽해보세요.",
+      "agoda": "",
+      "link": "/item/nishijin_silk_latte_kyoto_nishijin_ko"
+    },
+    {
+      "id": "nijo_castle_west_cafe_kyoto_nijo_en",
+      "lang": "en",
+      "title": "Nijo Castle West Cafe: Your Premier Work-Friendly Haven in Kyoto's Historic Nijo District",
+      "venue_name": "Nijo Castle West Cafe",
+      "lat": 35.0099,
+      "lng": 135.7435,
+      "categories": [
+        "Work-Friendly",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/nijo_castle_west_cafe_kyoto_nijo.jpg",
+      "address": "Kyoto, Nijo",
+      "published": "2026-05-01",
+      "summary": "Discover Nijo Castle West Cafe, a modern oasis in Kyoto's Nijo district offering the perfect blend of productivity and relaxation. With stable internet and a work-friendly layout, it's an ideal spot for remote workers and early risers alike, steps away from historic Nijo Castle.",
+      "agoda": "",
+      "link": "/item/nijo_castle_west_cafe_kyoto_nijo_en"
+    },
+    {
+      "id": "neon_latte_dotonbori_osaka_dotonbori_en",
+      "lang": "en",
+      "title": "Neon Latte Dotonbori: Your Essential Guide to Osaka's Most Stylish Dessert Cafe",
+      "venue_name": "Neon Latte Dotonbori",
+      "lat": 34.6658,
+      "lng": 135.5031,
       "categories": [
         "Dessert",
         "Specialty"
       ],
-      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_harajuku.jpg",
-      "address": "Tokyo, Harajuku",
-      "published": "2026-04-29",
-      "summary": "Discover Tokyo Brew Spot, Harajuku's enchanting dessert cafe, celebrated for its exquisite signature lattes and picture-perfect setting that promises an unforgettable culinary and visual experience, making it a must-visit photo spot in the heart of Tokyo.",
+      "thumbnail": "/static/images/neon_latte_dotonbori_osaka_dotonbori.jpg",
+      "address": "Osaka, Dotonbori",
+      "published": "2026-05-01",
+      "summary": "Discover Neon Latte Dotonbori, an Osaka gem where vibrant lattes meet exquisite dessert pairings in a stunningly stylish setting, offering a perfect escape with an accessible English menu.",
       "agoda": "",
-      "link": "/item/tokyo_brew_spot_tokyo_harajuku_en"
+      "link": "/item/neon_latte_dotonbori_osaka_dotonbori_en"
     },
     {
-      "id": "tokyo_brew_spot_tokyo_roppongi_ko",
-      "lang": "ko",
-      "title": "롯폰기의 밤을 밝히는 아늑한 커피 성지: 도쿄 브루 스팟 (Tokyo Brew Spot)",
-      "lat": 35.6655,
-      "lng": 139.7293,
-      "categories": [
-        "Specialty"
-      ],
-      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_roppongi.jpg",
-      "address": "Tokyo, Roppongi",
-      "published": "2026-04-29",
-      "summary": "도쿄 롯폰기 한가운데 자리한 도쿄 브루 스팟는 최고급 싱글 오리진 원두와 늦게까지 이어지는 영업 시간, 그리고 아늑한 조명이 어우러져 특별한 커피 경험을 선사합니다. 번화한 도시의 밤 속에서 진정한 휴식과 깊은 커피의 맛을 찾아 떠나는 이들을 위한 완벽한 안식처입니다.",
-      "agoda": "",
-      "link": "/item/tokyo_brew_spot_tokyo_roppongi_ko"
-    },
-    {
-      "id": "tokyo_brew_spot_tokyo_kichijoji_en",
+      "id": "marunouchi_blend_lab_tokyo_marunouchi_en",
       "lang": "en",
-      "title": "Tokyo Brew Spot: Your Serene Garden Cafe Escape in Kichijoji, Tokyo",
-      "lat": 35.7004,
-      "lng": 139.5803,
-      "categories": [
-        "Specialty",
-        "Scenic"
-      ],
-      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_kichijoji.jpg",
-      "address": "Tokyo, Kichijoji",
-      "published": "2026-04-29",
-      "summary": "Discover Tokyo Brew Spot, a charming cafe sanctuary nestled in the vibrant heart of Kichijoji. Indulge in exquisite hand-drip coffee amidst a lush garden terrace, perfect for a peaceful escape or a joyful family outing. This hidden gem offers a unique blend of artisanal quality and welcoming ambiance.",
-      "agoda": "",
-      "link": "/item/tokyo_brew_spot_tokyo_kichijoji_en"
-    },
-    {
-      "id": "tokyo_brew_spot_tokyo_shinjuku_en",
-      "lang": "en",
-      "title": "Tokyo Brew Spot: Shinjuku's Premier Sanctuary for Third-Wave Coffee & Laptop Productivity",
-      "lat": 35.6895,
-      "lng": 139.7005,
-      "categories": [
-        "Specialty",
-        "Work-Friendly"
-      ],
-      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_shinjuku.jpg",
-      "address": "Tokyo, Shinjuku",
-      "published": "2026-04-29",
-      "summary": "Discover Tokyo Brew Spot, Shinjuku's hidden gem renowned for its exquisite third-wave espresso, tranquil atmosphere, and exceptional laptop-friendly environment, perfect for discerning coffee lovers and remote professionals alike.",
-      "agoda": "",
-      "link": "/item/tokyo_brew_spot_tokyo_shinjuku_en"
-    },
-    {
-      "id": "tokyo_brew_spot_tokyo_shibuya_en",
-      "lang": "en",
-      "title": "Tokyo Brew Spot: Your Ultimate Work-Friendly Cafe & Brunch Haven in Vibrant Shibuya, Tokyo",
-      "lat": 35.6581,
-      "lng": 139.7017,
-      "categories": [
-        "Work-Friendly",
-        "Specialty"
-      ],
-      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_shibuya.jpg",
-      "address": "Tokyo, Shibuya",
-      "published": "2026-04-29",
-      "summary": "Discover Tokyo Brew Spot, a premier cafe in the heart of Shibuya, offering an exceptional brunch experience, lightning-fast Wi-Fi, and a genuinely welcoming atmosphere for international visitors. It's the perfect spot to fuel your day, catch up on work, or simply soak in the vibrant Tokyo energy.",
-      "agoda": "",
-      "link": "/item/tokyo_brew_spot_tokyo_shibuya_en"
-    },
-    {
-      "id": "tokyo_brew_spot_tokyo_ebisu_ko",
-      "lang": "ko",
-      "title": "도쿄 에비스의 완벽한 아침을 선사하는 작업 공간: 도쿄 브루 스팟",
-      "lat": 35.6467,
-      "lng": 139.71,
-      "categories": [
-        "Work-Friendly",
-        "Specialty"
-      ],
-      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_ebisu.jpg",
-      "address": "Tokyo, Ebisu",
-      "published": "2026-04-29",
-      "summary": "도쿄 에비스에 위치한 도쿄 브루 스팟은 바쁜 도시 속에서 효율적인 작업과 진정한 휴식을 동시에 선사하는 현대적인 카페입니다. 안정적인 인터넷, 편안한 작업 공간, 그리고 아침 일찍 문을 여는 이 곳에서 당신만의 특별한 하루를 시작해보세요.",
-      "agoda": "",
-      "link": "/item/tokyo_brew_spot_tokyo_ebisu_ko"
-    },
-    {
-      "id": "tokyo_brew_spot_tokyo_marunouchi_en",
-      "lang": "en",
-      "title": "Tokyo Brew Spot: Your Premier Specialty Coffee & Work Hub in Marunouchi, Tokyo",
+      "title": "Marunouchi Blend Lab: Your Premier Specialty Coffee & Work Oasis in Tokyo's Marunouchi District",
+      "venue_name": "Marunouchi Blend Lab",
       "lat": 35.6812,
       "lng": 139.7671,
       "categories": [
         "Specialty",
         "Work-Friendly"
       ],
-      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_marunouchi.jpg",
+      "thumbnail": "/static/images/marunouchi_blend_lab_tokyo_marunouchi.jpg",
       "address": "Tokyo, Marunouchi",
-      "published": "2026-04-29",
-      "summary": "Discover Tokyo Brew Spot, Marunouchi's hidden gem for unparalleled specialty coffee, offering a serene yet vibrant atmosphere perfect for both savoring exquisite brews and productive work sessions. With reliable Wi-Fi and ample power outlets, it's an ideal urban retreat for locals and visitors alike seeking quality and convenience in the heart of Tokyo.",
+      "published": "2026-05-01",
+      "summary": "Discover Marunouchi Blend Lab, a haven for specialty coffee enthusiasts and remote workers alike, nestled in the sophisticated heart of Tokyo's Marunouchi district. Experience expertly crafted brews and a perfectly equipped environment designed for productivity and relaxation, complete with high-speed Wi-Fi and ample power outlets.",
       "agoda": "",
-      "link": "/item/tokyo_brew_spot_tokyo_marunouchi_en"
+      "link": "/item/marunouchi_blend_lab_tokyo_marunouchi_en"
     },
     {
-      "id": "tokyo_brew_spot_tokyo_ikebukuro_en",
-      "lang": "en",
-      "title": "Discover Tokyo Brew Spot: Your Ultimate Guide to Ikebukuro's Specialty Coffee & Work-Friendly Haven",
-      "lat": 35.7289,
-      "lng": 139.7101,
-      "categories": [
-        "Specialty",
-        "Work-Friendly"
-      ],
-      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_ikebukuro.jpg",
-      "address": "Tokyo, Ikebukuro",
-      "published": "2026-04-29",
-      "summary": "Uncover the inviting charm of Tokyo Brew Spot, Ikebukuro's premier cafe offering exceptional house-roasted coffee and spacious group tables. Perfectly situated for easy access, it's an ideal spot for both coffee connoisseurs and those seeking a productive environment in the heart of Tokyo.",
-      "agoda": "",
-      "link": "/item/tokyo_brew_spot_tokyo_ikebukuro_en"
-    },
-    {
-      "id": "tokyo_brew_spot_tokyo_ueno_en",
-      "lang": "en",
-      "title": "Tokyo Brew Spot: Ueno's Tranquil Haven for Pour-Over Coffee and Calm Reflection",
-      "lat": 35.7089,
-      "lng": 139.731,
-      "categories": [
-        "Specialty",
-        "Work-Friendly"
-      ],
-      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_ueno.jpg",
-      "address": "Tokyo, Ueno",
-      "published": "2026-04-29",
-      "summary": "Discover Tokyo Brew Spot in Ueno, a serene haven dedicated to the art of pour-over coffee. Offering a calm ambiance and scenic window seats, it's the perfect escape for connoisseurs and those seeking a peaceful workspace amidst the bustling city.",
-      "agoda": "",
-      "link": "/item/tokyo_brew_spot_tokyo_ueno_en"
-    },
-    {
-      "id": "tokyo_brew_spot_tokyo_shinjuku_ko",
+      "id": "ebisu_workbench_cafe_tokyo_ebisu_ko",
       "lang": "ko",
-      "title": "도쿄 신주쿠의 숨겨진 보석, 도쿄 브루 스팟: 스페셜티 커피와 노트북 작업의 완벽 조화",
-      "lat": 35.6895,
-      "lng": 139.7005,
-      "categories": [
-        "Specialty",
-        "Work-Friendly"
-      ],
-      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_shinjuku.jpg",
-      "address": "Tokyo, Shinjuku",
-      "published": "2026-04-29",
-      "summary": "신주쿠의 번잡함 속 고요한 안식처, 도쿄 브루 스팟는 최상급의 서드 웨이브 에스프레소와 함께 집중적인 작업이 가능한 조용한 공간을 제공합니다. 섬세하게 추출된 커피 한 잔과 함께 생산성을 높이고 싶은 분들을 위한 이상적인 카페입니다.",
-      "agoda": "",
-      "link": "/item/tokyo_brew_spot_tokyo_shinjuku_ko"
-    },
-    {
-      "id": "tokyo_brew_spot_tokyo_kichijoji_ko",
-      "lang": "ko",
-      "title": "도쿄 키치죠지 'Tokyo Brew Spot': 정원 테라스의 평화, 핸드드립 커피의 깊이, 가족 친화적인 카페",
-      "lat": 35.7004,
-      "lng": 139.5803,
-      "categories": [
-        "Specialty",
-        "Scenic"
-      ],
-      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_kichijoji.jpg",
-      "address": "Tokyo, Kichijoji",
-      "published": "2026-04-29",
-      "summary": "도쿄 키치죠지에 자리한 'Tokyo Brew Spot'은 싱그러운 정원 테라스, 장인의 손길로 내린 핸드드립 커피, 그리고 모든 연령대가 편안하게 즐길 수 있는 가족 친화적인 분위기가 완벽하게 어우러진 특별한 카페입니다. 도심 속에서 자연의 여유와 최상급 커피 한 잔의 행복을 동시에 만끽할 수 있는 이곳은 방문객들에게 잊지 못할 추억을 선사합니다.",
-      "agoda": "",
-      "link": "/item/tokyo_brew_spot_tokyo_kichijoji_ko"
-    },
-    {
-      "id": "tokyo_brew_spot_tokyo_ueno_ko",
-      "lang": "ko",
-      "title": "도쿄 우에노의 고요한 커피 안식처: 도쿄 브루 스팟 완벽 가이드",
-      "lat": 35.7089,
-      "lng": 139.731,
-      "categories": [
-        "Specialty",
-        "Work-Friendly"
-      ],
-      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_ueno.jpg",
-      "address": "Tokyo, Ueno",
-      "published": "2026-04-29",
-      "summary": "우에노의 번잡함 속 숨겨진 보석, 도쿄 브루 스팟은 섬세한 핸드드립 커피와 평온한 분위기로 방문객을 맞이합니다. 고즈넉한 창가 좌석에서 도쿄의 정취를 느끼며 진정한 휴식을 경험해보세요. 커피 애호가와 조용한 시간을 찾는 이들에게 완벽한 도피처입니다.",
-      "agoda": "",
-      "link": "/item/tokyo_brew_spot_tokyo_ueno_ko"
-    },
-    {
-      "id": "tokyo_brew_spot_tokyo_ikebukuro_ko",
-      "lang": "ko",
-      "title": "도쿄 이케부쿠로 필수 코스: '도쿄 브루 스팟'에서 만나는 하우스 로스트 스페셜티 커피",
-      "lat": 35.7289,
-      "lng": 139.7101,
-      "categories": [
-        "Specialty",
-        "Work-Friendly"
-      ],
-      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_ikebukuro.jpg",
-      "address": "Tokyo, Ikebukuro",
-      "published": "2026-04-29",
-      "summary": "도쿄 이케부쿠로 중심부에 위치한 '도쿄 브루 스팟'은 특별한 하우스 로스트 커피와 넓은 그룹 테이블을 제공하여, 혼자만의 여유로운 시간부터 단체 모임까지 완벽한 공간입니다. 뛰어난 접근성까지 갖춰 도쿄 여행 중 반드시 방문해야 할 스페셜티 카페로 손꼽힙니다.",
-      "agoda": "",
-      "link": "/item/tokyo_brew_spot_tokyo_ikebukuro_ko"
-    },
-    {
-      "id": "tokyo_brew_spot_tokyo_marunouchi_ko",
-      "lang": "ko",
-      "title": "도쿄 마루노우치 '도쿄 브루 스팟': 스페셜티 커피와 완벽한 업무 환경을 만나다",
-      "lat": 35.6812,
-      "lng": 139.7671,
-      "categories": [
-        "Specialty",
-        "Work-Friendly"
-      ],
-      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_marunouchi.jpg",
-      "address": "Tokyo, Marunouchi",
-      "published": "2026-04-29",
-      "summary": "도쿄 마루노우치 중심에 위치한 '도쿄 브루 스팟'은 최고급 스페셜티 커피와 함께 안정적인 Wi-Fi, 넉넉한 전원 콘센트를 제공하여 여행객과 비즈니스 방문객 모두에게 완벽한 휴식 및 업무 공간을 선사합니다.",
-      "agoda": "",
-      "link": "/item/tokyo_brew_spot_tokyo_marunouchi_ko"
-    },
-    {
-      "id": "tokyo_brew_spot_tokyo_ebisu_en",
-      "lang": "en",
-      "title": "Tokyo Brew Spot: Your Ultimate Work-Friendly Cafe Sanctuary in Ebisu, Tokyo",
+      "title": "에비스 워크벤치 카페: 도쿄 에비스의 생산성과 스페셜티 커피가 만나는 완벽한 공간",
+      "venue_name": "Ebisu Workbench Cafe",
       "lat": 35.6467,
       "lng": 139.71,
       "categories": [
         "Work-Friendly",
         "Specialty"
       ],
-      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_ebisu.jpg",
+      "thumbnail": "/static/images/ebisu_workbench_cafe_tokyo_ebisu.jpg",
       "address": "Tokyo, Ebisu",
-      "published": "2026-04-29",
-      "summary": "Discover Tokyo Brew Spot in Ebisu, a premier cafe offering an unparalleled work-friendly environment with stable internet and early morning hours, perfect for digital nomads and early risers seeking productivity and exceptional coffee. This detailed guide unveils why it's Tokyo's best destination for focused work, creative brainstorming, and serene starts to your day, blending ergonomic design with artisanal brews in the heart of Ebisu.",
+      "published": "2026-05-01",
+      "summary": "도쿄 에비스에 위치한 에비스 워크벤치 카페는 생산성과 휴식을 동시에 만족시키는 특별한 공간입니다. 안정적인 인터넷, 넉넉한 전원 콘센트, 편안한 좌석을 갖춘 완벽한 작업 환경과 함께, 이른 아침부터 즐길 수 있는 고품질의 스페셜티 커피는 방문객들에게 최상의 경험을 선사합니다.",
       "agoda": "",
-      "link": "/item/tokyo_brew_spot_tokyo_ebisu_en"
+      "link": "/item/ebisu_workbench_cafe_tokyo_ebisu_ko"
     },
     {
-      "id": "tokyo_brew_spot_tokyo_shibuya_ko",
+      "id": "nakanoshima_river_roast_osaka_nakanoshima_ko",
       "lang": "ko",
-      "title": "도쿄 시부야의 보석, 도쿄 브루 스팟: 완벽한 브런치와 고속 Wi-Fi를 만끽하세요",
-      "lat": 35.6581,
-      "lng": 139.7017,
+      "title": "오사카 나카노시마의 보석, 나카노시마 리버 로스트: 가성비 드립 커피와 공부하기 좋은 카페",
+      "venue_name": "Nakanoshima River Roast",
+      "lat": 34.6975,
+      "lng": 135.5152,
       "categories": [
         "Work-Friendly",
         "Specialty"
       ],
-      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_shibuya.jpg",
-      "address": "Tokyo, Shibuya",
-      "published": "2026-04-29",
-      "summary": "도쿄 시부야에 위치한 도쿄 브루 스팟는 맛있는 브런치와 함께 고속 Wi-Fi를 제공하여, 여행객과 현지인 모두에게 완벽한 휴식처를 선사합니다. 편안한 분위기에서 여유로운 시간을 보내며, 도쿄의 활기찬 에너지를 만끽할 수 있습니다.",
+      "thumbnail": "/static/images/nakanoshima_river_roast_osaka_nakanoshima.jpg",
+      "address": "Osaka, Nakanoshima",
+      "published": "2026-05-01",
+      "summary": "오사카의 심장부에 자리한 나카노시마 리버 로스트는 단순한 카페를 넘어, 저렴하면서도 훌륭한 드립 커피와 집중하기 좋은 학습 공간을 제공하는 진정한 휴식처입니다. 강변의 여유로운 분위기 속에서 현지인처럼 여유를 만끽할 수 있는 이곳은 오사카 여행객과 현지인 모두에게 사랑받는 특별한 공간입니다.",
       "agoda": "",
-      "link": "/item/tokyo_brew_spot_tokyo_shibuya_ko"
+      "link": "/item/nakanoshima_river_roast_osaka_nakanoshima_ko"
     },
     {
-      "id": "tokyo_brew_spot_tokyo_roppongi_en",
+      "id": "kuromon_pour_namba_osaka_namba_en",
       "lang": "en",
-      "title": "Discover Tokyo Brew Spot: Roppongi's Premier Cozy, Late-Night Single Origin Cafe Experience",
+      "title": "Discover Kuromon Pour Namba: Osaka's Premier Third Wave Coffee & Laptop-Friendly Haven in Namba",
+      "venue_name": "Kuromon Pour Namba",
+      "lat": 34.6687,
+      "lng": 135.5012,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/kuromon_pour_namba_osaka_namba.jpg",
+      "address": "Osaka, Namba",
+      "published": "2026-05-01",
+      "summary": "Escape the Namba bustle at Kuromon Pour Namba, a hidden gem celebrated for its exceptional third-wave espresso. This cafe offers a serene, laptop-friendly environment, making it perfect for focused work or a quiet moment of coffee appreciation in the heart of Osaka.",
+      "agoda": "",
+      "link": "/item/kuromon_pour_namba_osaka_namba_en"
+    },
+    {
+      "id": "origin_lab_roppongi_tokyo_roppongi_ko",
+      "lang": "ko",
+      "title": "오리진 랩 롯폰기: 도쿄 롯폰기에서 만나는 고품격 스페셜티 커피의 세계",
+      "venue_name": "Origin Lab Roppongi",
       "lat": 35.6655,
       "lng": 139.7293,
       "categories": [
-        "Specialty"
+        "Specialty",
+        "Work-Friendly"
       ],
-      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_roppongi.jpg",
+      "thumbnail": "/static/images/origin_lab_roppongi_tokyo_roppongi.jpg",
       "address": "Tokyo, Roppongi",
-      "published": "2026-04-29",
-      "summary": "Nestled in the vibrant heart of Roppongi, Tokyo Brew Spot offers an unparalleled escape with its meticulously curated single-origin coffee selection. Experience the allure of a sophisticated cafe that embraces late hours and wraps you in a truly cozy, inviting ambiance, making it a must-visit destination for discerning coffee lovers.",
+      "published": "2026-05-01",
+      "summary": "도쿄 롯폰기의 밤을 특별하게 밝히는 오리진 랩 롯폰기는 깊이 있는 싱글 오리진 커피와 아늑한 조명이 어우러진 매력적인 공간입니다. 늦은 시간까지 여유롭게 최상의 커피 경험을 선사하며, 고요한 휴식과 영감을 선사하는 도심 속 오아시스입니다.",
       "agoda": "",
-      "link": "/item/tokyo_brew_spot_tokyo_roppongi_en"
+      "link": "/item/origin_lab_roppongi_tokyo_roppongi_ko"
     },
     {
-      "id": "tokyo_brew_spot_tokyo_harajuku_ko",
+      "id": "ichijoji_forest_roast_kyoto_ichijoji_ko",
       "lang": "ko",
-      "title": "도쿄 하라주쿠의 숨겨진 보석: 도쿄 브루 스팟 – 시그니처 라떼와 디저트의 천국",
+      "title": "교토 이치죠지 숲 로스트: 정원 테라스와 핸드드립 커피의 만남, 가족 친화적인 힐링 카페",
+      "venue_name": "Ichijoji Forest Roast",
+      "lat": 35.0478,
+      "lng": 135.7801,
+      "categories": [
+        "Specialty",
+        "Scenic",
+        "Roastery"
+      ],
+      "thumbnail": "/static/images/ichijoji_forest_roast_kyoto_ichijoji.jpg",
+      "address": "Kyoto, Ichijoji",
+      "published": "2026-05-01",
+      "summary": "교토 이치죠지의 숨겨진 보석, 이치죠지 숲 로스트는 아름다운 정원 테라스에서 최고급 핸드드립 커피를 맛볼 수 있는 특별한 카페입니다. 온 가족이 함께 자연 속에서 여유로운 시간을 보내며, 정성껏 로스팅한 원두의 깊은 향과 맛을 경험해 보세요.",
+      "agoda": "",
+      "link": "/item/ichijoji_forest_roast_kyoto_ichijoji_ko"
+    },
+    {
+      "id": "tanimachi_bean_library_osaka_tanimachi_en",
+      "lang": "en",
+      "title": "Discover Tanimachi Bean Library: Osaka's Premier Specialty Coffee & Roastery Experience in Tanimachi",
+      "venue_name": "Tanimachi Bean Library",
+      "lat": 34.6712,
+      "lng": 135.52,
+      "categories": [
+        "Specialty",
+        "Roastery"
+      ],
+      "thumbnail": "/static/images/tanimachi_bean_library_osaka_tanimachi.jpg",
+      "address": "Osaka, Tanimachi",
+      "published": "2026-05-01",
+      "summary": "Step into the aromatic world of Tanimachi Bean Library, Osaka's hidden gem in Tanimachi offering an unparalleled specialty coffee experience. This dedicated roastery and cafe invites you to explore a curated selection of beans, expertly prepared by passionate baristas in a tranquil setting perfect for coffee connoisseurs.",
+      "agoda": "",
+      "link": "/item/tanimachi_bean_library_osaka_tanimachi_en"
+    },
+    {
+      "id": "tenma_market_coffee_osaka_tenjinbashisuji_en",
+      "lang": "en",
+      "title": "Discover Tenma Market Coffee: Your Essential Guide to Specialty Roasts in Osaka's Tenjinbashisuji",
+      "venue_name": "Tenma Market Coffee",
+      "lat": 34.7059,
+      "lng": 135.5071,
+      "categories": [
+        "Specialty",
+        "Roastery"
+      ],
+      "thumbnail": "/static/images/tenma_market_coffee_osaka_tenjinbashisuji.jpg",
+      "address": "Osaka, Tenjinbashisuji",
+      "published": "2026-05-01",
+      "summary": "Nestled in the bustling heart of Osaka's iconic Tenjinbashisuji shopping street, Tenma Market Coffee offers a sanctuary for specialty coffee lovers, celebrated for its exquisite house roasts and welcoming group tables perfect for any occasion.",
+      "agoda": "",
+      "link": "/item/tenma_market_coffee_osaka_tenjinbashisuji_en"
+    },
+    {
+      "id": "kinkaku_garden_view_cafe_kyoto_kinkakuji_en",
+      "lang": "en",
+      "title": "Kinkaku Garden View Cafe: Your Serene Specialty Coffee Escape by Kyoto's Iconic Kinkakuji Temple",
+      "venue_name": "Kinkaku Garden View Cafe",
+      "lat": 35.0333,
+      "lng": 135.7412,
+      "categories": [
+        "Specialty",
+        "Scenic",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/kinkaku_garden_view_cafe_kyoto_kinkakuji.jpg",
+      "address": "Kyoto, Kinkakuji",
+      "published": "2026-05-01",
+      "summary": "Discover Kinkaku Garden View Cafe, a tranquil oasis near Kyoto's iconic Kinkakuji Temple, where the art of manual brew coffee meets minimalist serenity. This hidden gem offers a quiet escape with stunning garden views, perfect for thoughtful reflection or a peaceful work session amidst breathtaking beauty.",
+      "agoda": "",
+      "link": "/item/kinkaku_garden_view_cafe_kyoto_kinkakuji_en"
+    },
+    {
+      "id": "kyobashi_bridge_blend_osaka_kyobashi_ko",
+      "lang": "ko",
+      "title": "교바시 브릿지 블렌드: 오사카 교바시의 밤을 수놓는 스페셜티 커피 경험",
+      "venue_name": "Kyobashi Bridge Blend",
+      "lat": 34.6873,
+      "lng": 135.5262,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/kyobashi_bridge_blend_osaka_kyobashi.jpg",
+      "address": "Osaka, Kyobashi",
+      "published": "2026-05-01",
+      "summary": "오사카 교바시의 숨겨진 보석, 교바시 브릿지 블렌드에서 특별한 커피의 세계를 만나보세요. 늦은 시간까지 신선한 싱글 오리진 원두와 아늑한 조명 아래 여유를 즐길 수 있는 이상적인 공간입니다.",
+      "agoda": "",
+      "link": "/item/kyobashi_bridge_blend_osaka_kyobashi_ko"
+    },
+    {
+      "id": "senju_study_base_tokyo_kitasenju_ko",
+      "lang": "ko",
+      "title": "도쿄 기타센주 센주 스터디 베이스: 저렴한 드립 커피와 완벽한 공부 환경을 갖춘 동네 카페의 재발견",
+      "venue_name": "Senju Study Base",
+      "lat": 35.752,
+      "lng": 139.8475,
+      "categories": [
+        "Work-Friendly",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/senju_study_base_tokyo_kitasenju.jpg",
+      "address": "Tokyo, Kitasenju",
+      "published": "2026-05-01",
+      "summary": "도쿄 기타센주의 활기 넘치는 골목에 자리한 센주 스터디 베이스는 저렴하고 맛있는 드립 커피와 공부에 최적화된 좌석, 그리고 따뜻한 동네 분위기를 동시에 선사하는 독특한 카페입니다. 생산성 향상과 편안한 휴식을 동시에 추구하는 이들에게 완벽한 안식처가 되어주는 이곳에서 특별한 경험을 만나보세요.",
+      "agoda": "",
+      "link": "/item/senju_study_base_tokyo_kitasenju_ko"
+    },
+    {
+      "id": "hommachi_minimal_drip_osaka_hommachi_ko",
+      "lang": "ko",
+      "title": "혼마치 미니멀 드립: 오사카 혼마치에서 경험하는 정수된 커피의 미학",
+      "venue_name": "Hommachi Minimal Drip",
+      "lat": 34.6848,
+      "lng": 135.5038,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/hommachi_minimal_drip_osaka_hommachi.jpg",
+      "address": "Osaka, Hommachi",
+      "published": "2026-05-01",
+      "summary": "오사카 혼마치 번화가 속에 숨겨진 고요한 커피 안식처, 혼마치 미니멀 드립을 소개합니다. 숙련된 바리스타의 수동 브루잉 스테이션에서 한 방울 한 방울 정성껏 내려진 스페셜티 커피의 진수를 경험해 보세요. 미니멀리스트 디자인의 차분한 공간에서 일상의 소음으로부터 벗어나 온전한 휴식과 집중의 시간을 가질 수 있습니다.",
+      "agoda": "",
+      "link": "/item/hommachi_minimal_drip_osaka_hommachi_ko"
+    },
+    {
+      "id": "umeda_clockwork_coffee_osaka_umeda_en",
+      "lang": "en",
+      "title": "Umeda Clockwork Coffee: Your Essential Guide to Osaka's Premier Specialty Cafe in Umeda",
+      "venue_name": "Umeda Clockwork Coffee",
+      "lat": 34.7025,
+      "lng": 135.4959,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/umeda_clockwork_coffee_osaka_umeda.jpg",
+      "address": "Osaka, Umeda",
+      "published": "2026-05-01",
+      "summary": "Nestled in the vibrant heart of Osaka's Umeda district, Umeda Clockwork Coffee offers a serene escape for discerning coffee lovers and productivity seekers alike. Discover a world of meticulously crafted specialty coffee, complemented by a truly work-friendly environment featuring reliable Wi-Fi and abundant power outlets, making it an indispensable stop for any visitor or local.",
+      "agoda": "",
+      "link": "/item/umeda_clockwork_coffee_osaka_umeda_en"
+    },
+    {
+      "id": "hibiya_standing_espresso_tokyo_hibiya_en",
+      "lang": "en",
+      "title": "Fuel Your Tokyo Day: Discover Hibiya Standing Espresso, The Premier Cafe in Tokyo's Dynamic Hibiya District",
+      "venue_name": "Hibiya Standing Espresso",
+      "lat": 35.6841,
+      "lng": 139.7519,
+      "categories": [
+        "Dessert",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/hibiya_standing_espresso_tokyo_hibiya.jpg",
+      "address": "Tokyo, Hibiya",
+      "published": "2026-05-01",
+      "summary": "Hibiya Standing Espresso offers a swift and satisfying caffeine fix in the heart of Tokyo's bustling Hibiya district, perfect for busy professionals and discerning travelers alike. Indulge in expertly crafted espresso and delectable pastries, a perfect blend of efficiency and taste in a prime urban setting.",
+      "agoda": "",
+      "link": "/item/hibiya_standing_espresso_tokyo_hibiya_en"
+    },
+    {
+      "id": "kissa_retro_otsuka_tokyo_otsuka_en",
+      "lang": "en",
+      "title": "Kissa Retro Otsuka: A Timeless Manual Brew Sanctuary in Tokyo's Charming Otsuka District",
+      "venue_name": "Kissa Retro Otsuka",
+      "lat": 35.7321,
+      "lng": 139.7135,
+      "categories": [
+        "Vintage",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/kissa_retro_otsuka_tokyo_otsuka.jpg",
+      "address": "Tokyo, Otsuka",
+      "published": "2026-05-01",
+      "summary": "Discover Kissa Retro Otsuka, a captivating Tokyo cafe where time slows amidst vintage charm and the exquisite aroma of meticulously manual brewed coffee. Nestled in the heart of Otsuka, it offers a serene escape for those seeking quality, tranquility, and a taste of nostalgic elegance.",
+      "agoda": "",
+      "link": "/item/kissa_retro_otsuka_tokyo_otsuka_en"
+    },
+    {
+      "id": "takeshita_latte_stand_tokyo_harajuku_en",
+      "lang": "en",
+      "title": "Takeshita Latte Stand: Harajuku's Iconic Dessert Haven & Photo Spot in Tokyo",
+      "venue_name": "Takeshita Latte Stand",
       "lat": 35.6702,
       "lng": 139.7026,
       "categories": [
         "Specialty",
         "Dessert"
       ],
-      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_harajuku.jpg",
+      "thumbnail": "/static/images/takeshita_latte_stand_tokyo_harajuku.jpg",
       "address": "Tokyo, Harajuku",
-      "published": "2026-04-29",
-      "summary": "도쿄 하라주쿠의 중심에 자리한 도쿄 브루 스팟는 독특한 시그니처 라떼와 예술적인 디저트로 미각과 시각을 동시에 사로잡는 디저트 카페입니다. 인스타그래머블한 포토 스팟으로도 유명하여 특별한 순간을 기록하고 싶은 이들에게 완벽한 도쿄 여행의 필수 코스입니다.",
+      "published": "2026-05-01",
+      "summary": "Nestled in the vibrant heart of Tokyo's Harajuku district, Takeshita Latte Stand is a must-visit destination, renowned for its exquisite signature lattes, visually stunning desserts, and charming ambiance that makes every visit a perfect photo opportunity.",
       "agoda": "",
-      "link": "/item/tokyo_brew_spot_tokyo_harajuku_ko"
+      "link": "/item/takeshita_latte_stand_tokyo_harajuku_en"
     },
     {
-      "id": "tokyo_brew_spot_tokyo_ginza_en",
+      "id": "atc_bay_view_cafe_osaka_nanko_en",
       "lang": "en",
-      "title": "Tokyo Brew Spot: Ginza's Stylish Sanctuary for Exquisite Dessert Pairings & Specialty Coffee in Tokyo",
+      "title": "ATC Bay View Cafe: Your Ultimate Guide to Osaka Nanko's Scenic Waterfront Coffee Experience",
+      "venue_name": "ATC Bay View Cafe",
+      "lat": 34.6571,
+      "lng": 135.4427,
+      "categories": [
+        "Scenic",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/atc_bay_view_cafe_osaka_nanko.jpg",
+      "address": "Osaka, Nanko",
+      "published": "2026-05-01",
+      "summary": "Discover ATC Bay View Cafe, Osaka Nanko's premier waterfront destination offering breathtaking bay views, an exquisite house blend coffee, and a welcoming atmosphere perfect for families and solo travelers alike. Indulge in artisanal coffee and delightful treats while soaking in the serene port landscape.",
+      "agoda": "",
+      "link": "/item/atc_bay_view_cafe_osaka_nanko_en"
+    },
+    {
+      "id": "tennoji_park_cafe_kin_osaka_tennoji_en",
+      "lang": "en",
+      "title": "Discover Tennoji Park Cafe Kin: An Oasis of Hand Drip Coffee and Garden Serenity in Osaka's Tennoji",
+      "venue_name": "Tennoji Park Cafe Kin",
+      "lat": 34.6508,
+      "lng": 135.5207,
+      "categories": [
+        "Scenic",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/tennoji_park_cafe_kin_osaka_tennoji.jpg",
+      "address": "Osaka, Tennoji",
+      "published": "2026-05-01",
+      "summary": "Nestled within the vibrant heart of Osaka's Tennoji Park, Cafe Kin offers a tranquil escape with its stunning garden terrace, exquisite hand-drip coffee, and warm, family-friendly atmosphere. It's the perfect spot for both a peaceful morning and a lively afternoon with loved ones, blending specialty coffee culture with natural beauty.",
+      "agoda": "",
+      "link": "/item/tennoji_park_cafe_kin_osaka_tennoji_en"
+    },
+    {
+      "id": "karasuma_oishi_coffee_kyoto_karasuma_ko",
+      "lang": "ko",
+      "title": "교토 카라스마의 보석, 카라스마 오이시 커피: 디저트 페어링의 미학을 만나다",
+      "venue_name": "Karasuma Oishi Coffee",
+      "lat": 35.0214,
+      "lng": 135.7556,
+      "categories": [
+        "Dessert",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/karasuma_oishi_coffee_kyoto_karasuma.jpg",
+      "address": "Kyoto, Karasuma",
+      "published": "2026-05-01",
+      "summary": "교토 카라스마의 중심에 자리한 카라스마 오이시 커피는 단순한 카페를 넘어, 미식 경험을 선사하는 특별한 공간입니다. 엄선된 스페셜티 커피와 예술적인 디저트 페어링, 그리고 감각적인 인테리어는 방문객에게 잊지 못할 추억을 선사할 것입니다.",
+      "agoda": "",
+      "link": "/item/karasuma_oishi_coffee_kyoto_karasuma_ko"
+    },
+    {
+      "id": "shinagawa_early_bird_coffee_tokyo_shinagawa_en",
+      "lang": "en",
+      "title": "Shinagawa Early Bird Coffee: Your Essential Guide to Tokyo's Premier Transit Hub Cafe in Shinagawa",
+      "venue_name": "Shinagawa Early Bird Coffee",
+      "lat": 35.638,
+      "lng": 139.7414,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/shinagawa_early_bird_coffee_tokyo_shinagawa.jpg",
+      "address": "Tokyo, Shinagawa",
+      "published": "2026-05-01",
+      "summary": "Discover Shinagawa Early Bird Coffee, Tokyo's perfect sanctuary for early risers and commuters, offering quality coffee and quick bites right in the bustling Shinagawa transit hub. This guide unlocks everything you need to know about starting your day right with convenience and a perfect brew in the heart of Tokyo.",
+      "agoda": "",
+      "link": "/item/shinagawa_early_bird_coffee_tokyo_shinagawa_en"
+    },
+    {
+      "id": "pontocho_night_river_coffee_kyoto_pontocho_en",
+      "lang": "en",
+      "title": "Pontocho Night River Coffee: A Serene Pour-Over Sanctuary in Kyoto's Historic Pontocho Alley",
+      "venue_name": "Pontocho Night River Coffee",
+      "lat": 35.0021,
+      "lng": 135.762,
+      "categories": [
+        "Specialty",
+        "Scenic"
+      ],
+      "thumbnail": "/static/images/pontocho_night_river_coffee_kyoto_pontocho.jpg",
+      "address": "Kyoto, Pontocho",
+      "published": "2026-05-01",
+      "summary": "Nestled within Kyoto's enchanting Pontocho alley, Pontocho Night River Coffee offers a tranquil escape with exceptional pour-over coffee and captivating Kamo River views, making it a sublime spot for reflection and sensory delight.",
+      "agoda": "",
+      "link": "/item/pontocho_night_river_coffee_kyoto_pontocho_en"
+    },
+    {
+      "id": "daitokuji_zen_blend_kyoto_daitokuji_en",
+      "lang": "en",
+      "title": "Daitokuji Zen Blend: Unveiling Kyoto's Timeless Retro Kissaten Near Daitokuji Temple",
+      "venue_name": "Daitokuji Zen Blend",
+      "lat": 35.0406,
+      "lng": 135.7489,
+      "categories": [
+        "Vintage",
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/daitokuji_zen_blend_kyoto_daitokuji.jpg",
+      "address": "Kyoto, Daitokuji",
+      "published": "2026-05-01",
+      "summary": "Step into Daitokuji Zen Blend, a cherished retro kissaten nestled in Kyoto's historic Daitokuji district, offering a serene escape with its traditional charm and delightful local snacks. Experience a journey back in time, where the aroma of fine coffee meets the tranquility of a bygone era, perfectly complementing a visit to the nearby iconic Zen temple complex.",
+      "agoda": "",
+      "link": "/item/daitokuji_zen_blend_kyoto_daitokuji_en"
+    },
+    {
+      "id": "ichijoji_forest_roast_kyoto_ichijoji_en",
+      "lang": "en",
+      "title": "Ichijoji Forest Roast: Kyoto's Premier Hand-Drip Cafe with a Scenic Garden Terrace in Ichijoji",
+      "venue_name": "Ichijoji Forest Roast",
+      "lat": 35.0478,
+      "lng": 135.7801,
+      "categories": [
+        "Specialty",
+        "Roastery",
+        "Scenic"
+      ],
+      "thumbnail": "/static/images/ichijoji_forest_roast_kyoto_ichijoji.jpg",
+      "address": "Kyoto, Ichijoji",
+      "published": "2026-05-01",
+      "summary": "Discover Ichijoji Forest Roast, a sanctuary in Kyoto's Ichijoji district, celebrated for its exquisite hand-drip coffee and serene garden terrace. This family-friendly cafe offers a perfect blend of expert craftsmanship and natural beauty, inviting guests of all ages to savor exceptional brews in a tranquil setting.",
+      "agoda": "",
+      "link": "/item/ichijoji_forest_roast_kyoto_ichijoji_en"
+    },
+    {
+      "id": "origin_lab_roppongi_tokyo_roppongi_en",
+      "lang": "en",
+      "title": "Discover Origin Lab Roppongi: Your Late-Night Specialty Coffee Haven in Tokyo's Vibrant Roppongi",
+      "venue_name": "Origin Lab Roppongi",
+      "lat": 35.6655,
+      "lng": 139.7293,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/origin_lab_roppongi_tokyo_roppongi.jpg",
+      "address": "Tokyo, Roppongi",
+      "published": "2026-05-01",
+      "summary": "Escape into the aromatic world of Origin Lab Roppongi, a premier specialty coffee cafe in Tokyo's bustling Roppongi district, offering meticulously sourced single origin beans and a welcoming, late-night ambiance perfect for work or relaxation.",
+      "agoda": "",
+      "link": "/item/origin_lab_roppongi_tokyo_roppongi_en"
+    },
+    {
+      "id": "kuromon_pour_namba_osaka_namba_ko",
+      "lang": "ko",
+      "title": "오사카 난바의 숨겨진 보석, 쿠로몬 푸어 난바: 스페셜티 커피와 노트북 작업의 완벽한 조화",
+      "venue_name": "Kuromon Pour Namba",
+      "lat": 34.6687,
+      "lng": 135.5012,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/kuromon_pour_namba_osaka_namba.jpg",
+      "address": "Osaka, Namba",
+      "published": "2026-05-01",
+      "summary": "오사카 난바의 번화함 속에서 고요한 안식처를 찾는다면 쿠로몬 푸어 난바가 정답입니다. 이곳은 최고급 서드 웨이브 에스프레소와 함께 노트북 작업에 최적화된 조용한 공간을 제공하여, 커피 애호가와 디지털 노마드 모두에게 완벽한 경험을 선사합니다.",
+      "agoda": "",
+      "link": "/item/kuromon_pour_namba_osaka_namba_ko"
+    },
+    {
+      "id": "nakanoshima_river_roast_osaka_nakanoshima_en",
+      "lang": "en",
+      "title": "Nakanoshima River Roast: Your Essential Guide to Osaka's Premier Work-Friendly Cafe in Nakanoshima",
+      "venue_name": "Nakanoshima River Roast",
+      "lat": 34.6975,
+      "lng": 135.5152,
+      "categories": [
+        "Work-Friendly",
+        "Scenic"
+      ],
+      "thumbnail": "/static/images/nakanoshima_river_roast_osaka_nakanoshima.jpg",
+      "address": "Osaka, Nakanoshima",
+      "published": "2026-05-01",
+      "summary": "Discover Nakanoshima River Roast, an inviting Osaka cafe nestled in the heart of Nakanoshima, offering affordable, expertly brewed drip coffee, ideal study spots, and a warm, community-focused atmosphere perfect for both productivity and relaxation.",
+      "agoda": "",
+      "link": "/item/nakanoshima_river_roast_osaka_nakanoshima_en"
+    },
+    {
+      "id": "ebisu_workbench_cafe_tokyo_ebisu_en",
+      "lang": "en",
+      "title": "Ebisu Workbench Cafe: Your Ultimate Work-Friendly Oasis in Vibrant Tokyo, Ebisu",
+      "venue_name": "Ebisu Workbench Cafe",
+      "lat": 35.6467,
+      "lng": 139.71,
+      "categories": [
+        "Work-Friendly",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/ebisu_workbench_cafe_tokyo_ebisu.jpg",
+      "address": "Tokyo, Ebisu",
+      "published": "2026-05-01",
+      "summary": "Discover Ebisu Workbench Cafe, a premier work-friendly haven in Tokyo's stylish Ebisu district, offering robust internet, ample power, and an early morning opening for peak productivity and exceptional coffee. This detailed guide unveils why it's the ideal spot for digital nomads and early birds alike seeking a perfect blend of focus and refreshment in the heart of the city.",
+      "agoda": "",
+      "link": "/item/ebisu_workbench_cafe_tokyo_ebisu_en"
+    },
+    {
+      "id": "marunouchi_blend_lab_tokyo_marunouchi_ko",
+      "lang": "ko",
+      "title": "마루노우치 블렌드 랩: 도쿄 마루노우치에서 만나는 최상의 스페셜티 커피와 완벽한 워크스페이스",
+      "venue_name": "Marunouchi Blend Lab",
+      "lat": 35.6812,
+      "lng": 139.7671,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/marunouchi_blend_lab_tokyo_marunouchi.jpg",
+      "address": "Tokyo, Marunouchi",
+      "published": "2026-05-01",
+      "summary": "도쿄의 심장부 마루노우치에 자리한 마루노우치 블렌드 랩은 단순한 카페를 넘어선 미식과 생산성의 성지입니다. 이곳에서 세계 최고 수준의 스페셜티 커피를 맛보고, 안정적인 Wi-Fi와 전원 콘센트가 완비된 쾌적한 공간에서 여유롭게 업무를 보거나 휴식을 취하며 도쿄 도심 속 특별한 경험을 만끽해보세요.",
+      "agoda": "",
+      "link": "/item/marunouchi_blend_lab_tokyo_marunouchi_ko"
+    },
+    {
+      "id": "neon_latte_dotonbori_osaka_dotonbori_ko",
+      "lang": "ko",
+      "title": "오사카 도톤보리, 네온 라떼 도톤보리: 화려한 네온사인 아래 펼쳐지는 스타일리시한 디저트 페어링의 향연",
+      "venue_name": "Neon Latte Dotonbori",
+      "lat": 34.6658,
+      "lng": 135.5031,
+      "categories": [
+        "Specialty",
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/neon_latte_dotonbori_osaka_dotonbori.jpg",
+      "address": "Osaka, Dotonbori",
+      "published": "2026-05-01",
+      "summary": "오사카 도톤보리의 중심에서 빛나는 네온 라떼 도톤보리는 단순한 카페를 넘어선 미식 경험을 선사합니다. 화려한 네온사인 아래 스타일리시한 인테리어와 감각적인 디저트 페어링으로 오감 만족의 시간을 가져보세요. 영어 메뉴도 제공되어 누구나 편안하게 즐길 수 있는 국제적인 공간입니다.",
+      "agoda": "",
+      "link": "/item/neon_latte_dotonbori_osaka_dotonbori_ko"
+    },
+    {
+      "id": "nishijin_silk_latte_kyoto_nishijin_en",
+      "lang": "en",
+      "title": "Nishijin Silk Latte: A Tranquil Oasis for Brunch & Work in Historic Kyoto, Nishijin",
+      "venue_name": "Nishijin Silk Latte",
+      "lat": 35.0153,
+      "lng": 135.7474,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/nishijin_silk_latte_kyoto_nishijin.jpg",
+      "address": "Kyoto, Nishijin",
+      "published": "2026-05-01",
+      "summary": "Discover Nishijin Silk Latte, a unique Kyoto cafe blending traditional charm with modern comfort, offering an exquisite brunch and a perfect setting for remote work amidst the historic Nishijin district. Indulge in their signature silky smooth latte while immersing yourself in Kyoto's rich cultural tapestry and enjoying top-tier amenities for travelers.",
+      "agoda": "",
+      "link": "/item/nishijin_silk_latte_kyoto_nishijin_en"
+    },
+    {
+      "id": "nijo_castle_west_cafe_kyoto_nijo_ko",
+      "lang": "ko",
+      "title": "교토 니조 니조성 서쪽 카페: 업무 효율과 평온함을 선사하는 완벽한 공간",
+      "venue_name": "Nijo Castle West Cafe",
+      "lat": 35.0099,
+      "lng": 135.7435,
+      "categories": [
+        "Work-Friendly",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/nijo_castle_west_cafe_kyoto_nijo.jpg",
+      "address": "Kyoto, Nijo",
+      "published": "2026-05-01",
+      "summary": "교토 니조성 서쪽 카페는 생산적인 하루를 시작하고 싶은 여행자와 현지인에게 완벽한 공간입니다. 안정적인 인터넷과 편안한 작업 환경, 그리고 이른 아침부터 문을 열어 업무와 휴식을 효율적으로 병행할 수 있도록 돕습니다.",
+      "agoda": "",
+      "link": "/item/nijo_castle_west_cafe_kyoto_nijo_ko"
+    },
+    {
+      "id": "osaka_castle_moat_cafe_osaka_morinomiya_ko",
+      "lang": "ko",
+      "title": "오사카성 해자 카페: 모리노미야의 고요 속 특별한 커피 경험",
+      "venue_name": "Osaka Castle Moat Cafe",
+      "lat": 34.6785,
+      "lng": 135.5289,
+      "categories": [
+        "Scenic",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/osaka_castle_moat_cafe_osaka_morinomiya.jpg",
+      "address": "Osaka, Morinomiya",
+      "published": "2026-05-01",
+      "summary": "오사카성 해자 카페는 오사카 모리노미야에 위치한 숨겨진 보석 같은 카페로, 고요한 오사카성 해자를 바라보며 특별한 에스프레소 토닉과 편안한 음악을 즐길 수 있는 곳입니다. 역사적인 풍경과 현대적인 커피 문화가 조화롭게 어우러진 이곳에서 잊지 못할 휴식 시간을 경험해보세요.",
+      "agoda": "",
+      "link": "/item/osaka_castle_moat_cafe_osaka_morinomiya_ko"
+    },
+    {
+      "id": "shinjuku_south_latte_lab_tokyo_shinjuku_ko",
+      "lang": "ko",
+      "title": "도쿄 신주쿠의 오아시스: 신주쿠 사우스 라떼 랩 – 조용하고 생산적인 스페셜티 커피 경험",
+      "venue_name": "Shinjuku South Latte Lab",
+      "lat": 35.6895,
+      "lng": 139.7005,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/shinjuku_south_latte_lab_tokyo_shinjuku.jpg",
+      "address": "Tokyo, Shinjuku",
+      "published": "2026-05-01",
+      "summary": "도쿄 신주쿠의 번화함 속에서 진정한 휴식과 집중을 선사하는 신주쿠 사우스 라떼 랩은 최고급 스페셜티 커피와 노트북 작업에 최적화된 조용한 공간을 제공합니다. 섬세한 라떼 아트를 감상하며 고요함 속에서 생산적인 시간을 보내고 싶은 이들을 위한 완벽한 목적지입니다.",
+      "agoda": "",
+      "link": "/item/shinjuku_south_latte_lab_tokyo_shinjuku_ko"
+    },
+    {
+      "id": "sakuragawa_alley_coffee_osaka_sakuragawa_en",
+      "lang": "en",
+      "title": "Discover Sakuragawa Alley Coffee: Osaka's Hidden Gem for Premium Brews and Romantic Retreats in Sakuragawa",
+      "venue_name": "Sakuragawa Alley Coffee",
+      "lat": 34.6629,
+      "lng": 135.4871,
+      "categories": [
+        "Specialty",
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/sakuragawa_alley_coffee_osaka_sakuragawa.jpg",
+      "address": "Osaka, Sakuragawa",
+      "published": "2026-05-01",
+      "summary": "Escape to Sakuragawa Alley Coffee, an enchanting Osaka cafe nestled in Sakuragawa, offering a sublime blend of meticulously sourced premium beans and exquisite artisan desserts within an irresistibly romantic, date-night ambiance perfect for intimate moments.",
+      "agoda": "",
+      "link": "/item/sakuragawa_alley_coffee_osaka_sakuragawa_en"
+    },
+    {
+      "id": "azabu_hill_roasters_tokyo_azabu_en",
+      "lang": "en",
+      "title": "Azabu Hill Roasters: Tokyo Azabu's Premier Cafe for Specialty Coffee & Artisan Desserts",
+      "venue_name": "Azabu Hill Roasters",
+      "lat": 35.6664,
+      "lng": 139.732,
+      "categories": [
+        "Specialty",
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/azabu_hill_roasters_tokyo_azabu.jpg",
+      "address": "Tokyo, Azabu",
+      "published": "2026-05-01",
+      "summary": "Nestled in the upscale Azabu district of Tokyo, Azabu Hill Roasters offers an unparalleled cafe experience, combining meticulously sourced premium beans with an inviting date-night ambiance and exquisite artisan desserts. It's the perfect urban escape for connoisseurs and romantics alike, redefining Tokyo's specialty coffee scene.",
+      "agoda": "",
+      "link": "/item/azabu_hill_roasters_tokyo_azabu_en"
+    },
+    {
+      "id": "shin_osaka_transit_roasters_osaka_shin_osaka_ko",
+      "lang": "ko",
+      "title": "오사카 신오사카역 필수 코스: 신오사카 트랜짓 로스터스에서 만나는 활력과 미식 경험",
+      "venue_name": "Shin-Osaka Transit Roasters",
+      "lat": 34.7198,
+      "lng": 135.5029,
+      "categories": [
+        "Specialty",
+        "Dessert",
+        "Roastery"
+      ],
+      "thumbnail": "/static/images/shin_osaka_transit_roasters_osaka_shin_osaka.jpg",
+      "address": "Osaka, Shin-Osaka",
+      "published": "2026-05-01",
+      "summary": "신오사카 트랜짓 로스터스는 오사카 신오사카역의 번잡함 속에서 빠른 서비스와 맛있는 페이스트리, 그리고 신선하게 로스팅된 스페셜티 커피로 여행객들에게 활력과 편안함을 선사하는 이상적인 카페입니다. 이동 중에도 잊을 수 없는 미식 경험을 제공하며, 오사카를 오가는 모든 이들에게 필수 방문 코스입니다.",
+      "agoda": "",
+      "link": "/item/shin_osaka_transit_roasters_osaka_shin_osaka_ko"
+    },
+    {
+      "id": "kiyomizu_slope_beans_kyoto_kiyomizu_en",
+      "lang": "en",
+      "title": "Kiyomizu Slope Beans: Your Coworking Oasis and Scenic Retreat in Kyoto's Historic Kiyomizu District",
+      "venue_name": "Kiyomizu Slope Beans",
+      "lat": 35.0058,
+      "lng": 135.7812,
+      "categories": [
+        "Work-Friendly",
+        "Scenic"
+      ],
+      "thumbnail": "/static/images/kiyomizu_slope_beans_kyoto_kiyomizu.jpg",
+      "address": "Kyoto, Kiyomizu",
+      "published": "2026-05-01",
+      "summary": "Nestled amidst the timeless beauty of Kyoto's Kiyomizu district, Kiyomizu Slope Beans offers a unique blend of traditional charm and modern convenience, serving as an ideal haven for remote workers and a tranquil escape for visitors. This inviting cafe boasts ample charging stations, comfortable seating for long stays, and an atmosphere conducive to both focused productivity and serene relaxation, making it a truly indispensable stop for anyone exploring the iconic Kiyomizu area.",
+      "agoda": "",
+      "link": "/item/kiyomizu_slope_beans_kyoto_kiyomizu_en"
+    },
+    {
+      "id": "kitayama_garden_coffee_kyoto_kitayama_ko",
+      "lang": "ko",
+      "title": "교토 키타야마 가든 커피: 시그니처 라떼와 감성 디저트, 완벽한 포토 스팟의 정점",
+      "venue_name": "Kitayama Garden Coffee",
+      "lat": 35.0512,
+      "lng": 135.7632,
+      "categories": [
+        "Dessert",
+        "Scenic"
+      ],
+      "thumbnail": "/static/images/kitayama_garden_coffee_kyoto_kitayama.jpg",
+      "address": "Kyoto, Kitayama",
+      "published": "2026-05-01",
+      "summary": "교토 키타야마에 위치한 키타야마 가든 커피는 아름다운 정원 뷰와 함께 특별한 시그니처 라떼, 눈과 입이 즐거운 디저트, 그리고 완벽한 포토 스팟을 제공하는 매력적인 카페입니다.",
+      "agoda": "",
+      "link": "/item/kitayama_garden_coffee_kyoto_kitayama_ko"
+    },
+    {
+      "id": "fushimi_sake_alley_coffee_kyoto_fushimi_en",
+      "lang": "en",
+      "title": "Fushimi Sake Alley Coffee: Your Essential Guide to Kyoto's Work-Friendly Haven in the Historic Sake District",
+      "venue_name": "Fushimi Sake Alley Coffee",
+      "lat": 34.9388,
+      "lng": 135.7621,
+      "categories": [
+        "Work-Friendly",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/fushimi_sake_alley_coffee_kyoto_fushimi.jpg",
+      "address": "Kyoto, Fushimi",
+      "published": "2026-05-01",
+      "summary": "Discover Fushimi Sake Alley Coffee, a hidden gem in Kyoto's historic Fushimi district, offering exceptional yet affordable drip coffee and a serene environment perfect for study or relaxation amidst a vibrant neighborhood vibe. This detailed guide unveils why this unique cafe is a must-visit for travelers and locals alike seeking an authentic Kyoto experience.",
+      "agoda": "",
+      "link": "/item/fushimi_sake_alley_coffee_kyoto_fushimi_en"
+    },
+    {
+      "id": "pontocho_night_river_coffee_kyoto_pontocho_ko",
+      "lang": "ko",
+      "title": "교토 폰토초의 밤을 수놓다: 폰토초 나이트 리버 커피, 그 고요한 매력",
+      "venue_name": "Pontocho Night River Coffee",
+      "lat": 35.0021,
+      "lng": 135.762,
+      "categories": [
+        "Specialty",
+        "Scenic"
+      ],
+      "thumbnail": "/static/images/pontocho_night_river_coffee_kyoto_pontocho.jpg",
+      "address": "Kyoto, Pontocho",
+      "published": "2026-05-01",
+      "summary": "교토 폰토초의 정취를 온전히 느낄 수 있는 폰토초 나이트 리버 커피는 가모가와 강변의 고즈넉한 풍경과 함께 깊이 있는 핸드드립 커피를 선사합니다. 밤의 운치를 더하는 차분한 분위기 속에서 창가 좌석에 앉아 잊지 못할 교토의 밤을 만끽해 보세요.",
+      "agoda": "",
+      "link": "/item/pontocho_night_river_coffee_kyoto_pontocho_ko"
+    },
+    {
+      "id": "shinagawa_early_bird_coffee_tokyo_shinagawa_ko",
+      "lang": "ko",
+      "title": "시나가와 얼리버드 커피: 도쿄 시나가와에서 아침을 여는 완벽한 시작",
+      "venue_name": "Shinagawa Early Bird Coffee",
+      "lat": 35.638,
+      "lng": 139.7414,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/shinagawa_early_bird_coffee_tokyo_shinagawa.jpg",
+      "address": "Tokyo, Shinagawa",
+      "published": "2026-05-01",
+      "summary": "도쿄 시나가와역의 활기찬 아침을 여는 '시나가와 얼리버드 커피'는 바쁜 여행객과 직장인을 위한 완벽한 트랜짓 허브 카페입니다. 일찍 문을 열어 신선한 커피와 간편한 식사를 제공하며, 빠르고 효율적인 서비스로 하루를 힘차게 시작할 수 있도록 돕습니다.",
+      "agoda": "",
+      "link": "/item/shinagawa_early_bird_coffee_tokyo_shinagawa_ko"
+    },
+    {
+      "id": "karasuma_oishi_coffee_kyoto_karasuma_en",
+      "lang": "en",
+      "title": "Sip and Savor: Karasuma Oishi Coffee – Kyoto's Premier Dessert Pairing Cafe in Karasuma",
+      "venue_name": "Karasuma Oishi Coffee",
+      "lat": 35.0214,
+      "lng": 135.7556,
+      "categories": [
+        "Dessert",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/karasuma_oishi_coffee_kyoto_karasuma.jpg",
+      "address": "Kyoto, Karasuma",
+      "published": "2026-05-01",
+      "summary": "Discover Karasuma Oishi Coffee, a gem in Kyoto's bustling Karasuma district, offering an exquisite dessert pairing experience within a stylish, tranquil setting, complete with convenient English menus for all visitors.",
+      "agoda": "",
+      "link": "/item/karasuma_oishi_coffee_kyoto_karasuma_en"
+    },
+    {
+      "id": "tennoji_park_cafe_kin_osaka_tennoji_ko",
+      "lang": "ko",
+      "title": "오사카 텐노지 공원 카페 킨: 핸드드립 스페셜티와 아름다운 정원 테라스의 완벽한 조화",
+      "venue_name": "Tennoji Park Cafe Kin",
+      "lat": 34.6508,
+      "lng": 135.5207,
+      "categories": [
+        "Scenic",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/tennoji_park_cafe_kin_osaka_tennoji.jpg",
+      "address": "Osaka, Tennoji",
+      "published": "2026-05-01",
+      "summary": "오사카 텐노지 공원 카페 킨은 텐노지 공원의 푸르름 속에서 핸드드립 스페셜티 커피와 아름다운 정원 테라스를 만끽할 수 있는 가족 친화적인 카페입니다. 도심 속 여유와 커피 한 잔의 행복을 동시에 선사하며 방문객들에게 잊지 못할 경험을 제공합니다.",
+      "agoda": "",
+      "link": "/item/tennoji_park_cafe_kin_osaka_tennoji_ko"
+    },
+    {
+      "id": "atc_bay_view_cafe_osaka_nanko_ko",
+      "lang": "ko",
+      "title": "오사카 난코 ATC 베이 뷰 카페: 탁 트인 바다 전망과 특별한 하우스 블렌드가 있는 휴식처",
+      "venue_name": "ATC Bay View Cafe",
+      "lat": 34.6571,
+      "lng": 135.4427,
+      "categories": [
+        "Scenic",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/atc_bay_view_cafe_osaka_nanko.jpg",
+      "address": "Osaka, Nanko",
+      "published": "2026-05-01",
+      "summary": "오사카 난코의 숨겨진 보석, ATC 베이 뷰 카페에서 파노라마 바다 전망과 함께 특별한 휴식을 경험해보세요. 신선한 하우스 블렌드 커피와 가족 친화적인 분위기는 이곳을 잊지 못할 추억의 장소로 만듭니다.",
+      "agoda": "",
+      "link": "/item/atc_bay_view_cafe_osaka_nanko_ko"
+    },
+    {
+      "id": "takeshita_latte_stand_tokyo_harajuku_ko",
+      "lang": "ko",
+      "title": "도쿄 하라주쿠의 심장, 타케시타 라떼 스탠드: 시그니처 라떼와 감각적인 디저트의 완벽 조화",
+      "venue_name": "Takeshita Latte Stand",
+      "lat": 35.6702,
+      "lng": 139.7026,
+      "categories": [
+        "Specialty",
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/takeshita_latte_stand_tokyo_harajuku.jpg",
+      "address": "Tokyo, Harajuku",
+      "published": "2026-05-01",
+      "summary": "하라주쿠 타케시타 거리의 활기 넘치는 분위기 속에서 오아시스를 발견해보세요. 타케시타 라떼 스탠드는 독창적인 시그니처 라떼와 감각적인 디저트, 그리고 눈길을 사로잡는 포토 스팟으로 도쿄 방문객들에게 잊지 못할 추억을 선사합니다.",
+      "agoda": "",
+      "link": "/item/takeshita_latte_stand_tokyo_harajuku_ko"
+    },
+    {
+      "id": "kissa_retro_otsuka_tokyo_otsuka_ko",
+      "lang": "ko",
+      "title": "도쿄 오츠카의 숨겨진 보석: 킷사 레트로 오츠카 – 시간 여행 빈티지 카페",
+      "venue_name": "Kissa Retro Otsuka",
+      "lat": 35.7321,
+      "lng": 139.7135,
+      "categories": [
+        "Vintage",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/kissa_retro_otsuka_tokyo_otsuka.jpg",
+      "address": "Tokyo, Otsuka",
+      "published": "2026-05-01",
+      "summary": "도쿄 오츠카에 위치한 킷사 레트로 오츠카는 고즈넉한 빈티지 분위기 속에서 수동 추출 커피의 깊은 맛과 조용한 휴식을 선사하는 특별한 공간입니다. 바쁜 도시 생활 속에서 잠시 멈춰 서서 과거의 향수와 고품격 커피를 만끽하고 싶은 이들에게 완벽한 도피처가 되어줄 것입니다.",
+      "agoda": "",
+      "link": "/item/kissa_retro_otsuka_tokyo_otsuka_ko"
+    },
+    {
+      "id": "hibiya_standing_espresso_tokyo_hibiya_ko",
+      "lang": "ko",
+      "title": "도쿄 히비야 스탠딩 에스프레소: 바쁜 비즈니스 지구의 오아시스, 빠른 서비스와 프리미엄 페이스트리",
+      "venue_name": "Hibiya Standing Espresso",
+      "lat": 35.6841,
+      "lng": 139.7519,
+      "categories": [
+        "Specialty",
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/hibiya_standing_espresso_tokyo_hibiya.jpg",
+      "address": "Tokyo, Hibiya",
+      "published": "2026-05-01",
+      "summary": "도쿄 히비야의 심장부에 위치한 히비야 스탠딩 에스프레소는 바쁜 비즈니스맨과 여행객에게 완벽한 에너지 충전소를 제공합니다. 빠른 서비스와 최상의 에스프레소, 그리고 매혹적인 페이스트리가 어우러져 짧지만 강렬한 미식 경험을 선사합니다. 효율성과 맛을 동시에 잡은 이곳에서 도쿄의 활기찬 분위기를 만끽해보세요.",
+      "agoda": "",
+      "link": "/item/hibiya_standing_espresso_tokyo_hibiya_ko"
+    },
+    {
+      "id": "umeda_clockwork_coffee_osaka_umeda_ko",
+      "lang": "ko",
+      "title": "오사카 우메다 클락워크 커피: 스페셜티 커피의 깊이와 완벽한 작업 공간을 만나다",
+      "venue_name": "Umeda Clockwork Coffee",
+      "lat": 34.7025,
+      "lng": 135.4959,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/umeda_clockwork_coffee_osaka_umeda.jpg",
+      "address": "Osaka, Umeda",
+      "published": "2026-05-01",
+      "summary": "오사카 우메다의 클락워크 커피는 스페셜티 커피의 깊은 풍미와 함께 노트북 작업 및 독서에 최적화된 편안하고 기능적인 공간을 제공합니다. 섬세하게 추출된 커피 한 잔과 함께 몰입의 시간을 경험할 수 있는 이곳은 여행자와 현지인 모두에게 사랑받는 우메다의 숨겨진 보석입니다.",
+      "agoda": "",
+      "link": "/item/umeda_clockwork_coffee_osaka_umeda_ko"
+    },
+    {
+      "id": "hommachi_minimal_drip_osaka_hommachi_en",
+      "lang": "en",
+      "title": "Discover Serenity and Specialty Brews: A Guide to Hommachi Minimal Drip in Osaka's Hommachi District",
+      "venue_name": "Hommachi Minimal Drip",
+      "lat": 34.6848,
+      "lng": 135.5038,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/hommachi_minimal_drip_osaka_hommachi.jpg",
+      "address": "Osaka, Hommachi",
+      "published": "2026-05-01",
+      "summary": "Nestled in the bustling heart of Osaka's Hommachi district, Hommachi Minimal Drip offers a serene escape with its meticulously crafted manual brews and minimalist aesthetic, providing an ideal haven for coffee connoisseurs and remote workers alike.",
+      "agoda": "",
+      "link": "/item/hommachi_minimal_drip_osaka_hommachi_en"
+    },
+    {
+      "id": "senju_study_base_tokyo_kitasenju_en",
+      "lang": "en",
+      "title": "Senju Study Base: Kitasenju's Premier Cafe for Study, Work & Affordable Drip Coffee in Tokyo",
+      "venue_name": "Senju Study Base",
+      "lat": 35.752,
+      "lng": 139.8475,
+      "categories": [
+        "Work-Friendly",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/senju_study_base_tokyo_kitasenju.jpg",
+      "address": "Tokyo, Kitasenju",
+      "published": "2026-05-01",
+      "summary": "Escape the bustling streets of Tokyo and find your focus at Senju Study Base, Kitasenju's beloved cafe offering affordable drip coffee, dedicated study seats, and a welcoming neighborhood vibe perfect for productive hours or relaxed contemplation.",
+      "agoda": "",
+      "link": "/item/senju_study_base_tokyo_kitasenju_en"
+    },
+    {
+      "id": "kyobashi_bridge_blend_osaka_kyobashi_en",
+      "lang": "en",
+      "title": "Kyobashi Bridge Blend: Your Ultimate Guide to Osaka's Premier Specialty Cafe in Kyobashi",
+      "venue_name": "Kyobashi Bridge Blend",
+      "lat": 34.6873,
+      "lng": 135.5262,
+      "categories": [
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/kyobashi_bridge_blend_osaka_kyobashi.jpg",
+      "address": "Osaka, Kyobashi",
+      "published": "2026-05-01",
+      "summary": "Nestled in the vibrant heart of Osaka's Kyobashi district, Kyobashi Bridge Blend offers an exquisite escape for coffee connoisseurs, celebrated for its meticulously sourced single origin beans, welcoming late hours, and irresistibly cozy lighting. This guide delves into why it's a quintessential stop for anyone seeking an authentic and memorable cafe experience in Japan's bustling Kansai region.",
+      "agoda": "",
+      "link": "/item/kyobashi_bridge_blend_osaka_kyobashi_en"
+    },
+    {
+      "id": "tenma_market_coffee_osaka_tenjinbashisuji_ko",
+      "lang": "ko",
+      "title": "오사카 텐진바시스지 텐마 마켓 커피: 하우스 로스트 스페셜티 커피와 편안한 휴식 공간",
+      "venue_name": "Tenma Market Coffee",
+      "lat": 34.7059,
+      "lng": 135.5071,
+      "categories": [
+        "Specialty",
+        "Roastery"
+      ],
+      "thumbnail": "/static/images/tenma_market_coffee_osaka_tenjinbashisuji.jpg",
+      "address": "Osaka, Tenjinbashisuji",
+      "published": "2026-05-01",
+      "summary": "오사카 텐진바시스지 시장의 활기 속에서 만나는 텐마 마켓 커피는 신선한 하우스 로스트 원두의 깊은 향과 맛으로 방문객들을 매혹합니다. 넓고 편안한 단체 테이블이 마련되어 있어 친구나 가족, 동료와 함께 여유로운 시간을 보내기에 안성맞춤이며, 시장 구경 중 잠시 쉬어가기 좋은 뛰어난 접근성을 자랑하는 완벽한 오아시스입니다.",
+      "agoda": "",
+      "link": "/item/tenma_market_coffee_osaka_tenjinbashisuji_ko"
+    },
+    {
+      "id": "tanimachi_bean_library_osaka_tanimachi_ko",
+      "lang": "ko",
+      "title": "오사카 다니마치 스페셜티 커피의 성지: 타니마치 빈 라이브러리 완벽 가이드",
+      "venue_name": "Tanimachi Bean Library",
+      "lat": 34.6712,
+      "lng": 135.52,
+      "categories": [
+        "Specialty",
+        "Roastery"
+      ],
+      "thumbnail": "/static/images/tanimachi_bean_library_osaka_tanimachi.jpg",
+      "address": "Osaka, Tanimachi",
+      "published": "2026-05-01",
+      "summary": "오사카 다니마치에 위치한 타니마치 빈 라이브러리는 로스터리가 함께하는 특별한 스페셜티 커피 경험을 선사합니다. 엄선된 원두 테이스팅과 숙련된 바리스타의 섬세한 추출로 커피 애호가들의 오감을 만족시키는 이곳에서 진정한 커피의 세계를 만나보세요.",
+      "agoda": "",
+      "link": "/item/tanimachi_bean_library_osaka_tanimachi_ko"
+    },
+    {
+      "id": "juso_night_owl_espresso_osaka_juso_en",
+      "lang": "en",
+      "title": "Juso Night Owl Espresso: Your Ultimate Work-Friendly Haven in Osaka's Vibrant Juso District",
+      "venue_name": "Juso Night Owl Espresso",
+      "lat": 34.714,
+      "lng": 135.5314,
+      "categories": [
+        "Work-Friendly",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/juso_night_owl_espresso_osaka_juso.jpg",
+      "address": "Osaka, Juso",
+      "published": "2026-05-01",
+      "summary": "Discover Juso Night Owl Espresso, the ultimate work-friendly café in Osaka's vibrant Juso district. Offering comfortable seating, abundant charging stations, and a welcoming atmosphere for long stays, it's the perfect spot for remote workers, students, and creative minds seeking productivity and exceptional coffee.",
+      "agoda": "",
+      "link": "/item/juso_night_owl_espresso_osaka_juso_en"
+    },
+    {
+      "id": "tsuki_coffee_abeno_osaka_abeno_ko",
+      "lang": "ko",
+      "title": "오사카 아베노 츠키 커피 아베노: 감성 가득 포토 스팟, 시그니처 라떼와 환상의 디저트 여정",
+      "venue_name": "Tsuki Coffee Abeno",
+      "lat": 34.6462,
+      "lng": 135.5148,
+      "categories": [
+        "Specialty",
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/tsuki_coffee_abeno_osaka_abeno.jpg",
+      "address": "Osaka, Abeno",
+      "published": "2026-05-01",
+      "summary": "오사카 아베노에 위치한 츠키 커피 아베노는 단순한 카페를 넘어 미식과 예술이 공존하는 특별한 공간입니다. 이곳의 시그니처 라떼와 아름다운 디저트, 그리고 감각적인 인테리어는 방문객들에게 잊을 수 없는 경험과 인생샷을 선사하며 오사카 여행의 필수 코스로 자리매김하고 있습니다.",
+      "agoda": "",
+      "link": "/item/tsuki_coffee_abeno_osaka_abeno_ko"
+    },
+    {
+      "id": "bentencho_wharf_kissaten_osaka_bentencho_en",
+      "lang": "en",
+      "title": "Bentencho Wharf Kissaten: Osaka's Timeless Retro Cafe Gem in the Harbor District",
+      "venue_name": "Bentencho Wharf Kissaten",
+      "lat": 34.6792,
+      "lng": 135.4703,
+      "categories": [
+        "Vintage",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/bentencho_wharf_kissaten_osaka_bentencho.jpg",
+      "address": "Osaka, Bentencho",
+      "published": "2026-05-01",
+      "summary": "Step back in time at Bentencho Wharf Kissaten, a beloved traditional Japanese cafe nestled in Osaka's Bentencho district, offering a captivating retro ambiance and delightful local snacks. This guide explores everything that makes this vintage coffee house an unforgettable stop for locals and travelers seeking authentic Japanese charm.",
+      "agoda": "",
+      "link": "/item/bentencho_wharf_kissaten_osaka_bentencho_en"
+    },
+    {
+      "id": "nishi_yodogawa_coffee_lab_osaka_nishi_en",
+      "lang": "en",
+      "title": "Nishi Yodogawa Coffee Lab: Your Premier Work-Friendly & Specialty Cafe in Osaka, Nishi",
+      "venue_name": "Nishi Yodogawa Coffee Lab",
+      "lat": 34.6723,
+      "lng": 135.4842,
+      "categories": [
+        "Work-Friendly",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/nishi_yodogawa_coffee_lab_osaka_nishi.jpg",
+      "address": "Osaka, Nishi",
+      "published": "2026-05-01",
+      "summary": "Discover Nishi Yodogawa Coffee Lab, a leading cafe in Osaka, Nishi, perfect for remote work and a haven for specialty coffee enthusiasts. Experience its stable internet, thoughtful work-friendly layout, and refreshing morning opening hours, making it an ideal spot to start your day productively.",
+      "agoda": "",
+      "link": "/item/nishi_yodogawa_coffee_lab_osaka_nishi_en"
+    },
+    {
+      "id": "skytree_blend_sumida_tokyo_sumida_en",
+      "lang": "en",
+      "title": "Skytree Blend Sumida: Tokyo's Premier Cafe for Breathtaking Skytree Views & Artisan Coffee in Sumida",
+      "venue_name": "Skytree Blend Sumida",
+      "lat": 35.7107,
+      "lng": 139.8107,
+      "categories": [
+        "Scenic",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/skytree_blend_sumida_tokyo_sumida.jpg",
+      "address": "Tokyo, Sumida",
+      "published": "2026-05-01",
+      "summary": "Discover Skytree Blend Sumida, a premier Tokyo cafe offering unparalleled views of the iconic Tokyo Skytree, an exquisite house blend coffee, and a welcoming atmosphere perfect for families, making it an essential stop in Sumida.",
+      "agoda": "",
+      "link": "/item/skytree_blend_sumida_tokyo_sumida_en"
+    },
+    {
+      "id": "shinsaibashi_parlor_osaka_shinsaibashi_ko",
+      "lang": "ko",
+      "title": "오사카 신사이바시 파빌리온: 번화가 속 완벽한 브런치, 초고속 Wi-Fi, 그리고 아늑한 휴식 공간",
+      "venue_name": "Shinsaibashi Parlor",
+      "lat": 34.6766,
+      "lng": 135.4979,
+      "categories": [
+        "Dessert",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/shinsaibashi_parlor_osaka_shinsaibashi.jpg",
+      "address": "Osaka, Shinsaibashi",
+      "published": "2026-05-01",
+      "summary": "활기찬 오사카 신사이바시에 위치한 신사이바시 파빌리온은 맛있는 브런치 세트, 초고속 Wi-Fi, 그리고 관광객 친화적인 분위기로 여러분의 오사카 여행에 특별한 편안함을 선사합니다. 쇼핑과 관광으로 지친 몸과 마음에 완벽한 휴식을 제공하며, 현지인과 여행객 모두에게 사랑받는 이 아늑한 카페에서 잊지 못할 시간을 보내세요.",
+      "agoda": "",
+      "link": "/item/shinsaibashi_parlor_osaka_shinsaibashi_ko"
+    },
+    {
+      "id": "nomad_desk_nishi_shinjuku_tokyo_nishi_shinjuku_ko",
+      "lang": "ko",
+      "title": "생산성을 높이는 도쿄의 오아시스: 노마드 데스크 니시신주쿠 상세 가이드",
+      "venue_name": "Nomad Desk Nishi-Shinjuku",
+      "lat": 35.6938,
+      "lng": 139.7034,
+      "categories": [
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/nomad_desk_nishi_shinjuku_tokyo_nishi_shinjuku.jpg",
+      "address": "Tokyo, Nishi-Shinjuku",
+      "published": "2026-05-01",
+      "summary": "도쿄 니시신주쿠의 번화가 속에 자리한 노마드 데스크 니시신주쿠는 디지털 노마드와 원격 근무자들을 위한 완벽한 오아시스입니다. 편리한 충전 스테이션, 장시간 체류에 최적화된 편안한 환경, 그리고 생산성을 높이는 코워킹 친화적인 분위기까지, 이곳은 단순한 카페를 넘어 영감을 주는 업무 공간을 제공합니다.",
+      "agoda": "",
+      "link": "/item/nomad_desk_nishi_shinjuku_tokyo_nishi_shinjuku_ko"
+    },
+    {
+      "id": "fukushima_taproom_cafe_osaka_fukushima_en",
+      "lang": "en",
+      "title": "Fukushima Taproom Cafe: Your Tranquil Specialty Coffee Oasis in Osaka, Fukushima",
+      "venue_name": "Fukushima Taproom Cafe",
+      "lat": 34.6922,
+      "lng": 135.4911,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/fukushima_taproom_cafe_osaka_fukushima.jpg",
+      "address": "Osaka, Fukushima",
+      "published": "2026-05-01",
+      "summary": "Escape the urban buzz and find your perfect cup at Fukushima Taproom Cafe, a serene sanctuary in Osaka's vibrant Fukushima district, renowned for its exquisite pour-over coffee, calming atmosphere, and inviting window seats ideal for people-watching or quiet contemplation.",
+      "agoda": "",
+      "link": "/item/fukushima_taproom_cafe_osaka_fukushima_en"
+    },
+    {
+      "id": "nakatsu_morning_roastery_osaka_nakatsu_ko",
+      "lang": "ko",
+      "title": "오사카 나카쓰의 아침을 깨우는 커피 명소: 나카쓰 모닝 로스터리 완벽 가이드",
+      "venue_name": "Nakatsu Morning Roastery",
+      "lat": 34.7074,
+      "lng": 135.4898,
+      "categories": [
+        "Roastery",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/nakatsu_morning_roastery_osaka_nakatsu.jpg",
+      "address": "Osaka, Nakatsu",
+      "published": "2026-05-01",
+      "summary": "오사카 나카쓰 비즈니스 지구의 활기찬 아침을 여는 '나카쓰 모닝 로스터리'는 이른 시간부터 신선하게 로스팅된 스페셜티 커피를 제공하며, 바쁜 출근길에 활력을 불어넣는 완벽한 커피 경험을 선사합니다. 빠르고 간편하게 즐길 수 있는 고품질 커피로, 오사카 현지인과 여행객 모두에게 사랑받는 아침의 오아시스입니다.",
+      "agoda": "",
+      "link": "/item/nakatsu_morning_roastery_osaka_nakatsu_ko"
+    },
+    {
+      "id": "higashiyama_stone_path_cafe_kyoto_higashiyama_ko",
+      "lang": "ko",
+      "title": "교토 히가시야마의 밤을 밝히는 보석: 히가시야마 스톤 패스 카페에서 만나는 특별한 커피 경험",
+      "venue_name": "Higashiyama Stone Path Cafe",
+      "lat": 35.0302,
+      "lng": 135.7783,
+      "categories": [
+        "Specialty",
+        "Scenic",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/higashiyama_stone_path_cafe_kyoto_higashiyama.jpg",
+      "address": "Kyoto, Higashiyama",
+      "published": "2026-05-01",
+      "summary": "교토 히가시야마의 고즈넉한 돌길 위에 자리한 히가시야마 스톤 패스 카페는 싱글 오리진 커피의 깊은 맛과 아늑한 분위기, 그리고 늦은 시간까지 열려있는 특별함으로 방문객의 마음을 사로잡습니다. 교토의 밤을 여유롭게 즐기며 최상의 커피를 경험하고 싶다면 이곳이 완벽한 선택이 될 것입니다.",
+      "agoda": "",
+      "link": "/item/higashiyama_stone_path_cafe_kyoto_higashiyama_ko"
+    },
+    {
+      "id": "komachi_kissaten_asakusa_tokyo_asakusa_en",
+      "lang": "en",
+      "title": "Komachi Kissaten Asakusa: A Timeless Retro Cafe Experience in Tokyo's Historic Asakusa",
+      "venue_name": "Komachi Kissaten Asakusa",
+      "lat": 35.6992,
+      "lng": 139.8135,
+      "categories": [
+        "Vintage",
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/komachi_kissaten_asakusa_tokyo_asakusa.jpg",
+      "address": "Tokyo, Asakusa",
+      "published": "2026-05-01",
+      "summary": "Step back in time at Komachi Kissaten Asakusa, a charming retro cafe nestled in Tokyo's historic district, offering a delightful escape with its traditional kissaten ambiance and delectable local snacks. Experience a slice of Showa-era Japan, where classic coffee culture meets nostalgic charm, making it a must-visit for travelers seeking an authentic Tokyo experience.",
+      "agoda": "",
+      "link": "/item/komachi_kissaten_asakusa_tokyo_asakusa_en"
+    },
+    {
+      "id": "haneda_route_cafe_tokyo_ota_ko",
+      "lang": "ko",
+      "title": "도쿄 오타 하네다 루트 카페: 공항 이용객을 위한 넓고 편안한 영어 지원 카페",
+      "venue_name": "Haneda Route Cafe",
+      "lat": 35.5583,
+      "lng": 139.7781,
+      "categories": [
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/haneda_route_cafe_tokyo_ota.jpg",
+      "address": "Tokyo, Ota",
+      "published": "2026-05-01",
+      "summary": "하네다 루트 카페는 도쿄 오타에 위치한 공항 이용객을 위한 완벽한 휴식 공간입니다. 넓고 쾌적한 좌석 배치와 편리한 영어 지원 서비스를 제공하여, 여행 전후 혹은 경유 중에 편안한 시간을 보낼 수 있습니다.",
+      "agoda": "",
+      "link": "/item/haneda_route_cafe_tokyo_ota_ko"
+    },
+    {
+      "id": "sun_city_espresso_ikebukuro_tokyo_ikebukuro_ko",
+      "lang": "ko",
+      "title": "도쿄 이케부쿠로의 특별한 커피 경험: 선 시티 에스프레소 이케부쿠로 완벽 가이드 | Tokyo, Ikebukuro 커피 명소",
+      "venue_name": "Sun City Espresso Ikebukuro",
+      "lat": 35.7289,
+      "lng": 139.7101,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/sun_city_espresso_ikebukuro_tokyo_ikebukuro.jpg",
+      "address": "Tokyo, Ikebukuro",
+      "published": "2026-05-01",
+      "summary": "이케부쿠로 중심부에 위치한 선 시티 에스프레소는 특별한 하우스 로스트 커피와 편안한 그룹 테이블을 제공하며, 뛰어난 접근성으로 도쿄 방문객과 현지인 모두에게 완벽한 휴식처를 선사합니다. 세련된 분위기 속에서 깊은 풍미의 커피와 함께 여유로운 시간을 만끽할 수 있는 이곳은 단순한 카페를 넘어 문화적인 경험을 선사합니다.",
+      "agoda": "",
+      "link": "/item/sun_city_espresso_ikebukuro_tokyo_ikebukuro_ko"
+    },
+    {
+      "id": "demachi_kamogawa_cafe_kyoto_demachiyanagi_en",
+      "lang": "en",
+      "title": "Demachi Kamogawa Cafe: Your Essential Guide to Kyoto's Demachiyanagi Specialty Coffee Haven",
+      "venue_name": "Demachi Kamogawa Cafe",
+      "lat": 35.0377,
+      "lng": 135.7729,
+      "categories": [
+        "Specialty",
+        "Roastery",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/demachi_kamogawa_cafe_kyoto_demachiyanagi.jpg",
+      "address": "Kyoto, Demachiyanagi",
+      "published": "2026-05-01",
+      "summary": "Discover Demachi Kamogawa Cafe, a true coffee gem nestled in Kyoto's vibrant Demachiyanagi district, celebrated for its exquisite house roast, welcoming group tables, and remarkably easy access. This guide unveils why it's a must-visit for both seasoned coffee connoisseurs and casual travelers seeking an authentic Kyoto cafe experience.",
+      "agoda": "",
+      "link": "/item/demachi_kamogawa_cafe_kyoto_demachiyanagi_en"
+    },
+    {
+      "id": "eiga_village_coffee_uzumasa_kyoto_uzumasa_ko",
+      "lang": "ko",
+      "title": "교토 우즈마사, 환승 허브의 오아시스: 에이가 빌리지 커피 우즈마사 완벽 가이드",
+      "venue_name": "Eiga Village Coffee Uzumasa",
+      "lat": 35.0195,
+      "lng": 135.7358,
+      "categories": [
+        "Dessert",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/eiga_village_coffee_uzumasa_kyoto_uzumasa.jpg",
+      "address": "Kyoto, Uzumasa",
+      "published": "2026-05-01",
+      "summary": "교토 우즈마사의 중심에 위치한 에이가 빌리지 커피 우즈마사는 바쁜 여행자들에게 빠르고 맛있는 휴식을 선사하는 이상적인 환승 허브 카페입니다. 신선하고 풍미 가득한 페이스트리와 함께 편안하면서도 효율적인 시간을 경험해보세요.",
+      "agoda": "",
+      "link": "/item/eiga_village_coffee_uzumasa_kyoto_uzumasa_ko"
+    },
+    {
+      "id": "toyosu_blue_table_tokyo_toyosu_ko",
+      "lang": "ko",
+      "title": "도쿄 토요스 블루 테이블: 그림 같은 수변 풍경과 스페셜티 커피의 완벽한 조화",
+      "venue_name": "Toyosu Blue Table",
+      "lat": 35.6244,
+      "lng": 139.7757,
+      "categories": [
+        "Specialty",
+        "Scenic"
+      ],
+      "thumbnail": "/static/images/toyosu_blue_table_tokyo_toyosu.jpg",
+      "address": "Tokyo, Toyosu",
+      "published": "2026-05-01",
+      "summary": "도쿄 토요스에 위치한 토요스 블루 테이블은 아름다운 수변 전망과 특별한 에스프레소 토닉, 그리고 편안한 음악이 어우러진 도심 속 안식처입니다. 바쁜 일상에서 벗어나 여유를 만끽할 수 있는 완벽한 카페 경험을 선사합니다.",
+      "agoda": "",
+      "link": "/item/toyosu_blue_table_tokyo_toyosu_ko"
+    },
+    {
+      "id": "patisserie_bloom_ginza_tokyo_ginza_en",
+      "lang": "en",
+      "title": "Patisserie Bloom Ginza: Tokyo's Ultimate Destination for Exquisite Dessert Pairings and Stylish Cafe Culture in Ginza",
+      "venue_name": "Patisserie Bloom Ginza",
       "lat": 35.6718,
       "lng": 139.7645,
       "categories": [
         "Dessert",
         "Specialty"
       ],
-      "thumbnail": "/static/images/tokyo_brew_spot_tokyo_ginza.jpg",
+      "thumbnail": "/static/images/patisserie_bloom_ginza_tokyo_ginza.jpg",
       "address": "Tokyo, Ginza",
-      "published": "2026-04-29",
-      "summary": "Discover Tokyo Brew Spot, a stylish cafe in the heart of Ginza, Tokyo, offering an unparalleled experience in dessert pairings and specialty coffee. With its chic interior and an accessible English menu, this destination promises a sophisticated culinary escape for local connoisseurs and international travelers alike.",
+      "published": "2026-05-01",
+      "summary": "Step into a world where gourmet desserts meet curated beverages at Patisserie Bloom Ginza, a stylish cafe in the heart of Tokyo's upscale Ginza district. Discover an unforgettable culinary journey with their signature dessert pairings, all within an elegantly designed interior and supported by a convenient English menu.",
       "agoda": "",
-      "link": "/item/tokyo_brew_spot_tokyo_ginza_en"
+      "link": "/item/patisserie_bloom_ginza_tokyo_ginza_en"
+    },
+    {
+      "id": "harmonica_coffee_terrace_tokyo_kichijoji_en",
+      "lang": "en",
+      "title": "Harmonica Coffee Terrace: A Tranquil Garden Oasis for Hand-Drip Coffee in Tokyo's Kichijoji",
+      "venue_name": "Harmonica Coffee Terrace",
+      "lat": 35.7004,
+      "lng": 139.5803,
+      "categories": [
+        "Specialty",
+        "Scenic"
+      ],
+      "thumbnail": "/static/images/harmonica_coffee_terrace_tokyo_kichijoji.jpg",
+      "address": "Tokyo, Kichijoji",
+      "published": "2026-05-01",
+      "summary": "Discover Harmonica Coffee Terrace, a serene escape in Tokyo's vibrant Kichijoji, offering expertly hand-dripped coffee amidst a lush garden setting perfect for families and coffee connoisseurs alike. Experience a tranquil oasis where quality coffee meets a welcoming, verdant ambiance.",
+      "agoda": "",
+      "link": "/item/harmonica_coffee_terrace_tokyo_kichijoji_en"
+    },
+    {
+      "id": "shibuya_morning_club_tokyo_shibuya_ko",
+      "lang": "ko",
+      "title": "시부야 모닝 클럽: 도쿄 시부야에서 최고의 브런치와 작업 공간을 만나다",
+      "venue_name": "Shibuya Morning Club",
+      "lat": 35.6581,
+      "lng": 139.7017,
+      "categories": [
+        "Specialty",
+        "Work-Friendly",
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/shibuya_morning_club_tokyo_shibuya.jpg",
+      "address": "Tokyo, Shibuya",
+      "published": "2026-05-01",
+      "summary": "도쿄 시부야의 활기찬 아침을 여는 시부야 모닝 클럽은 미식 브런치, 초고속 Wi-Fi, 그리고 관광객 친화적인 분위기로 여행자와 디지털 노마드 모두에게 완벽한 아지트입니다. 하치코 동상 근처에 위치하여 접근성이 뛰어나며, 특별한 아침 식사와 편안한 휴식을 동시에 제공합니다.",
+      "agoda": "",
+      "link": "/item/shibuya_morning_club_tokyo_shibuya_ko"
+    },
+    {
+      "id": "tofukuji_maple_terrace_kyoto_tofukuji_en",
+      "lang": "en",
+      "title": "Tofukuji Maple Terrace: A Premium Coffee & Artisan Dessert Sanctuary for Date Nights in Kyoto",
+      "venue_name": "Tofukuji Maple Terrace",
+      "lat": 35.0244,
+      "lng": 135.7986,
+      "categories": [
+        "Specialty",
+        "Dessert",
+        "Scenic"
+      ],
+      "thumbnail": "/static/images/tofukuji_maple_terrace_kyoto_tofukuji.jpg",
+      "address": "Kyoto, Tofukuji",
+      "published": "2026-05-01",
+      "summary": "Discover Tofukuji Maple Terrace, a Kyoto cafe where exceptional specialty coffee meets exquisite artisan desserts, creating the perfect intimate setting for a memorable date night or a serene escape.",
+      "agoda": "",
+      "link": "/item/tofukuji_maple_terrace_kyoto_tofukuji_en"
+    },
+    {
+      "id": "gion_yasaka_blend_kyoto_gion_en",
+      "lang": "en",
+      "title": "Gion Yasaka Blend: Your Essential Guide to Kyoto Gion's Premier Specialty Coffee & Work-Friendly Oasis",
+      "venue_name": "Gion Yasaka Blend",
+      "lat": 35.0116,
+      "lng": 135.7681,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/gion_yasaka_blend_kyoto_gion.jpg",
+      "address": "Kyoto, Gion",
+      "published": "2026-05-01",
+      "summary": "Nestled in the heart of historic Gion, Kyoto, Gion Yasaka Blend offers an exceptional specialty coffee experience alongside a perfectly designed space for productivity. Discover exquisite brews and a serene environment equipped with Wi-Fi and power outlets, making it an ideal retreat for both coffee connoisseurs and digital nomads exploring Japan's ancient capital.",
+      "agoda": "",
+      "link": "/item/gion_yasaka_blend_kyoto_gion_en"
+    },
+    {
+      "id": "kawaramachi_folding_cafe_kyoto_kawaramachi_ko",
+      "lang": "ko",
+      "title": "교토 카와라마치 폴딩 카페: 고요함 속 스페셜티 커피와 완벽한 작업 공간",
+      "venue_name": "Kawaramachi Folding Cafe",
+      "lat": 35.0037,
+      "lng": 135.7708,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/kawaramachi_folding_cafe_kyoto_kawaramachi.jpg",
+      "address": "Kyoto, Kawaramachi",
+      "published": "2026-05-01",
+      "summary": "교토 카와라마치에 위치한 폴딩 카페는 스페셜티 커피의 깊은 향과 고요한 분위기, 그리고 노트북 사용에 최적화된 편의 시설을 제공합니다. 번잡한 도시 속에서 집중과 휴식을 동시에 경험할 수 있는 이곳은 품격 있는 커피와 함께 자신만의 시간을 보내고 싶은 분들을 위한 완벽한 선택입니다.",
+      "agoda": "",
+      "link": "/item/kawaramachi_folding_cafe_kyoto_kawaramachi_ko"
+    },
+    {
+      "id": "nanzenji_philosopher_drip_kyoto_nanzenji_en",
+      "lang": "en",
+      "title": "Nanzenji Philosopher Drip: Your Essential Guide to Kyoto's Serene Cafe Gem in Nanzenji",
+      "venue_name": "Nanzenji Philosopher Drip",
+      "lat": 35.027,
+      "lng": 135.7894,
+      "categories": [
+        "Scenic",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/nanzenji_philosopher_drip_kyoto_nanzenji.jpg",
+      "address": "Kyoto, Nanzenji",
+      "published": "2026-05-01",
+      "summary": "Discover Nanzenji Philosopher Drip, a tranquil specialty cafe nestled along Kyoto's scenic Nanzenji temple route, offering an exquisite espresso tonic amidst a backdrop of serene beauty and relaxed music. This hidden gem provides the perfect respite for contemplation and refreshment after exploring the historic district.",
+      "agoda": "",
+      "link": "/item/nanzenji_philosopher_drip_kyoto_nanzenji_en"
+    },
+    {
+      "id": "ueno_parkside_drip_tokyo_ueno_en",
+      "lang": "en",
+      "title": "Discover Serenity: Ueno Parkside Drip – Tokyo's Premier Pour-Over Cafe Oasis in Ueno",
+      "venue_name": "Ueno Parkside Drip",
+      "lat": 35.7089,
+      "lng": 139.731,
+      "categories": [
+        "Specialty",
+        "Scenic",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/ueno_parkside_drip_tokyo_ueno.jpg",
+      "address": "Tokyo, Ueno",
+      "published": "2026-05-01",
+      "summary": "Escape the urban hustle at Ueno Parkside Drip, Tokyo's quintessential pour-over cafe in Ueno, offering meticulously crafted coffee and a serene atmosphere perfect for reflection, all enjoyed from captivating window seats overlooking the vibrant city.",
+      "agoda": "",
+      "link": "/item/ueno_parkside_drip_tokyo_ueno_en"
     }
   ]
 }
