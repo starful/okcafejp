@@ -304,7 +304,19 @@ def serve_favicons():
     if os.path.exists(local_path):
         mimetype = 'image/png' if filename.endswith('.png') else 'image/vnd.microsoft.icon'
         return send_from_directory(image_dir, filename, mimetype=mimetype)
+    # Always serve a valid local fallback so crawlers can fetch a stable favicon.
+    fallback_svg = os.path.join(image_dir, 'favicon.svg')
+    if os.path.exists(fallback_svg):
+        return redirect('/favicon.svg', code=302)
     return serve_images(filename)
+
+@app.route('/favicon.svg')
+def serve_favicon_svg():
+    image_dir = os.path.join(STATIC_DIR, 'images')
+    fallback_svg = os.path.join(image_dir, 'favicon.svg')
+    if os.path.exists(fallback_svg):
+        return send_from_directory(image_dir, 'favicon.svg', mimetype='image/svg+xml')
+    return Response(status=404)
 
 @app.route('/site.webmanifest')
 def webmanifest():
