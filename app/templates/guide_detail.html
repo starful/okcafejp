@@ -19,6 +19,7 @@
     gtag('config', '{{ site.ga_id }}');
     </script>
 
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <title>{{ title }} - {{ site.site_name }} Guide</title>
     <meta name="description" content="{{ post.summary }}">
     <link rel="canonical" href="{{ canonical }}" />
@@ -32,52 +33,38 @@
     <meta property="og:description" content="{{ post.summary }}">
     <meta property="og:image" content="{{ image_url_abs }}">
     <meta property="og:url" content="{{ canonical }}">
+    <meta property="og:locale" content="{{ 'ko_KR' if lang == 'ko' else 'en_US' }}">
+    <meta property="og:locale:alternate" content="{{ 'en_US' if lang == 'ko' else 'ko_KR' }}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ title }}">
     <meta name="twitter:description" content="{{ post.summary }}">
     <meta name="twitter:image" content="{{ image_url_abs }}">
 
-    <!-- Article Schema -->
     <script type="application/ld+json">
-    {
+    {{- {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "{{ title }}",
-      "image": "{{ image_url_abs }}",
-      "datePublished": "{{ post.date }}",
-      "description": "{{ post.summary }}",
+      "headline": title,
+      "image": image_url_abs,
+      "datePublished": (post.date|string if post.date else ""),
+      "description": post.summary or "",
       "publisher": {
         "@type": "Organization",
-        "name": "{{ site.site_name }}",
-        "logo": {"@type": "ImageObject", "url": "{{ site.site_url }}/static/images/logo.png"}
+        "name": site.site_name,
+        "logo": {"@type": "ImageObject", "url": site.site_url.rstrip('/') ~ "/static/images/logo.png"}
       }
-    }
+    }|tojson }}
     </script>
     <script type="application/ld+json">
-    {
+    {{- {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "{{ site.site_url }}/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Guides",
-          "item": "{{ site.site_url }}/guide"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "{{ title }}",
-          "item": "{{ canonical }}"
-        }
+        {"@type": "ListItem", "position": 1, "name": ('홈' if lang == 'ko' else 'Home'), "item": site.site_url.rstrip('/') ~ "/"},
+        {"@type": "ListItem", "position": 2, "name": ('가이드' if lang == 'ko' else 'Guides'), "item": site.site_url.rstrip('/') ~ "/guide"},
+        {"@type": "ListItem", "position": 3, "name": title, "item": canonical}
       ]
-    }
+    }|tojson }}
     </script>
 
     <link rel="stylesheet" href="/static/css/style.css">

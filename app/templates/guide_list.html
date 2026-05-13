@@ -1,20 +1,28 @@
+{% set gl_title = site.guide_title_ko if lang == 'ko' else site.guide_title_en %}
+{% set gl_desc = site.guide_meta_ko if lang == 'ko' else site.guide_meta_en %}
 <!DOCTYPE html>
 <html lang="{{ lang }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Guides - {{ site.site_name }}</title>
-    <meta name="description" content="Browse all {{ site.site_name }} guides in {{ lang }}.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <title>{{ gl_title }}</title>
+    <meta name="description" content="{{ gl_desc }}">
     <link rel="canonical" href="{{ canonical }}" />
     <link rel="alternate" hreflang="en" href="{{ site.site_url }}/guide" />
     <link rel="alternate" hreflang="ko" href="{{ site.site_url }}/guide?lang=ko" />
     <link rel="alternate" hreflang="x-default" href="{{ site.site_url }}/guide" />
     <meta property="og:type" content="website">
-    <meta property="og:title" content="All Guides - {{ site.site_name }}">
-    <meta property="og:description" content="Browse all {{ site.site_name }} guides in {{ lang }}.">
+    <meta property="og:title" content="{{ gl_title }}">
+    <meta property="og:description" content="{{ gl_desc }}">
     <meta property="og:url" content="{{ canonical }}">
     <meta property="og:image" content="{{ site.site_url }}/static/images/logo.png">
+    <meta property="og:locale" content="{{ 'ko_KR' if lang == 'ko' else 'en_US' }}">
+    <meta property="og:locale:alternate" content="{{ 'en_US' if lang == 'ko' else 'ko_KR' }}">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ gl_title }}">
+    <meta name="twitter:description" content="{{ gl_desc }}">
+    <meta name="twitter:image" content="{{ site.site_url }}/static/images/logo.png">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
@@ -36,12 +44,12 @@
     {% include 'header.html' %}
 
     <div class="content-wrapper" style="margin-top: 40px;">
-        <h2 class="list-title" style="text-align: center;">📖 All {{ site.site_name }} Guides</h2>
+        <h2 class="list-title" style="text-align: center;">{% if lang == 'ko' %}📖 {{ site.site_name }} 가이드 전체{% else %}📖 All {{ site.site_name }} Guides{% endif %}</h2>
 
         <div class="onsen-grid">
             {% for guide in guides.get(lang, []) %}
             <a href="/guide/{{ guide.id }}" class="onsen-card">
-                <img src="{{ guide.thumbnail }}" alt="{{ guide.title }}" class="card-thumb">
+                <img src="{{ guide.thumbnail }}" alt="{{ guide.title }}" class="card-thumb" loading="lazy">
                 <div class="card-content">
                     <h3 class="card-title">{{ guide.title }}</h3>
                     <p class="card-summary">{{ guide.summary }}</p>
@@ -57,21 +65,12 @@
 
     {% include 'footer.html' %}
     <script type="application/ld+json">
-    {
+    {{- {
       "@context": "https://schema.org",
       "@type": "ItemList",
-      "name": "{{ site.site_name }} guides",
-      "itemListElement": [
-        {% for guide in guides.get(lang, []) %}
-        {
-          "@type": "ListItem",
-          "position": {{ loop.index }},
-          "url": "{{ site.site_url }}/guide/{{ guide.id }}",
-          "name": "{{ guide.title }}"
-        }{% if not loop.last %},{% endif %}
-        {% endfor %}
-      ]
-    }
+      "name": site.site_name ~ " guides",
+      "itemListElement": guide_list_schema,
+    }|tojson }}
     </script>
 </body>
 </html>

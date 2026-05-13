@@ -164,7 +164,7 @@ header {
     box-shadow: 0 15px 35px rgba(0,0,0,0.1);
     margin-bottom: 40px; text-align: center;
 }
-.intro-box h2 { font-size: 1.8rem; margin-bottom: 12px; }
+.intro-box h1, .intro-box h2 { font-size: 1.8rem; margin-bottom: 12px; font-weight: 800; }
 
 .list-title {
     font-size: 1.8rem; font-weight: 900; margin: 40px 0 25px;
@@ -314,7 +314,7 @@ footer {
     .guide-section-title { font-size: 1.25rem; }
     .guide-highlight-section { padding: 20px 14px; border-width: 2px; }
     .intro-box { padding: 18px 14px; margin-bottom: 28px; }
-    .intro-box h2 { font-size: 1.35rem; }
+    .intro-box h1, .intro-box h2 { font-size: 1.35rem; }
 }
 
 @media (max-width: 480px) {
@@ -328,7 +328,7 @@ footer {
         row-gap: 8px;
         padding: 10px 2px 6px;
     }
-    .header-top h1 { grid-area: logo; margin: 0; justify-self: center; }
+    .header-top .header-brand { grid-area: logo; margin: 0; justify-self: center; }
     .header-left { grid-area: guide; position: static; justify-self: start; }
     .lang-selector { grid-area: lang; position: static; justify-self: end; }
     .logo-img { height: 44px; max-width: 70vw; }

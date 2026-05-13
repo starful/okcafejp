@@ -144,9 +144,12 @@ function updateCounts() {
     }
 }
 
-// Event: language toggle
+// Event: language toggle (buttons only; <a href> uses full navigation for SEO)
 document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.addEventListener('click', async () => {
+        if (btn.tagName === 'A' && btn.getAttribute('href')) {
+            return;
+        }
         document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         currentLang = btn.dataset.lang;

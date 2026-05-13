@@ -1,24 +1,29 @@
+{% set home_title = site.home_title_ko if lang == 'ko' else site.home_title_en %}
+{% set home_desc = site.home_meta_ko if lang == 'ko' else site.home_meta_en %}
 <!DOCTYPE html>
 <html lang="{{ lang }}">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
     <!-- SEO & Canonical -->
-    <title>{{ site.site_name }} - {{ site.tagline }}</title>
-    <meta name="description" content="{{ site.tagline }}">
+    <title>{{ home_title }}</title>
+    <meta name="description" content="{{ home_desc }}">
     <link rel="canonical" href="{{ canonical }}" />
     <link rel="alternate" hreflang="en" href="{{ site.site_url }}" />
     <link rel="alternate" hreflang="ko" href="{{ site.site_url }}?lang=ko" />
     <link rel="alternate" hreflang="x-default" href="{{ site.site_url }}" />
     <meta property="og:type" content="website">
-    <meta property="og:title" content="{{ site.site_name }} - {{ site.tagline }}">
-    <meta property="og:description" content="{{ site.tagline }}">
+    <meta property="og:title" content="{{ home_title }}">
+    <meta property="og:description" content="{{ home_desc }}">
     <meta property="og:url" content="{{ canonical }}">
     <meta property="og:image" content="{{ site.site_url }}/static/images/logo.png">
+    <meta property="og:locale" content="{{ 'ko_KR' if lang == 'ko' else 'en_US' }}">
+    <meta property="og:locale:alternate" content="{{ 'en_US' if lang == 'ko' else 'ko_KR' }}">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ site.site_name }} - {{ site.tagline }}">
-    <meta name="twitter:description" content="{{ site.tagline }}">
+    <meta name="twitter:title" content="{{ home_title }}">
+    <meta name="twitter:description" content="{{ home_desc }}">
     <meta name="twitter:image" content="{{ site.site_url }}/static/images/logo.png">
 
     <!-- Google Analytics -->
@@ -49,33 +54,28 @@
         <div class="content-wrapper">
             <!-- Intro -->
             <article class="intro-box">
-                <h2>{{ site.emoji }} {{ site.tagline }}</h2>
+                <h1>{{ site.emoji }} {{ site.tagline }}</h1>
+                {% if lang == 'ko' %}
                 <p>
-                    Discover the best places in Japan with <strong>{{ site.site_name }}</strong>.<br>
-                    Use category filters and the map to explore quickly.
+                    <strong>{{ site.site_name }}</strong>로 일본의 스페셜티·디저트·작업하기 좋은 카페를 지도에서 찾아보세요.
+                    카테고리 필터와 가이드로 도쿄·오사카·교토 등 여행 일정에 맞춰 빠르게 고를 수 있습니다.
                 </p>
+                {% else %}
+                <p>
+                    Discover standout cafes across Japan with <strong>{{ site.site_name }}</strong>—specialty coffee,
+                    dessert spots, work-friendly Wi‑Fi, and scenic views. Use the map, category filters, and bilingual
+                    guides to plan stops in Tokyo, Osaka, Kyoto, and beyond.
+                </p>
+                {% endif %}
             </article>
 
             <!-- Guide highlight section -->
             <section class="guide-highlight-section">
-                <h2 class="guide-section-title">📖 {{ site.site_name }} Guides</h2>
+                <h2 class="guide-section-title">{% if lang == 'ko' %}📖 {{ site.site_name }} 가이드{% else %}📖 {{ site.site_name }} Guides{% endif %}</h2>
                 <div class="onsen-grid" id="guide-list">
-
-                    <!-- English guides (top 3) -->
-                    {% for guide in guides.get('en', [])[:3] %}
-                    <a href="/guide/{{ guide.id }}" class="onsen-card guide-card guide-en">
-                        <img src="{{ guide.thumbnail }}" alt="{{ guide.title }}" class="card-thumb">
-                        <div class="card-content">
-                            <h3 class="card-title">{{ guide.title }}</h3>
-                            <p class="card-summary">{{ guide.summary }}</p>
-                        </div>
-                    </a>
-                    {% endfor %}
-
-                    <!-- Korean guides (top 3, hidden by default) -->
-                    {% for guide in guides.get('ko', [])[:3] %}
-                    <a href="/guide/{{ guide.id }}" class="onsen-card guide-card guide-ko" style="display: none;">
-                        <img src="{{ guide.thumbnail }}" alt="{{ guide.title }}" class="card-thumb">
+                    {% for guide in top_guides %}
+                    <a href="/guide/{{ guide.id }}{% if lang == 'ko' %}?lang=ko{% endif %}" class="onsen-card guide-card">
+                        <img src="{{ guide.thumbnail }}" alt="{{ guide.title }}" class="card-thumb" loading="lazy">
                         <div class="card-content">
                             <h3 class="card-title">{{ guide.title }}</h3>
                             <p class="card-summary">{{ guide.summary }}</p>
@@ -84,13 +84,13 @@
                     {% endfor %}
                 </div>
                 <div class="view-all-container">
-                    <a href="/guide" class="btn-view-all">View All Guides</a>
+                    <a href="/guide{% if lang == 'ko' %}?lang=ko{% endif %}" class="btn-view-all">{% if lang == 'ko' %}가이드 전체 보기{% else %}View All Guides{% endif %}</a>
                 </div>
             </section>
 
             <!-- Item list -->
             <section id="list-section">
-                <h2 class="list-title">{{ site.emoji }} Latest {{ site.site_name }}</h2>
+                <h2 class="list-title">{% if lang == 'ko' %}{{ site.emoji }} 최신 {{ site.site_name }} 카페{% else %}{{ site.emoji }} Latest {{ site.site_name }}{% endif %}</h2>
                 <div id="item-list" class="onsen-grid">
                     {% for item in initial_items %}
                     <div class="onsen-card">
@@ -116,13 +116,13 @@
         <div class="container">
             <div class="footer-status">
                 <div class="status-badge">
-                    {{ site.emoji }} <span id="total-items">0</span> Items
+                    {{ site.emoji }} <span id="total-items">0</span> {% if lang == 'ko' %}곳{% else %}Items{% endif %}
                 </div>
                 <div class="status-badge">
                     📅 Updated: <span id="last-updated-date">{{ last_updated }}</span>
                 </div>
                 <div class="status-badge highlight">
-                    🔥 Trending Now
+                    {% if lang == 'ko' %}🔥 지금 주목{% else %}🔥 Trending Now{% endif %}
                 </div>
             </div>
             <div class="footer-content">
@@ -136,39 +136,33 @@
         </div>
     </footer>
 
-    <!-- Toggle guide cards on language change -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            document.querySelectorAll('.lang-btn').forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    const lang = e.target.getAttribute('data-lang');
-                    document.querySelectorAll('.guide-card').forEach(el => el.style.display = 'none');
-                    document.querySelectorAll('.guide-' + lang).forEach(el => el.style.display = 'flex');
-                });
-            });
-        });
-    </script>
-
     <!-- Google Maps Loader -->
     <script>
     (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({"key": "{{ site.maps_api_key }}", "v": "beta"});
     </script>
     <script type="application/ld+json">
-    {
+    {{- {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": site.site_name,
+      "url": site.site_url.rstrip('/'),
+      "inLanguage": ["en", "ko"],
+      "description": home_desc,
+      "publisher": {
+        "@type": "Organization",
+        "name": site.site_name,
+        "url": site.site_url.rstrip('/'),
+        "logo": {"@type": "ImageObject", "url": site.site_url.rstrip('/') ~ "/static/images/logo.png"}
+      }
+    }|tojson }}
+    </script>
+    <script type="application/ld+json">
+    {{- {
       "@context": "https://schema.org",
       "@type": "ItemList",
-      "name": "{{ site.site_name }} latest items",
-      "itemListElement": [
-        {% for item in initial_items %}
-        {
-          "@type": "ListItem",
-          "position": {{ loop.index }},
-          "url": "{{ site.site_url }}{{ item.link }}",
-          "name": "{{ item.venue_name or item.title }}"
-        }{% if not loop.last %},{% endif %}
-        {% endfor %}
-      ]
-    }
+      "name": site.site_name ~ " latest cafes",
+      "itemListElement": item_list_schema,
+    }|tojson }}
     </script>
     <script type="module" src="/static/js/main.js"></script>
 </body>

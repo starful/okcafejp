@@ -9,11 +9,11 @@
             </div>
 
             <!-- Center: logo -->
-            <h1>
+            <div class="header-brand">
                 <a href="/">
                     <img src="/static/images/logo.png" alt="{{ site.site_name }}" class="logo-img">
                 </a>
-            </h1>
+            </div>
 
             <!-- Right: language selector -->
             <div class="lang-selector">
@@ -29,10 +29,11 @@
                 {% elif request.path == '/guide' %}
                     <a href="/guide?lang=en" class="lang-btn {% if lang == 'en' %}active{% endif %}">English</a>
                     <a href="/guide?lang=ko" class="lang-btn {% if lang == 'ko' %}active{% endif %}">Korean</a>
-                {# Main/other pages: toggle via JS #}
+                {# Home: real URLs so crawlers see EN/KO versions (hreflang + ?lang=ko) #}
                 {% else %}
-                    <button class="lang-btn active" data-lang="en">English</button>
-                    <button class="lang-btn" data-lang="ko">Korean</button>
+                    {% set nav_lang = lang|default('en') %}
+                    <a href="/" class="lang-btn {% if nav_lang == 'en' %}active{% endif %}" data-lang="en">English</a>
+                    <a href="/?lang=ko" class="lang-btn {% if nav_lang == 'ko' %}active{% endif %}" data-lang="ko">Korean</a>
                 {% endif %}
             </div>
         </div>

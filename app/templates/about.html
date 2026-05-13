@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <title>About &amp; Contact - {{ site.site_name }}</title>
+    <meta name="description" content="{{ site.about_meta }}">
+    <link rel="canonical" href="{{ canonical }}" />
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About {{ site.site_name }}">
+    <meta property="og:description" content="{{ site.about_meta }}">
+    <meta property="og:url" content="{{ canonical }}">
+    <meta property="og:image" content="{{ site.site_url }}/static/images/logo.png">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
-    <title>About & Contact - {{ site.site_name }}</title>
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga_id }}"></script>
     <script>
     window.dataLayer = window.dataLayer || [];

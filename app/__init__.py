@@ -185,9 +185,26 @@ def index():
     top_guides = CACHED_GUIDES.get(lang, [])[:3]
     stats = _get_footer_stats(lang)
     canonical = SITE_CONFIG['site_url'] if lang == 'en' else f"{SITE_CONFIG['site_url']}?lang={lang}"
-    return render_template('index.html', lang=lang, guides=CACHED_GUIDES,
-                           top_guides=top_guides, initial_items=initial_items,
-                           canonical=canonical, **stats)
+    base = SITE_CONFIG['site_url'].rstrip('/')
+    item_list_schema = [
+        {
+            "@type": "ListItem",
+            "position": idx + 1,
+            "url": base + (item.get("link") or ""),
+            "name": item.get("venue_name") or item.get("title") or "",
+        }
+        for idx, item in enumerate(initial_items)
+    ]
+    return render_template(
+        'index.html',
+        lang=lang,
+        guides=CACHED_GUIDES,
+        top_guides=top_guides,
+        initial_items=initial_items,
+        canonical=canonical,
+        item_list_schema=item_list_schema,
+        **stats,
+    )
 
 @app.route('/api/items')
 def api_items():
@@ -205,14 +222,38 @@ def api_items():
         s['categories'] = list(set(new_cats))
         spoofed.append(s)
 
-    return jsonify({SITE_CONFIG['data_key']: spoofed, "last_updated": CACHED_DATA.get('last_updated')})
+    resp = jsonify(
+        {SITE_CONFIG['data_key']: spoofed, "last_updated": CACHED_DATA.get('last_updated')}
+    )
+    # Let crawlers fetch JSON so they can honor noindex; blocking /api/ in robots.txt
+    # causes "Indexed, though blocked" when URLs appear in JS (e.g. /api/items?lang=…).
+    resp.headers["X-Robots-Tag"] = "noindex, nofollow"
+    return resp
 
 @app.route('/guide')
 def guide_list():
     lang = request.args.get('lang', 'en')
     stats = _get_footer_stats(lang)
     canonical = f"{SITE_CONFIG['site_url']}/guide" if lang == 'en' else f"{SITE_CONFIG['site_url']}/guide?lang={lang}"
-    return render_template('guide_list.html', guides=CACHED_GUIDES, lang=lang, canonical=canonical, **stats)
+    base = SITE_CONFIG['site_url'].rstrip('/')
+    guides_for_lang = CACHED_GUIDES.get(lang, [])
+    guide_list_schema = [
+        {
+            "@type": "ListItem",
+            "position": i + 1,
+            "url": f"{base}/guide/{g['id']}",
+            "name": g.get("title") or "",
+        }
+        for i, g in enumerate(guides_for_lang)
+    ]
+    return render_template(
+        'guide_list.html',
+        guides=CACHED_GUIDES,
+        lang=lang,
+        canonical=canonical,
+        guide_list_schema=guide_list_schema,
+        **stats,
+    )
 
 @app.route('/guide/<guide_id>')
 def guide_detail(guide_id):
@@ -331,7 +372,6 @@ def robots_txt():
     content = (
         "User-agent: *\n"
         "Allow: /\n"
-        "Disallow: /api/\n"
         f"Sitemap: {SITE_CONFIG['site_url'].rstrip('/')}/sitemap.xml\n"
     )
     return Response(content, mimetype='text/plain')
@@ -400,9 +440,10 @@ def sitemap_xml():
 
 @app.route('/about.html')
 def about():
-    lang  = request.args.get('lang', 'en')
+    lang = request.args.get('lang', 'en')
     stats = _get_footer_stats(lang)
-    return render_template('about.html', **stats)
+    canonical = f"{SITE_CONFIG['site_url'].rstrip('/')}/about.html"
+    return render_template('about.html', lang=lang, canonical=canonical, **stats)
 
 @app.route('/privacy.html')
 def privacy():

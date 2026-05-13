@@ -16,6 +16,35 @@ SITE_CONFIG = {
     "tagline":       "Discover Japan's Best Cafes for Travelers",
     "data_key":      "items",               # Top-level JSON key (items/courses/etc.)
 
+    # Homepage / listing SEO (search snippets & social previews)
+    "home_title_en": (
+        "OKCafeJP — Japan Cafe Map & Bilingual Travel Guides (EN/KO)"
+    ),
+    "home_title_ko": "OKCafeJP — 일본 카페 지도·여행 가이드 (한영)",
+    "home_meta_en": (
+        "Explore Japan's best cafes on a map: specialty coffee, dessert cafes, "
+        "work-friendly Wi‑Fi spots, and scenic coffee shops. Bilingual guides for "
+        "travelers — Tokyo, Osaka, Kyoto, and beyond."
+    ),
+    "home_meta_ko": (
+        "일본 카페를 지도로 탐색하세요. 스페셜티, 디저트, 노트북 작업, 뷰 맛집까지. "
+        "도쿄·오사카·교토 등 여행자를 위한 한국어·영어 가이드와 큐레이션."
+    ),
+    "guide_title_en": "Japan Cafe Guides — All Articles | OKCafeJP",
+    "guide_title_ko": "일본 카페 가이드 전체 | OKCafeJP",
+    "guide_meta_en": (
+        "Read every OKCafeJP guide: Japan cafe neighborhoods, travel tips, "
+        "and specialty coffee culture — curated for English-speaking travelers."
+    ),
+    "guide_meta_ko": (
+        "OKCafeJP 가이드 모음 — 일본 카페 동네 추천, 여행 팁, 스페셜티 커피 문화까지 "
+        "한국어로 정리했습니다."
+    ),
+    "about_meta": (
+        "About OKCafeJP: a bilingual Japan cafe discovery site with maps, "
+        "guides, and curated picks for English and Korean travelers."
+    ),
+
     # ----------------------------------------------------------
     # 2. SEO / analytics
     # ----------------------------------------------------------

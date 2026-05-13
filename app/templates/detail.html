@@ -20,11 +20,13 @@
     </script>
 
     <!-- SEO -->
+    {% set item_canonical = site.site_url.rstrip('/') ~ '/item/' ~ post.id %}
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <title>{{ post.title }} - {{ site.site_name }}</title>
     <meta name="description" content="{{ post.summary }}">
     <meta name="keywords" content="{{ site.site_name }}, {{ post.venue_name or post.title }}, {{ post.categories|join(', ') }}, {{ post.address }}, Japan">
 
-    <link rel="canonical" href="{{ site.site_url }}/item/{{ post.id }}" />
+    <link rel="canonical" href="{{ item_canonical }}" />
     {% if post.lang == 'en' %}
     <link rel="alternate" hreflang="ko" href="{{ site.site_url }}/item/{{ post.id | replace('_en', '_ko') }}" />
     {% else %}
@@ -37,7 +39,9 @@
     <meta property="og:title" content="{{ post.title }}">
     <meta property="og:description" content="{{ post.summary }}">
     <meta property="og:image" content="{{ thumbnail_abs }}">
-    <meta property="og:url" content="{{ site.site_url }}/item/{{ post.id }}">
+    <meta property="og:url" content="{{ item_canonical }}">
+    <meta property="og:locale" content="{{ 'ko_KR' if post.lang == 'ko' else 'en_US' }}">
+    <meta property="og:locale:alternate" content="{{ 'en_US' if post.lang == 'ko' else 'ko_KR' }}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ post.title }}">
     <meta name="twitter:description" content="{{ post.summary }}">
@@ -45,23 +49,26 @@
 
     <!-- JSON-LD structured data -->
     <script type="application/ld+json">
-    {
+    {{- {
       "@context": "https://schema.org",
-      "@type": "{{ site.schema_type }}",
-      "name": "{{ post.venue_name or post.title }}",
-      "image": "{{ post.thumbnail }}",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "{{ post.address }}",
-        "addressCountry": "JP"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": {{ post.lat if post.lat else 0 }},
-        "longitude": {{ post.lng if post.lng else 0 }}
-      },
-      "description": "{{ post.summary }}"
-    }
+      "@type": site.schema_type,
+      "name": post.venue_name or post.title,
+      "url": item_canonical,
+      "image": thumbnail_abs,
+      "address": {"@type": "PostalAddress", "addressLocality": post.address or "", "addressCountry": "JP"},
+      "geo": {"@type": "GeoCoordinates", "latitude": (post.lat or 0)|float, "longitude": (post.lng or 0)|float},
+      "description": post.summary or ""
+    }|tojson }}
+    </script>
+    <script type="application/ld+json">
+    {{- {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": ('홈' if post.lang == 'ko' else 'Home'), "item": site.site_url.rstrip('/') ~ "/"},
+        {"@type": "ListItem", "position": 2, "name": post.venue_name or post.title, "item": item_canonical}
+      ]
+    }|tojson }}
     </script>
 
     <link rel="stylesheet" href="/static/css/style.css">
