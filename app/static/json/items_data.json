@@ -1,6 +1,6 @@
 {
   "last_updated": "2026.05.27",
-  "total_count": 196,
+  "total_count": 216,
   "items": [
     {
       "id": "kabushikigaisha_fukuoka_jounan_ko",
@@ -56,6 +56,24 @@
       "summary": "Discover DINGHY COFFEE, an unexpected yet delightful specialty coffee shop nestled within the historic Kofune Sake Brewery in Osaka. This unique cafe offers a serene escape with exceptional brews, blending tradition and modern cafe culture in a surprising urban setting at 〒531-0076 大阪府大阪市北区大淀中１丁目７−１９.",
       "agoda": "",
       "link": "/item/dinghy_coffee_in_kofune_sake_brewery_osaka_kita_en"
+    },
+    {
+      "id": "curio_espresso_and_vintage_design_kanazawa_ko",
+      "lang": "ko",
+      "title": "가나자와 큐리오 에스프레소 앤 빈티지 디자인: 〒920-0854 石川県金沢市安江町1-13에서 경험하는 특별한 커피와 레트로 감성",
+      "venue_name": "Curio Espresso and Vintage Design",
+      "lat": 36.563889,
+      "lng": 136.656667,
+      "categories": [
+        "Vintage",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/curio_espresso_and_vintage_design_kanazawa.jpg",
+      "address": "〒920-0854 石川県金沢市安江町1-13",
+      "published": "2026-05-27",
+      "summary": "가나자와 중심부에 위치한 큐리오 에스프레소 앤 빈티지 디자인은 단순한 카페를 넘어 시간의 흔적이 담긴 보물창고입니다. 독특한 빈티지 인테리어와 최상급 에스프레소가 조화를 이루어 방문객에게 잊지 못할 경험을 선사합니다. 금빛 도시 가나자와에서 아침 식사와 함께 여유로운 시간을 보내기에 이상적인 장소입니다.",
+      "agoda": "curio_espresso_kanazawa",
+      "link": "/item/curio_espresso_and_vintage_design_kanazawa_ko"
     },
     {
       "id": "kiosq_coffee_rotary_sapporo_en",
@@ -273,6 +291,25 @@
       "summary": "焼き芋ここん은 후쿠오카 중앙구 警固에 위치한 특별한 고구마 디저트 카페입니다. 4.8점의 높은 구글 평점으로 검증된 이곳에서 달콤하고 부드러운 인생 고구마를 경험해보세요.",
       "agoda": "",
       "link": "/item/yaki_imo_kokon_fukuoka_chuuou_ko"
+    },
+    {
+      "id": "nagasaki_oranda_koohii_kan_fukuoka_minami_ko",
+      "lang": "ko",
+      "title": "후쿠오카 남구의 숨겨진 보석, 나가사키 오란다 커피관: 〒815-0071 福岡県福岡市南区平和２丁目１６−３에서 만나는 특별한 커피 경험",
+      "venue_name": "長崎阿蘭陀珈琲館",
+      "lat": 33.564504,
+      "lng": 130.400744,
+      "categories": [
+        "Specialty",
+        "Vintage",
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/nagasaki_oranda_koohii_kan_fukuoka_minami.jpg",
+      "address": "〒815-0071 福岡県福岡市南区平和２丁目１６−３",
+      "published": "2026-05-27",
+      "summary": "후쿠오카 남구에 자리한 나가사키 오란다 커피관은 단순한 카페를 넘어, 독특한 분위기와 맛있는 커피, 그리고 다채로운 요리를 선사하는 문화 공간입니다. 고풍스러운 매력 속에서 특별한 미식 경험을 찾는 이들에게 완벽한 도피처가 되어줄 것입니다.",
+      "agoda": "",
+      "link": "/item/nagasaki_oranda_koohii_kan_fukuoka_minami_ko"
     },
     {
       "id": "coupe_kyoto_fu_kyoutoshi_sakyou_ko",
@@ -510,6 +547,25 @@
       "link": "/item/obscura_coffee_roasters_hiroshima_fukurocho_hiroshima_naka_en"
     },
     {
+      "id": "rain_tree_coffee_kamakura_en",
+      "lang": "en",
+      "title": "Discover Rain Tree Coffee: A Tranquil Specialty Cafe in Kamakura's Komachi District (〒248-0006 神奈川県鎌倉市小町2-7-28)",
+      "venue_name": "Rain Tree Coffee",
+      "lat": 35.3186,
+      "lng": 139.5502,
+      "categories": [
+        "Specialty",
+        "Scenic",
+        "Vintage"
+      ],
+      "thumbnail": "/static/images/rain_tree_coffee_kamakura.jpg",
+      "address": "〒248-0006 神奈川県鎌倉市小町2-7-28",
+      "published": "2026-05-27",
+      "summary": "Nestled in the heart of Kamakura's vibrant Komachi district, Rain Tree Coffee offers a serene retreat for coffee enthusiasts and weary travelers alike. Experience exceptional brews and a charming, vintage-inspired atmosphere, making it an indispensable stop on your Kamakura itinerary.",
+      "agoda": "rain_tree_coffee_kamakura",
+      "link": "/item/rain_tree_coffee_kamakura_en"
+    },
+    {
       "id": "sabasu_osaka_tennouji_en",
       "lang": "en",
       "title": "Discover Sabasu: A Charming Cafe Gem in Osaka's Tennoji Ward at 〒543-0001 大阪府大阪市天王寺区上本町３丁目５−２１ 小畑第２ビル",
@@ -617,6 +673,24 @@
       "summary": "Immerse yourself in the aromatic world of 自家焙煎 トヨクニコーヒー, a highly-rated specialty roastery and cafe nestled in Osaka's charming 都島区, offering an exceptional coffee experience for connoisseurs and casual visitors alike.",
       "agoda": "",
       "link": "/item/jika_baisen_toyokunikoohii_osaka_miyako_shima_en"
+    },
+    {
+      "id": "coffee_roastery_sendai_aoba_ko",
+      "lang": "ko",
+      "title": "센다이 스페셜티 커피의 성지: 45COFFEE ROASTERY에서 만나는 특별한 로스팅의 미학 | 〒980-0811 宮城県仙台市青葉区一番町3-3-20",
+      "venue_name": "45COFFEE ROASTERY",
+      "lat": 38.262892,
+      "lng": 140.871623,
+      "categories": [
+        "Specialty",
+        "Roastery"
+      ],
+      "thumbnail": "/static/images/coffee_roastery_sendai_aoba.jpg",
+      "address": "〒980-0811 宮城県仙台市青葉区一番町3-3-20",
+      "published": "2026-05-27",
+      "summary": "센다이 이치반초에 위치한 45COFFEE ROASTERY는 단순한 카페를 넘어, 신선한 원두 로스팅의 향기가 가득한 특별한 커피 성지입니다. 이곳에서 최상급 스페셜티 커피의 깊은 맛과 아늑한 분위기를 경험하며, 센다이 여행의 완벽한 휴식을 만끽해 보세요.",
+      "agoda": "45coffee_roastery_sendai",
+      "link": "/item/coffee_roastery_sendai_aoba_ko"
     },
     {
       "id": "place_japan_ko",
@@ -1201,6 +1275,24 @@
       "link": "/item/sabou_maeda_kyoto_fu_kyoutoshi_chuukyou_en"
     },
     {
+      "id": "pateizugaaden_sapporo_ko",
+      "lang": "ko",
+      "title": "パティズガーデン：〒064-0805 札幌市中央区南５条西１４丁目３−１２에서 맛보는 진정한 휴식과 미식의 조화",
+      "venue_name": "パティズガーデン",
+      "lat": 43.0523126,
+      "lng": 141.3354903,
+      "categories": [
+        "Specialty",
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/pateizugaaden_sapporo.jpg",
+      "address": "〒064-0805 北海道札幌市中央区南５条西１４丁目３−１２",
+      "published": "2026-05-27",
+      "summary": "삿포로의 번잡함 속 고요한 안식처, 파티즈가든은 4.9점의 높은 구글 평점을 자랑하는 숨겨진 카페입니다. 엄선된 재료로 만든 특별한 메뉴와 아늑한 분위기 속에서 일상 탈출의 즐거움을 경험해 보세요.",
+      "agoda": "",
+      "link": "/item/pateizugaaden_sapporo_ko"
+    },
+    {
       "id": "koohii_tarou_honpo_sapporo_en",
       "lang": "en",
       "title": "Discover 珈琲太郎本舗: A Specialty Coffee Oasis in Sapporo's Higashi Ward at 〒007-0836 北海道札幌市東区北３６条東１丁目５−5番1号 大越ビル 1階",
@@ -1306,6 +1398,25 @@
       "summary": "오사카 浪速区 芦原에 위치한 Studio&Café Make는 라이브 음악, 향긋한 커피, 그리고 다채로운 이벤트가 한데 어우러진 독특한 복합 문화 공간입니다. 구글 평점 4.1점으로 검증된 이곳에서 오사카의 색다른 매력을 경험해보세요.",
       "agoda": "",
       "link": "/item/studioandcaf_e_make_osaka_naniwa_ko"
+    },
+    {
+      "id": "bongo_coffee_karuizawa_karuizawa_ko",
+      "lang": "ko",
+      "title": "가루이자와의 커피 성지: 봉고 커피 가루이자와 (Bongo Coffee Karuizawa), 〒389-0102 長野県北佐久郡軽井沢町軽井沢813-1 완벽 분석",
+      "venue_name": "Bongo Coffee Karuizawa",
+      "lat": 36.342806,
+      "lng": 138.635194,
+      "categories": [
+        "Specialty",
+        "Scenic",
+        "Roastery"
+      ],
+      "thumbnail": "/static/images/bongo_coffee_karuizawa_karuizawa.jpg",
+      "address": "〒389-0102 長野県北佐久郡軽井沢町軽井沢813-1",
+      "published": "2026-05-27",
+      "summary": "가루이자와의 아름다운 자연 속에서 신선한 로스팅 커피의 진수를 경험할 수 있는 봉고 커피 가루이자와는 단순한 카페를 넘어선 특별한 문화 공간입니다. 이곳은 커피 애호가와 여행객 모두에게 잊지 못할 추억과 고품격 휴식을 선사하는 가루이자와의 대표 명소입니다.",
+      "agoda": "bongo_coffee_karuizawa",
+      "link": "/item/bongo_coffee_karuizawa_karuizawa_ko"
     },
     {
       "id": "trunk_coffee_bar_takaoka_honten_nagoya_higashi_en",
@@ -1593,6 +1704,25 @@
       "summary": "Nestled beside a tranquil stream in Kyoto's picturesque Sakyo-ku, riverside café GREEN TERRACE offers an idyllic escape where gourmet coffee, exquisite desserts, and delightful brunch options are savored amidst lush natural beauty. Boasting a commendable Google rating of 4.3, this charming cafe promises a memorable experience for those seeking serenity and culinary delight in the heart of Japan's ancient capital.",
       "agoda": "",
       "link": "/item/riverside_caf_e_green_terrace_kyoto_fu_kyoutoshi_sakyou_en"
+    },
+    {
+      "id": "bakery_and_table_hakone_hakone_ko",
+      "lang": "ko",
+      "title": "하코네의 보석, Bakery & Table 箱根: 아시 호수 전경과 갓 구운 빵의 유혹 (〒250-0522 神奈川県足柄下郡箱根町元箱根9-1)",
+      "venue_name": "Bakery & Table 箱根",
+      "lat": 35.213889,
+      "lng": 139.026389,
+      "categories": [
+        "Scenic",
+        "Dessert",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/bakery_and_table_hakone_hakone.jpg",
+      "address": "〒250-0522 神奈川県足柄下郡箱根町元箱根9-1",
+      "published": "2026-05-27",
+      "summary": "하코네 아시 호수변에 위치한 Bakery & Table 箱根은 그림 같은 호수 전경을 바라보며 갓 구운 빵과 향긋한 커피를 즐길 수 있는 특별한 공간입니다. 신선한 베이커리와 엄선된 음료, 그리고 발코니 족욕탕까지 갖춰 방문객들에게 잊지 못할 추억을 선사하는 이곳은 하코네 여행의 필수 코스로 자리매김하고 있습니다.",
+      "agoda": "bakery_and_table_hakone",
+      "link": "/item/bakery_and_table_hakone_hakone_ko"
     },
     {
       "id": "zou_no_hana_terasu_yokohama_naka_ko",
@@ -1954,6 +2084,25 @@
       "summary": "나고야 히가시구에 위치한 TRUNK COFFEE BAR 高岳本店은 단순한 카페를 넘어, 신선한 로스팅 원두와 전문 바리스타의 손길로 완성된 스페셜티 커피의 세계를 선사합니다. 낮에는 향긋한 커피, 저녁에는 매력적인 바로 변모하는 이곳에서 나고야의 진정한 커피 문화를 경험해 보세요.",
       "agoda": "trunk_coffee_bar_nagoya_takaoka",
       "link": "/item/trunk_coffee_bar_takaoka_honten_nagoya_higashi_ko"
+    },
+    {
+      "id": "bongo_coffee_karuizawa_karuizawa_en",
+      "lang": "en",
+      "title": "Discover Bongo Coffee Karuizawa: A Scenic Specialty Roastery at 〒389-0102 長野県北佐久郡軽井沢町軽井沢813-1",
+      "venue_name": "Bongo Coffee Karuizawa",
+      "lat": 36.342806,
+      "lng": 138.635194,
+      "categories": [
+        "Specialty",
+        "Scenic",
+        "Roastery"
+      ],
+      "thumbnail": "/static/images/bongo_coffee_karuizawa_karuizawa.jpg",
+      "address": "〒389-0102 長野県北佐久郡軽井沢町軽井沢813-1",
+      "published": "2026-05-27",
+      "summary": "Nestled in the picturesque resort town of Karuizawa, Bongo Coffee Karuizawa offers an exceptional coffee experience, blending artisanal roasting with breathtaking natural surroundings. This specialty cafe and roastery, located at 〒389-0102 長野県北佐久郡軽井沢町軽井沢813-1, is a must-visit for connoisseurs seeking both exquisite brews and serene beauty.",
+      "agoda": "bongo_coffee_karuizawa",
+      "link": "/item/bongo_coffee_karuizawa_karuizawa_en"
     },
     {
       "id": "studioandcaf_e_make_osaka_naniwa_en",
@@ -2391,6 +2540,24 @@
       "link": "/item/burudigara_toukyou_tokyo_chiyoda_en"
     },
     {
+      "id": "okaffe_kyoto_kyoto_fu_kyoutoshi_shimogyou_ko",
+      "lang": "ko",
+      "title": "오카프 교토(Okaffe Kyoto): 〒600-8092 교토부 교토시 시모교구 신메이초 235−2의 스페셜티 커피 경험",
+      "venue_name": "Okaffe Kyoto",
+      "lat": 35.0023024,
+      "lng": 135.7621503,
+      "categories": [
+        "Specialty",
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/okaffe_kyoto_kyoto_fu_kyoutoshi_shimogyou.jpg",
+      "address": "〒600-8092 京都府京都市下京区神明町２３５−２",
+      "published": "2026-05-27",
+      "summary": "Nestled in Kyoto's vibrant Shimogyo Ward, Okaffe Kyoto stands as a highly-rated sanctuary for coffee lovers, boasting a 4.5 Google rating. This specialty cafe offers a meticulously crafted beverage experience paired with delightful treats, inviting both locals and travelers to discover its unique charm at 〒600-8092 京都府京都市下京区神明町２３５−２.",
+      "agoda": "",
+      "link": "/item/okaffe_kyoto_kyoto_fu_kyoutoshi_shimogyou_ko"
+    },
+    {
       "id": "hakozaki_hato_tarou_shouten_fukuoka_higashi_ko",
       "lang": "ko",
       "title": "후쿠오카 하코자키 筥崎 鳩太郎商店: 〒812-0053 福岡県福岡市東区箱崎１丁目４４−２０, 전통과 현대가 어우러진 미식 공간",
@@ -2443,6 +2610,24 @@
       "summary": "후쿠오카 미나미구 타카미야에 위치한 앙크루 타카미야점은 고품격 커피와 다채로운 디저트, 그리고 아늑한 분위기로 현지인과 방문객 모두에게 사랑받는 특별한 카페입니다. 일상 속 작은 휴식을 선사하며, 고미야 지역의 매력을 담은 완벽한 휴식처를 제공합니다.",
       "agoda": "",
       "link": "/item/ankuru_takamiya_mise_fukuoka_minami_ko"
+    },
+    {
+      "id": "kyouto_the_shake_kyoto_fu_kyoutoshi_shimogyou_ko",
+      "lang": "ko",
+      "title": "교토의 새로운 맛과 휴식, '京都 THE SHAKE': 〒600-8011 京都府京都市下京区橋本町１１１ 四条アイブリ屋ビル 2階",
+      "venue_name": "京都 THE SHAKE",
+      "lat": 35.003631,
+      "lng": 135.7708455,
+      "categories": [
+        "Specialty",
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/kyouto_the_shake_kyoto_fu_kyoutoshi_shimogyou.jpg",
+      "address": "〒600-8011 京都府京都市下京区橋本町１１１ 四条アイブリ屋ビル 2階",
+      "published": "2026-05-27",
+      "summary": "전통과 현대가 공존하는 교토의 중심에서, '京都 THE SHAKE'는 단순한 음료를 넘어선 특별한 미식 경험을 선사합니다. 신선하고 독창적인 쉐이크와 편안한 분위기가 어우러진 이곳은 교토 여행 중 잠시 쉬어가며 새로운 활력을 얻기에 완벽한 장소입니다.",
+      "agoda": "",
+      "link": "/item/kyouto_the_shake_kyoto_fu_kyoutoshi_shimogyou_ko"
     },
     {
       "id": "nina_zarittsukaaruton_toukyou_tokyo_minato_ko",
@@ -2570,6 +2755,43 @@
       "summary": "Nestled along Yokohama's picturesque waterfront, 象の鼻テラス offers a unique blend of a charming cafe and a vibrant art space, inviting visitors to savor delicious refreshments amidst stunning harbor views and inspiring cultural exhibitions.",
       "agoda": "zou_no_hana_terrace_yokohama",
       "link": "/item/zou_no_hana_terasu_yokohama_naka_en"
+    },
+    {
+      "id": "bakery_and_table_hakone_hakone_en",
+      "lang": "en",
+      "title": "Discover Bakery & Table 箱根: Lake Ashi's Premier Scenic Cafe & Bakery at 〒250-0522 神奈川県足柄下郡箱根町元箱根9-1",
+      "venue_name": "Bakery & Table 箱根",
+      "lat": 35.213889,
+      "lng": 139.026389,
+      "categories": [
+        "Scenic",
+        "Specialty",
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/bakery_and_table_hakone_hakone.jpg",
+      "address": "〒250-0522 神奈川県足柄下郡箱根町元箱根9-1",
+      "published": "2026-05-27",
+      "summary": "Nestled on the shores of Lake Ashi in Moto-Hakone, Bakery & Table 箱根 offers an unparalleled fusion of artisanal baked goods, aromatic coffee, and breathtaking panoramic views, creating an unforgettable scenic cafe experience in Hakone. It's a cherished point of interest where delicious food meets stunning natural beauty, inviting travelers to relax and savor the moment.",
+      "agoda": "bakery_and_table_hakone",
+      "link": "/item/bakery_and_table_hakone_hakone_en"
+    },
+    {
+      "id": "riverside_caf_e_green_terrace_kyoto_fu_kyoutoshi_sakyou_ko",
+      "lang": "ko",
+      "title": "교토의 숨겨진 보석: 리버사이드 카페 그린 테라스(riverside café GREEN TERRACE)에서 즐기는 평화로운 휴식 – 〒606-8421 교토부 교토시 사쿄구 시시가타니 호넨인초 72",
+      "venue_name": "riverside café GREEN TERRACE",
+      "lat": 35.0235439,
+      "lng": 135.7965783,
+      "categories": [
+        "Scenic",
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/riverside_caf_e_green_terrace_kyoto_fu_kyoutoshi_sakyou.jpg",
+      "address": "〒606-8421 京都府京都市左京区鹿ケ谷法然院町７２",
+      "published": "2026-05-27",
+      "summary": "교토의 아름다운 자연 속에 자리한 '리버사이드 카페 그린 테라스(riverside café GREEN TERRACE)'는 바쁜 일상에서 벗어나 진정한 평온을 선사합니다. 강변의 고요함과 함께 즐기는 신선한 커피, 향긋한 차, 그리고 수제 디저트는 방문객들에게 잊지 못할 미식 경험을 제공합니다.",
+      "agoda": "",
+      "link": "/item/riverside_caf_e_green_terrace_kyoto_fu_kyoutoshi_sakyou_ko"
     },
     {
       "id": "darts_fukuoka_hakata_en",
@@ -2717,6 +2939,25 @@
       "link": "/item/pateisurii_amonguu_sapporo_ko"
     },
     {
+      "id": "merisis_coffee_brewers_naha_en",
+      "lang": "en",
+      "title": "Merisis Coffee Brewers: Discover Naha's Premier Cafe & Brunch Haven at 〒900-0022 沖縄県那覇市樋川2丁目6-3 新垣家住宅103",
+      "venue_name": "Merisis Coffee Brewers",
+      "lat": 26.2155,
+      "lng": 127.6862,
+      "categories": [
+        "Specialty",
+        "Dessert",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/merisis_coffee_brewers_naha.jpg",
+      "address": "〒900-0022 沖縄県那覇市樋川2丁目6-3 新垣家住宅103",
+      "published": "2026-05-27",
+      "summary": "Merisis Coffee Brewers offers a serene escape in Naha, Okinawa, blending artisanal coffee, delightful brunch, and exquisite desserts in a welcoming atmosphere. It's a perfect spot for locals and travelers seeking a premium cafe experience, providing a cozy haven for relaxation or productivity amidst the city's vibrant energy and serving as a true point of interest.",
+      "agoda": "merisis_coffee_naha",
+      "link": "/item/merisis_coffee_brewers_naha_en"
+    },
+    {
       "id": "tariizukoohii_daibaashitei_toukyou_puraza_mise_tokyo_koutou_ko",
       "lang": "ko",
       "title": "오다이바의 활력 충전소: 타리즈 커피 다이버시티 도쿄 플라자점 (〒135-0064 東京都江東区青海１丁目１−1番地10 다이버시티 도쿄 플라자 3F)",
@@ -2751,6 +2992,25 @@
       "summary": "Nestled in Fukuoka's vibrant Chuo Ward, 西日本シティ銀行ココロ館カフェ offers a welcoming retreat for locals and travelers alike, boasting a delightful menu and a highly-rated atmosphere perfect for relaxation or a productive stop. This charming establishment, praised for its quality and inviting ambiance, stands as a true local gem in the Torikai neighborhood.",
       "agoda": "",
       "link": "/item/nishinihon_shitei_ginkou_kokoro_kan_kafe_fukuoka_chuuou_en"
+    },
+    {
+      "id": "koube_nishimura_koohii_mise_motomachi_mise_kobe_chuuou_ko",
+      "lang": "ko",
+      "title": "神戸にしむら珈琲店 元町店: 〒650-0022 兵庫県神戸市中央区元町通2丁目6-3 | 神戸元町で味わう格別のヴィンテージカフェ体験",
+      "venue_name": "神戸にしむら珈琲店 元町店",
+      "lat": 34.689456,
+      "lng": 135.186892,
+      "categories": [
+        "Vintage",
+        "Dessert",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/koube_nishimura_koohii_mise_motomachi_mise_kobe_chuuou.jpg",
+      "address": "〒650-0022 兵庫県神戸市中央区元町通2丁目6-3",
+      "published": "2026-05-27",
+      "summary": "神戸にしむら珈琲店 元町店は、元町商店街に佇む、時を超えた魅力を持つヴィンテージカフェです。ここでは、香り高いスペシャルティコーヒーと繊細なデザートを、歴史を感じさせる優雅な空間で心ゆくまでお楽しみいただけます。神戸の伝統と洗練された喫茶文化が融合した、格別なひとときをぜひご体験ください。",
+      "agoda": "nishimura_coffee_kobe_motomachi",
+      "link": "/item/koube_nishimura_koohii_mise_motomachi_mise_kobe_chuuou_ko"
     },
     {
       "id": "sanmarukukafe_oosaka_azuchi_machi_mise_osaka_chuuou_en",
@@ -3028,6 +3288,24 @@
       "link": "/item/tsubaki_saron_honten_sapporo_en"
     },
     {
+      "id": "maaruburanshu_konshierujuruumu_kyoto_fu_kyoutoshi_kita_en",
+      "lang": "en",
+      "title": "マールブランシュ コンシェルジュルーム: An Exclusive Kyoto Cafe Experience in Kitayama at 〒603-8053 京都市北区上賀茂岩ケ垣内町４１−４１ ４１B−LOCK−KITAYAMA",
+      "venue_name": "マールブランシュ コンシェルジュルーム",
+      "lat": 35.0512686,
+      "lng": 135.7637068,
+      "categories": [
+        "Specialty",
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/maaruburanshu_konshierujuruumu_kyoto_fu_kyoutoshi_kita.jpg",
+      "address": "〒603-8053 京都府京都市北区上賀茂岩ケ垣内町４１−４１ ４１B−LOCK−KITAYAMA",
+      "published": "2026-05-27",
+      "summary": "Discover マールブランシュ コンシェルジュルーム, an exquisite cafe in Kyoto's sophisticated Kitayama district, renowned for its luxurious desserts and specialty beverages, offering a refined escape for discerning travelers. This 4.2-rated establishment promises an elevated culinary journey, blending Japanese artistry with a touch of European elegance.",
+      "agoda": "",
+      "link": "/item/maaruburanshu_konshierujuruumu_kyoto_fu_kyoutoshi_kita_en"
+    },
+    {
       "id": "shimogamo_jinja_saruya_kyoto_fu_kyoutoshi_sakyou_ko",
       "lang": "ko",
       "title": "古都の風情に浸る：下鴨神社 さるやで味わう絶品和スイーツ体験 - 〒606-0807 京都府京都市左京区下鴨泉川町５９ 下鴨神社境内",
@@ -3101,6 +3379,25 @@
       "link": "/item/kiosq_coffee_rotary_sapporo_ko"
     },
     {
+      "id": "curio_espresso_and_vintage_design_kanazawa_en",
+      "lang": "en",
+      "title": "Experience Timeless Charm: Curio Espresso and Vintage Design at 〒920-0854 石川県金沢市安江町1-13",
+      "venue_name": "Curio Espresso and Vintage Design",
+      "lat": 36.563889,
+      "lng": 136.656667,
+      "categories": [
+        "Vintage",
+        "Specialty",
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/curio_espresso_and_vintage_design_kanazawa.jpg",
+      "address": "〒920-0854 石川県金沢市安江町1-13",
+      "published": "2026-05-27",
+      "summary": "Step into Curio Espresso and Vintage Design, a unique cafe in Kanazawa that beautifully marries the art of specialty coffee with the allure of bygone eras, creating an unforgettable sensory journey in the heart of Ishikawa.",
+      "agoda": "curio_espresso_kanazawa",
+      "link": "/item/curio_espresso_and_vintage_design_kanazawa_en"
+    },
+    {
       "id": "dinghy_coffee_in_kofune_sake_brewery_osaka_kita_ko",
       "lang": "ko",
       "title": "오사카의 숨겨진 보석: 고후네 양조장 속 딩기 커피 (DINGHY COFFEE in KOFUNE SAKE BREWERY) – 〒531-0076 大阪府大阪市北区大淀中１丁目７−１９에서 만나는 특별한 커피 경험",
@@ -3170,6 +3467,24 @@
       "summary": "エルパティオ offers a delightful escape in Osaka's Kita Ward, a charming cafe where locals and visitors alike can savor quality coffee and delectable food. With its inviting atmosphere and convenient location, it’s a perfect spot to relax, refuel, and experience a slice of authentic Osaka cafe culture.",
       "agoda": "",
       "link": "/item/erupateio_osaka_kita_en"
+    },
+    {
+      "id": "salon_de_kyoto_fu_kyoutoshi_joukyou_ko",
+      "lang": "ko",
+      "title": "교토의 시간 여행 카페: salon de 1904 | 〒602-8041 京都府京都市上京区薮之内町１에서 만나는 빈티지 감성",
+      "venue_name": "salon de 1904",
+      "lat": 35.020721,
+      "lng": 135.7559377,
+      "categories": [
+        "Vintage",
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/salon_de_kyoto_fu_kyoutoshi_joukyou.jpg",
+      "address": "〒602-8041 京都府京都市上京区薮之内町１",
+      "published": "2026-05-27",
+      "summary": "교토 상교구의 조용한 골목에 자리한 salon de 1904는 1904년이라는 이름처럼 아련한 옛 감성을 오롯이 담아낸 빈티지 카페입니다. 맛있는 커피와 특별한 디저트, 그리고 시대를 초월하는 분위기 속에서 잊지 못할 추억을 만들어보세요.",
+      "agoda": "",
+      "link": "/item/salon_de_kyoto_fu_kyoutoshi_joukyou_ko"
     },
     {
       "id": "cafe_and_bar_brisa_do_fukuoka_chuuou_ko",
@@ -3405,6 +3720,24 @@
       "link": "/item/place_japan_en"
     },
     {
+      "id": "coffee_roastery_sendai_aoba_en",
+      "lang": "en",
+      "title": "Discover 45COFFEE ROASTERY: A Specialty Coffee Sanctuary in Sendai's Ichibancho (〒980-0811 宮城県仙台市青葉区一番町3-3-20)",
+      "venue_name": "45COFFEE ROASTERY",
+      "lat": 38.262892,
+      "lng": 140.871623,
+      "categories": [
+        "Roastery",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/coffee_roastery_sendai_aoba.jpg",
+      "address": "〒980-0811 宮城県仙台市青葉区一番町3-3-20",
+      "published": "2026-05-27",
+      "summary": "Experience the rich aroma and expert craftsmanship of 45COFFEE ROASTERY, a premier specialty coffee destination in Sendai. Nestled in the vibrant Ichibancho district, this roastery cafe offers an immersive journey into the world of exceptional coffee, from bean to cup.",
+      "agoda": "45coffee_roastery_sendai",
+      "link": "/item/coffee_roastery_sendai_aoba_en"
+    },
+    {
       "id": "jika_baisen_toyokunikoohii_osaka_miyako_shima_ko",
       "lang": "ko",
       "title": "오사카 미야코지마의 커피 명소: 自家焙煎 トヨクニコーヒー – 〒534-0011 大阪府大阪市都島区高倉町１丁目１４−３ 트요쿠니하우스 A동 1층에서 만나는 스페셜티 로스터리",
@@ -3512,6 +3845,42 @@
       "summary": "오사카 덴노지구 우에혼마치에 위치한 사바스는 구글 평점 4점을 자랑하는 아늑하고 매력적인 카페로, 수준 높은 커피와 정성 가득한 식사 메뉴로 현지인과 여행객 모두에게 사랑받는 명소입니다. 북적이는 도심 속에서 잠시 벗어나 여유로운 시간을 보내고 싶은 분들께 완벽한 휴식처를 제공합니다.",
       "agoda": "",
       "link": "/item/sabasu_osaka_tennouji_ko"
+    },
+    {
+      "id": "rain_tree_coffee_kamakura_ko",
+      "lang": "ko",
+      "title": "가마쿠라 레인 트리 커피: 고마치 2-7-28 〒248-0006 가나가와현 가마쿠라시의 특별한 맛과 분위기",
+      "venue_name": "Rain Tree Coffee",
+      "lat": 35.3186,
+      "lng": 139.5502,
+      "categories": [
+        "Specialty",
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/rain_tree_coffee_kamakura.jpg",
+      "address": "〒248-0006 神奈川県鎌倉市小町2-7-28",
+      "published": "2026-05-27",
+      "summary": "가마쿠라 중심부의 활기 넘치는 고마치 거리에 자리한 레인 트리 커피는 방문객들에게 특별한 커피 경험을 선사합니다. 정성껏 내린 커피 한 잔과 달콤한 디저트가 어우러진 이곳에서 가마쿠라 여행의 여유를 만끽해 보세요.",
+      "agoda": "rain_tree_coffee_kamakura",
+      "link": "/item/rain_tree_coffee_kamakura_ko"
+    },
+    {
+      "id": "obscura_coffee_roasters_hiroshima_fukurocho_hiroshima_naka_ko",
+      "lang": "ko",
+      "title": "OBSCURA COFFEE ROASTERS Hiroshima Fukurocho: 〒730-0036 広島県広島市中区袋町3-28에서 만나는 스페셜티 커피의 세계",
+      "venue_name": "OBSCURA COFFEE ROASTERS Hiroshima Fukurocho",
+      "lat": 34.392856,
+      "lng": 132.454623,
+      "categories": [
+        "Specialty",
+        "Roastery"
+      ],
+      "thumbnail": "/static/images/obscura_coffee_roasters_hiroshima_fukurocho_hiroshima_naka.jpg",
+      "address": "〒730-0036 広島県広島市中区袋町3-28",
+      "published": "2026-05-27",
+      "summary": "히로시마 후쿠로초의 중심에 위치한 OBSCURA COFFEE ROASTERS는 단순한 카페를 넘어, 최고급 스페셜티 커피를 직접 로스팅하여 제공하는 진정한 커피 애호가의 성지입니다. 이곳에서 신선하게 로스팅된 원두가 선사하는 깊이 있는 맛과 향, 그리고 전문가의 손길이 닿은 완벽한 한 잔의 커피를 경험해보세요.",
+      "agoda": "obscura_coffee_hiroshima_fukurocho",
+      "link": "/item/obscura_coffee_roasters_hiroshima_fukurocho_hiroshima_naka_ko"
     },
     {
       "id": "hoshi_tomoe_katsu_osaka_chuuou_ko",
