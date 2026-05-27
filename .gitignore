@@ -4,7 +4,7 @@
 __pycache__/
 *.pyc
 .DS_Store
-app/content/
+# app/content/*.md must be tracked — Cloud Build only ships git files; without them GSC gets 404s.
 app/static/images/*.jpg
 app/static/images/*.jpeg
 app/static/images/*.png

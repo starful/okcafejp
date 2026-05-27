@@ -18,7 +18,7 @@ GCP_PROJECT_ID="${GCP_PROJECT_ID:-starful-258005}"
 MODE="full"
 DO_GIT=false
 DO_CLOUD_DEPLOY=false
-CONTENT_LIMIT="${CONTENT_LIMIT:-0}"
+CONTENT_LIMIT="${CONTENT_LIMIT:-10}"
 GUIDE_LIMIT="${GUIDE_LIMIT:-3}"
 
 print_step() {
@@ -49,7 +49,7 @@ Environment overrides
   SERVICE_URL      Default: https://okcafejp.net
   GCS_BUCKET       Default: gs://ok-project-assets/${PROJECT_NAME}
   GCP_PROJECT_ID   Default: starful-258005
-  CONTENT_LIMIT    Default: 0 (all items.csv rows; set e.g. 10 to cap)
+  CONTENT_LIMIT    Default: 10 (items.csv rows per run; 0 = all rows)
   GUIDE_LIMIT      Default: 3
 EOF
 }
@@ -70,9 +70,10 @@ sync_cloud_images_to_local() {
 
 generate_content() {
     print_step "STEP B: Generate content markdown"
-    print_info "Guide limit: GUIDE_LIMIT=${GUIDE_LIMIT} (guide_generator). Item rows: CONTENT_LIMIT=${CONTENT_LIMIT} (0=all)."
+    print_info "Guide limit: GUIDE_LIMIT=${GUIDE_LIMIT} (guide_generator). Item rows: CONTENT_LIMIT=${CONTENT_LIMIT} (0=all rows)."
     python3 script/guide_generator.py
     python3 script/item_generator.py --limit "${CONTENT_LIMIT}"
+    python3 script/item_generator.py --migrate-slugs
     print_ok "Content generation completed"
 }
 
@@ -86,7 +87,7 @@ process_and_upload_images() {
 }
 
 build_data() {
-    print_step "STEP D: Build JSON and sitemap"
+    print_step "STEP D: Build JSON (sitemap reads app/content/*.md at runtime)"
     python3 script/build_data.py
     print_ok "Data build completed"
 }

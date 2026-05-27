@@ -102,7 +102,7 @@ def generate_items(force: bool) -> int:
 
     created = 0
     skipped_invalid_coords = 0
-    rows_data: list[tuple[str, str, str, str, str, str]] = []
+    rows_data: list[tuple[str, str, str, str, str, str, str]] = []
     with open(ITEMS_CSV, "r", encoding="utf-8-sig") as f:
         reader = csv.DictReader(f)
         for row in reader:
@@ -123,12 +123,14 @@ def generate_items(force: bool) -> int:
             address = (row.get("Address") or "Japan").strip().replace('"', '\\"')
             features = (row.get("Features") or "").strip().replace('"', '\\"')
             agoda = (row.get("Agoda") or "").strip().replace('"', '\\"')
-            rows_data.append((name, lat, lng, address, features, agoda))
+            slug = (row.get("Slug") or "").strip()
+            rows_data.append((name, lat, lng, address, features, agoda, slug))
 
-    slugs = [build_item_slug(name, addr) for name, _, _, addr, _, _ in rows_data]
+    slugs = [build_item_slug(name, addr, slug) for name, _, _, addr, _, _, slug in rows_data]
     safe_names = uniquify_slugs(slugs)
 
-    for safe_name, (name, lat, lng, address, features, agoda) in zip(safe_names, rows_data):
+    for safe_name, row in zip(safe_names, rows_data):
+        name, lat, lng, address, features, agoda, _slug = row
         for lang in ("en", "ko"):
             filename = f"{safe_name}_{lang}.md"
             out_path = os.path.join(CONTENT_DIR, filename)

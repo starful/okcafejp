@@ -1,3 +1,4 @@
+import re
 import unittest
 
 from app import app
@@ -31,6 +32,24 @@ class ApiSmokeTest(unittest.TestCase):
         self.assertIn("<urlset", body)
         self.assertIn("<loc>", body)
         self.assertIn("xhtml:link", body)
+
+    def test_sitemap_item_urls_resolve(self):
+        sitemap = self.client.get("/sitemap.xml")
+        self.assertEqual(sitemap.status_code, 200)
+        body = sitemap.get_data(as_text=True)
+
+        for loc in re.findall(r"<loc>(https?://[^<]+|/[^<]+)</loc>", body):
+            path = loc
+            if loc.startswith("http"):
+                path = re.sub(r"^https?://[^/]+", "", loc)
+            if "/item/" not in path:
+                continue
+            resp = self.client.get(path)
+            self.assertEqual(
+                resp.status_code,
+                200,
+                msg=f"sitemap loc returned {resp.status_code}: {path}",
+            )
 
     def test_favicon_and_manifest_routes_exist(self):
         favicon = self.client.get("/favicon.ico")

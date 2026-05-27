@@ -377,6 +377,40 @@ def robots_txt():
     return Response(content, mimetype='text/plain')
 
 
+def _item_url_pairs_from_content(base: str) -> dict[str, dict[str, str]]:
+    """Build EN/KO URL pairs from item markdown on disk (source of truth for sitemap)."""
+    pairs: dict[str, dict[str, str]] = {}
+    if not os.path.isdir(CONTENT_DIR):
+        return pairs
+    for filename in os.listdir(CONTENT_DIR):
+        if not filename.endswith(".md"):
+            continue
+        m = re.match(r"^(.+)_(en|ko)\.md$", filename)
+        if not m:
+            continue
+        base_id, lang = m.group(1), m.group(2)
+        md_path = os.path.join(CONTENT_DIR, f"{base_id}_{lang}.md")
+        if not os.path.isfile(md_path):
+            continue
+        pairs.setdefault(base_id, {})[lang] = f"{base}/item/{base_id}_{lang}"
+    return pairs
+
+
+def _guide_url_pairs_from_disk(base: str) -> dict[str, dict[str, str]]:
+    pairs: dict[str, dict[str, str]] = {}
+    if not os.path.isdir(GUIDE_DIR):
+        return pairs
+    for filename in os.listdir(GUIDE_DIR):
+        if not filename.endswith(".md"):
+            continue
+        m = re.match(r"^(.+)_(en|ko)\.md$", filename)
+        if not m:
+            continue
+        base_id, lang = m.group(1), m.group(2)
+        pairs.setdefault(base_id, {})[lang] = f"{base}/guide/{base_id}_{lang}"
+    return pairs
+
+
 @app.route('/sitemap.xml')
 def sitemap_xml():
     base = SITE_CONFIG['site_url'].rstrip('/')
@@ -387,32 +421,16 @@ def sitemap_xml():
     for url in static_urls:
         url_entries.append({"loc": url, "alternates": {}})
 
-    items = CACHED_DATA.get(SITE_CONFIG['data_key'], [])
-    item_pairs = {}
-    for item in items:
-        item_id = item.get('id')
-        lang = item.get('lang', 'en')
-        if not item_id:
-            continue
-        base_id = re.sub(r'_(en|ko)$', '', item_id)
-        pair = item_pairs.setdefault(base_id, {})
-        pair[lang] = f"{base}/item/{item_id}"
+    # Prefer on-disk markdown over cached JSON so sitemap never lists 404 slugs.
+    item_pairs = _item_url_pairs_from_content(base)
     for pair in item_pairs.values():
-        primary = pair.get('en') or pair.get('ko')
+        primary = pair.get("en") or pair.get("ko")
         if primary:
             url_entries.append({"loc": primary, "alternates": pair})
 
-    guide_pairs = {}
-    for lang in ('en', 'ko'):
-        for guide in CACHED_GUIDES.get(lang, []):
-            gid = guide.get('id')
-            if not gid:
-                continue
-            base_id = re.sub(r'_(en|ko)$', '', gid)
-            pair = guide_pairs.setdefault(base_id, {})
-            pair[lang] = f"{base}/guide/{gid}"
+    guide_pairs = _guide_url_pairs_from_disk(base)
     for pair in guide_pairs.values():
-        primary = pair.get('en') or pair.get('ko')
+        primary = pair.get("en") or pair.get("ko")
         if primary:
             url_entries.append({"loc": primary, "alternates": pair})
 
@@ -425,6 +443,8 @@ def sitemap_xml():
                 for lang, href in sorted(alternates.items())
             ]
         )
+        if alternates.get("en"):
+            hreflangs += f'<xhtml:link rel="alternate" hreflang="x-default" href="{alternates["en"]}" />'
         nodes.append(
             f"<url><loc>{entry['loc']}</loc><lastmod>{today}</lastmod>"
             f"<changefreq>weekly</changefreq>{hreflangs}</url>"

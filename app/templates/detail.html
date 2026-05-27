@@ -32,7 +32,7 @@
     {% else %}
     <link rel="alternate" hreflang="en" href="{{ site.site_url }}/item/{{ post.id | replace('_ko', '_en') }}" />
     {% endif %}
-    <link rel="alternate" hreflang="x-default" href="{{ site.site_url }}/item/{{ post.id }}" />
+    <link rel="alternate" hreflang="x-default" href="{{ site.site_url }}/item/{{ post.id | replace('_ko', '_en') if post.id.endswith('_ko') else post.id }}" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="article">

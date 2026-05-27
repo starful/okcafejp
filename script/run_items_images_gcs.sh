@@ -6,7 +6,7 @@ ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
 export PYTHONUNBUFFERED=1
 
-LIMIT="${CONTENT_LIMIT:-0}"
+LIMIT="${CONTENT_LIMIT:-10}"
 if [[ "${1:-}" != "" ]]; then
   LIMIT="$1"
 fi
