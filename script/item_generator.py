@@ -444,7 +444,7 @@ def migrate_item_slugs(dry_run: bool = False) -> None:
     print(f"✅ Slug migration done: renamed {renamed}, removed {removed} orphan(s)")
 
 
-def run_generator(limit: int | None = 10, offset: int = 0, incomplete_only: bool = False):
+def run_generator(limit: int | None = 6, offset: int = 0, incomplete_only: bool = False):
     """Generate markdown. With incomplete_only, skip rows that already have both EN and KO."""
     csv_path = os.path.join(SCRIPT_DIR, "csv", "items.csv")
     if not os.path.exists(csv_path):
@@ -539,7 +539,7 @@ def _parse_cli_and_run() -> None:
         "--limit",
         type=int,
         default=None,
-        help="Max CSV rows to consider (default: 10, or CONTENT_LIMIT env). 0 = all rows.",
+        help="Max CSV rows to consider (default: 6, or CONTENT_LIMIT env). 0 = all rows.",
     )
     args = parser.parse_args()
     if args.enrich_trust:
@@ -560,9 +560,9 @@ def _parse_cli_and_run() -> None:
             try:
                 lim = int(raw)
             except ValueError:
-                lim = 10
+                lim = 6
         else:
-            lim = 10
+            lim = 6
     run_generator(limit=lim, offset=max(0, args.offset), incomplete_only=args.incomplete_only)
 
 

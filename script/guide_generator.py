@@ -154,4 +154,14 @@ def run_guide_generator(limit: int = 3):
 
 
 if __name__ == "__main__":
-    run_guide_generator(limit=3)
+    import sys
+
+    env_limit = os.environ.get("GUIDE_LIMIT")
+    arg_limit = sys.argv[1] if len(sys.argv) > 1 else None
+    try:
+        run_limit = int(arg_limit or env_limit or 3)
+    except ValueError:
+        run_limit = 3
+    if run_limit <= 0:
+        run_limit = 3
+    run_guide_generator(limit=run_limit)
