@@ -119,24 +119,34 @@ def run():
 
     processed = set()
     for filename in sorted(os.listdir(CONTENT_DIR)):
-        if not filename.endswith("_en.md"):
+        if not filename.endswith(".md") or filename.startswith("."):
             continue
-        safe_name = filename.replace("_en.md", "")
+        if "/guides/" in filename.replace("\\", "/"):
+            continue
+        m = re.match(r"^(.+)_(en|ko)\.md$", filename)
+        if not m:
+            continue
+        safe_name, lang = m.group(1), m.group(2)
         if safe_name in processed:
             continue
 
-        fpath = os.path.join(CONTENT_DIR, filename)
+        en_path = os.path.join(CONTENT_DIR, f"{safe_name}_en.md")
+        ko_path = os.path.join(CONTENT_DIR, f"{safe_name}_ko.md")
+        fpath = en_path if os.path.isfile(en_path) else ko_path
+        if not os.path.isfile(fpath):
+            continue
+
         try:
             with open(fpath, "r", encoding="utf-8") as f:
                 post = frontmatter.loads(clean_md(f.read()))
             prompt = str(post.get("image_prompt", ""))
             if not prompt or len(prompt) < 10:
-                print(f"⚠️  image_prompt is missing: {filename}")
+                print(f"⚠️  image_prompt is missing: {os.path.basename(fpath)}")
                 continue
             generate_image(safe_name, prompt)
             processed.add(safe_name)
         except Exception as e:
-            print(f"❌ Failed to read file ({filename}): {e}")
+            print(f"❌ Failed to read file ({os.path.basename(fpath)}): {e}")
 
 
 if __name__ == "__main__":
