@@ -445,14 +445,21 @@ def migrate_item_slugs(dry_run: bool = False) -> None:
 
 
 def run_generator(limit: int | None = 6, offset: int = 0, incomplete_only: bool = False):
-    """Generate markdown. With incomplete_only, skip rows that already have both EN and KO."""
+    """Generate markdown. With incomplete_only, scan all CSV rows and fill missing EN/KO."""
     csv_path = os.path.join(SCRIPT_DIR, "csv", "items.csv")
     if not os.path.exists(csv_path):
         print(f"❌ CSV not found: {csv_path}")
         return
 
-    max_rows = None if limit is None or limit <= 0 else limit
-    parsed = load_items_from_csv(csv_path, offset=offset, limit=max_rows)
+    pair_limit: int | None
+    if incomplete_only:
+        parsed = load_items_from_csv(csv_path, offset=0, limit=None)
+        pair_limit = None if limit is None or limit <= 0 else limit
+    else:
+        max_rows = None if limit is None or limit <= 0 else limit
+        parsed = load_items_from_csv(csv_path, offset=offset, limit=max_rows)
+        pair_limit = None
+
     if not parsed:
         print("❌ No rows to process in items.csv slice")
         return
@@ -462,7 +469,10 @@ def run_generator(limit: int | None = 6, offset: int = 0, incomplete_only: bool 
 
     tasks = []
     skipped_complete = 0
+    items_queued = 0
     for base_id, row in zip(base_ids, parsed):
+        if incomplete_only and pair_limit is not None and items_queued >= pair_limit:
+            break
         name, lat, lng, address, features, agoda, _slug = row
         en_path = os.path.join(CONTENT_DIR, f"{base_id}_en.md")
         ko_path = os.path.join(CONTENT_DIR, f"{base_id}_ko.md")
@@ -471,18 +481,28 @@ def run_generator(limit: int | None = 6, offset: int = 0, incomplete_only: bool 
         if incomplete_only and has_en and has_ko:
             skipped_complete += 1
             continue
+        pair_tasks = []
         for lang in ["en", "ko"]:
             out_path = os.path.join(CONTENT_DIR, f"{base_id}_{lang}.md")
             if not os.path.exists(out_path):
-                tasks.append((base_id, name, lat, lng, address, lang, features, agoda))
+                pair_tasks.append((base_id, name, lat, lng, address, lang, features, agoda))
+        if not pair_tasks:
+            continue
+        if incomplete_only:
+            items_queued += 1
+        tasks.extend(pair_tasks)
 
     if not tasks:
         print("✨ No missing EN/KO files to generate.")
         return
 
-    scope = f"rows {offset + 1}–{offset + len(parsed)}"
     if incomplete_only:
-        scope = f"incomplete pairs in {scope} ({skipped_complete} complete pair(s) skipped)"
+        scope = (
+            f"{items_queued} incomplete pair(s), {len(tasks)} file(s) "
+            f"({skipped_complete} complete pair(s) skipped)"
+        )
+    else:
+        scope = f"rows {offset + 1}–{offset + len(parsed)}"
     print(
         f"🔔 {scope}: generating {len(tasks)} missing file(s) "
         f"(model={GEMINI_MODEL}, workers={ITEM_MAX_WORKERS})..."

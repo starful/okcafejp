@@ -79,6 +79,9 @@
                         <div class="card-content">
                             <h3 class="card-title">{{ guide.title }}</h3>
                             <p class="card-summary">{{ guide.summary }}</p>
+                            <div class="card-meta">
+                                <span>📅 {{ guide.published or '' }}</span>
+                            </div>
                         </div>
                     </a>
                     {% endfor %}

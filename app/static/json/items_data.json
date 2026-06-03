@@ -1,7 +1,316 @@
 {
   "last_updated": "2026.06.03",
-  "total_count": 216,
+  "total_count": 233,
   "items": [
+    {
+      "id": "okinawa_street_food_and_drink_drive_in_naha_en",
+      "lang": "en",
+      "title": "Okinawa Street Food & Drink 87 DRIVE-IN: Your Ultimate Naha Culinary Stop Near Kokusai Street at 〒900-0014 沖縄県那覇市松尾２丁目８−１ ホテルランタナ那覇 国際通り前",
+      "venue_name": "Okinawa Street Food & Drink 87 DRIVE-IN",
+      "lat": 26.2154732,
+      "lng": 127.6860248,
+      "categories": [
+        "Specialty",
+        "Vintage"
+      ],
+      "thumbnail": "/static/images/okinawa_street_food_and_drink_drive_in_naha.jpg",
+      "address": "〒900-0014 沖縄県那覇市松尾２丁目８−１ ホテルランタナ那覇 国際通り前",
+      "published": "2026-06-03",
+      "summary": "Discover the vibrant tastes of Okinawa at 87 DRIVE-IN, a highly-rated cafe and breakfast spot perfectly situated near Naha's bustling Kokusai Street, offering a unique blend of local flavors and inviting ambiance for every traveler.",
+      "agoda": "",
+      "link": "/item/okinawa_street_food_and_drink_drive_in_naha_en"
+    },
+    {
+      "id": "jun_kissa_furasshu_kobe_en",
+      "lang": "en",
+      "title": "Pure Retro Charm: 純喫茶 フラッシュ – A Vintage Coffee Oasis in Kobe's Motomachi District (9, Chuo, ２丁目-９ 元町通 中央区 神戸市 兵庫県 650-0022)",
+      "venue_name": "純喫茶 フラッシュ",
+      "lat": 34.6889905,
+      "lng": 135.1868769,
+      "categories": [
+        "Vintage",
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/jun_kissa_furasshu_kobe.jpg",
+      "address": "9, Chuo, ２丁目-９ 元町通 中央区 神戸市 兵庫県 650-0022",
+      "published": "2026-06-03",
+      "summary": "Step into a bygone era at 純喫茶 フラッシュ, a cherished vintage coffee shop in Kobe's vibrant Motomachi district, offering a timeless escape with classic brews and delightful treats.",
+      "agoda": "",
+      "link": "/item/jun_kissa_furasshu_kobe_en"
+    },
+    {
+      "id": "noop_sendai_aoba_en",
+      "lang": "en",
+      "title": "NOOP: Your Definitive Guide to Sendai's Premier Cafe & Bar at 〒980-0811 宮城県仙台市青葉区一番町４丁目２−２７ ３F",
+      "venue_name": "NOOP",
+      "lat": 38.2631347,
+      "lng": 140.8720255,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/noop_sendai_aoba.jpg",
+      "address": "〒980-0811 宮城県仙台市青葉区一番町４丁目２−２７ ３F",
+      "published": "2026-06-03",
+      "summary": "Discover NOOP, a highly-rated cafe, bar, and food establishment in Sendai's vibrant Aoba Ward, offering a diverse menu and inviting atmosphere for locals and travelers alike. Nestled on the third floor of 〒980-0811 宮城県仙台市青葉区一番町４丁目２−２７, it's a perfect spot for any occasion, blending the best of specialty coffee with an enticing evening bar scene.",
+      "agoda": "",
+      "link": "/item/noop_sendai_aoba_en"
+    },
+    {
+      "id": "gyokusen_iori_kanazawa_en",
+      "lang": "en",
+      "title": "Discover 玉泉庵: A Serene Cafe Gem at 〒920-0937 石川県金沢市丸の内３−３ in Kanazawa",
+      "venue_name": "玉泉庵",
+      "lat": 36.5653351,
+      "lng": 136.656962,
+      "categories": [
+        "Scenic",
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/gyokusen_iori_kanazawa.jpg",
+      "address": "〒920-0937 石川県金沢市丸の内３−３",
+      "published": "2026-06-03",
+      "summary": "Nestled in the historic heart of Kanazawa, 玉泉庵 offers a serene escape, blending traditional charm with a delightful cafe experience. This highly-rated establishment is a must-visit for travelers seeking authentic Japanese hospitality and exquisite treats, making it a true point of interest at 〒920-0937 石川県金沢市丸の内３−３.",
+      "agoda": "",
+      "link": "/item/gyokusen_iori_kanazawa_en"
+    },
+    {
+      "id": "koohii_kan_yokohama_nihondai_touri_ekimae_mise_yokohama_naka_en",
+      "lang": "en",
+      "title": "Discover Serenity and Flavor: 珈琲館 横浜日本大通り駅前店 at 〒231-0021 神奈川県横浜市中区日本大通５−２ １F",
+      "venue_name": "珈琲館 横浜日本大通り駅前店",
+      "lat": 35.4465883,
+      "lng": 139.6434956,
+      "categories": [
+        "Vintage",
+        "Dessert",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/koohii_kan_yokohama_nihondai_touri_ekimae_mise_yokohama_naka.jpg",
+      "address": "〒231-0021 神奈川県横浜市中区日本大通５−２ １F",
+      "published": "2026-06-03",
+      "summary": "Nestled in the historic Nihon Odori district, 珈琲館 横浜日本大通り駅前店 offers a delightful escape with its classic coffee selections, tempting desserts, and a welcoming atmosphere perfect for work or relaxation, all within easy reach of Yokohama's vibrant attractions.",
+      "agoda": "",
+      "link": "/item/koohii_kan_yokohama_nihondai_touri_ekimae_mise_yokohama_naka_en"
+    },
+    {
+      "id": "kissashitsu_runoaaru_ikebukuro_higashiguchiten_tokyo_toyoshima_ko",
+      "lang": "ko",
+      "title": "池袋東口の隠れた名店『喫茶室ルノアール 池袋東口店』徹底ガイド：レトロな空間で極上のカフェ体験を 〒170-0013 東京都豊島区東池袋１丁目４０−２ ２階",
+      "venue_name": "喫茶室ルノアール 池袋東口店",
+      "lat": 35.732021,
+      "lng": 139.713737,
+      "categories": [
+        "Work-Friendly",
+        "Vintage"
+      ],
+      "thumbnail": "/static/images/kissashitsu_runoaaru_ikebukuro_higashiguchiten_tokyo_toyoshima.jpg",
+      "address": "〒170-0013 東京都豊島区東池袋１丁目４０−２ ２階",
+      "published": "2026-06-03",
+      "summary": "池袋東口の喧騒を忘れさせる喫茶室ルノアールは、昭和レトロな落ち着いた空間で、こだわりのコーヒーと共に上質な時間を過ごせる隠れ家的なカフェです。ビジネス利用から友人との語らい、一人で読書に耽るまで、多様なニーズに応える居心地の良さが魅力です。",
+      "agoda": "",
+      "link": "/item/kissashitsu_runoaaru_ikebukuro_higashiguchiten_tokyo_toyoshima_ko"
+    },
+    {
+      "id": "b_a_i_i_u_xe_hiroshima_naka_en",
+      "lang": "en",
+      "title": "Bãi đậu xe: Your Premier Specialty Cafe and Work-Friendly Oasis in Hiroshima's Naka Ward (〒730-0051 広島県広島市中区大手町２丁目６−２７)",
+      "venue_name": "Bãi đậu xe",
+      "lat": 34.3926198,
+      "lng": 132.4554991,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/b_a_i_i_u_xe_hiroshima_naka.jpg",
+      "address": "〒730-0051 広島県広島市中区大手町２丁目６−２７",
+      "published": "2026-06-03",
+      "summary": "Discover Bãi đậu xe, a captivating specialty cafe nestled in the heart of Hiroshima's bustling Naka Ward. This unique coffee shop offers a serene escape, blending exceptional beverages, delightful food, and a welcoming atmosphere perfect for both productivity and relaxation, making it a true urban sanctuary.",
+      "agoda": "",
+      "link": "/item/b_a_i_i_u_xe_hiroshima_naka_en"
+    },
+    {
+      "id": "efuraimu_nagoya_chigusa_ko",
+      "lang": "ko",
+      "title": "에프라임 (エフライム): 나고야 지쿠사구 이마이케의 숨겨진 커피 보석 〒464-0850",
+      "venue_name": "エフライム",
+      "lat": 35.1694935,
+      "lng": 136.9320077,
+      "categories": [
+        "Specialty",
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/efuraimu_nagoya_chigusa.jpg",
+      "address": "〒464-0850 愛知県名古屋市千種区今池１丁目２−８",
+      "published": "2026-06-03",
+      "summary": "아이치현 나고야시 지쿠사구 이마이케에 위치한 에프라임은 단순한 카페를 넘어선 미식 경험을 제공합니다. 뛰어난 커피와 정성 가득한 메뉴로 방문객들에게 잊지 못할 순간을 선사하는 이곳은 도심 속 작은 안식처입니다.",
+      "agoda": "",
+      "link": "/item/efuraimu_nagoya_chigusa_ko"
+    },
+    {
+      "id": "b_a_i_i_u_xe_hiroshima_naka_ko",
+      "lang": "ko",
+      "title": "히로시마 오오테마치 카페, Bãi đậu xe: 〒730-0051 広島県広島市中区大手町２丁目６−２７에서 만나는 특별한 커피 경험",
+      "venue_name": "Bãi đậu xe",
+      "lat": 34.3926198,
+      "lng": 132.4554991,
+      "categories": [
+        "Specialty",
+        "Dessert",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/b_a_i_i_u_xe_hiroshima_naka.jpg",
+      "address": "〒730-0051 広島県広島市中区大手町２丁目６−２７",
+      "published": "2026-06-03",
+      "summary": "히로시마의 중심, 오오테마치에 위치한 Bãi đậu xe는 고품질의 스페셜티 커피와 매력적인 분위기로 방문객들을 사로잡는 독특한 카페입니다. 잠시 멈춰 쉬어가는 '주차 공간'이라는 이름처럼, 이곳은 도시의 번잡함 속에서 평화로운 휴식을 선사하며 미식의 즐거움까지 선사하는 특별한 장소입니다.",
+      "agoda": "",
+      "link": "/item/b_a_i_i_u_xe_hiroshima_naka_ko"
+    },
+    {
+      "id": "koohii_kan_yokohama_nihondai_touri_ekimae_mise_yokohama_naka_ko",
+      "lang": "ko",
+      "title": "珈琲館 横浜日本大通り駅前店: 요코하마 도심 속 여유와 맛을 선사하는 특별한 커피 공간 (〒231-0021 神奈川県横浜市中区日本大通５−２ １F)",
+      "venue_name": "珈琲館 横浜日本大通り駅前店",
+      "lat": 35.4465883,
+      "lng": 139.6434956,
+      "categories": [
+        "Specialty",
+        "Work-Friendly"
+      ],
+      "thumbnail": "/static/images/koohii_kan_yokohama_nihondai_touri_ekimae_mise_yokohama_naka.jpg",
+      "address": "〒231-0021 神奈川県横浜市中区日本大通５−２ １F",
+      "published": "2026-06-03",
+      "summary": "요코하마 일본 오도리 역 바로 앞에 위치한 珈琲館 横浜日本大通り駅前店은 바쁜 도시 생활 속에서도 한 박자 쉬어갈 수 있는 아늑한 휴식처입니다. 엄선된 원두로 내린 풍미 깊은 커피와 함께 여유로운 시간을 보내며, 인근 관광 명소 탐방 전후로 완벽한 충전의 기회를 제공합니다.",
+      "agoda": "",
+      "link": "/item/koohii_kan_yokohama_nihondai_touri_ekimae_mise_yokohama_naka_ko"
+    },
+    {
+      "id": "cafe_tonton_sapporo_ko",
+      "lang": "ko",
+      "title": "삿포로의 숨겨진 보석, Cafe TONTON (〒004-0062 北海道札幌市厚別区厚別西２条２丁目３−５)에서 경험하는 진정한 휴식",
+      "venue_name": "Cafe TONTON",
+      "lat": 43.0474454,
+      "lng": 141.4601646,
+      "categories": [
+        "Specialty",
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/cafe_tonton_sapporo.jpg",
+      "address": "〒004-0062 北海道札幌市厚別区厚別西２条２丁目３−５",
+      "published": "2026-06-03",
+      "summary": "삿포로 두터운 자연 속에 자리 잡은 Cafe TONTON은 따뜻하고 아늑한 분위기 속에서 고품격 커피와 맛있는 디저트를 즐길 수 있는 매력적인 공간입니다. 구글 평점 4.1에 빛나는 이곳은 일상 속 작은 휴식을 선사하며, 지역 주민과 방문객 모두에게 사랑받는 명소입니다.",
+      "agoda": "",
+      "link": "/item/cafe_tonton_sapporo_ko"
+    },
+    {
+      "id": "sapporo_purinsuhoteru_oorudeidainingu_gurandeyuuru_sapporo_ko",
+      "lang": "ko",
+      "title": "札幌プリンスホテル オールデイダイニング グランデュール: 〒060-8615 北海道札幌市中央区で味わう至福のオールデイダイニング体験",
+      "venue_name": "札幌プリンスホテル オールデイダイニング グランデュール",
+      "lat": 43.055806,
+      "lng": 141.3407142,
+      "categories": [
+        "Specialty",
+        "Scenic"
+      ],
+      "thumbnail": "/static/images/sapporo_purinsuhoteru_oorudeidainingu_gurandeyuuru_sapporo.jpg",
+      "address": "〒060-8615 北海道札幌市中央区南２条西１１丁目",
+      "published": "2026-06-03",
+      "summary": "札幌プリンスホテル オールデイダイニング グランデュールは、北海道札幌市中央区に位置する、多様な美食体験を提供するホテルレストランです。朝食からディナーまで、和洋中の豊富なメニューが楽しめるビュッフェを中心に、カフェ利用も可能な洗練された空間で、訪れる人々に至福のひとときを約束します。",
+      "agoda": "",
+      "link": "/item/sapporo_purinsuhoteru_oorudeidainingu_gurandeyuuru_sapporo_ko"
+    },
+    {
+      "id": "efuraimu_nagoya_chigusa_en",
+      "lang": "en",
+      "title": "Discover エフライム: Your Ultimate Guide to a Charming Cafe Experience in Nagoya's Chigusa-ku (〒464-0850)",
+      "venue_name": "エフライム",
+      "lat": 35.1694935,
+      "lng": 136.9320077,
+      "categories": [
+        "Specialty",
+        "Vintage"
+      ],
+      "thumbnail": "/static/images/efuraimu_nagoya_chigusa.jpg",
+      "address": "〒464-0850 愛知県名古屋市千種区今池１丁目２−８",
+      "published": "2026-06-03",
+      "summary": "エフライム offers a delightful escape in Nagoya's vibrant Imaike district, serving as a cherished coffee shop and food store with a reputation for quality and charm, perfect for both locals and travelers seeking an authentic cafe experience. It's a beloved local spot where delicious coffee and thoughtfully prepared food create an inviting atmosphere for any time of day.",
+      "agoda": "",
+      "link": "/item/efuraimu_nagoya_chigusa_en"
+    },
+    {
+      "id": "jun_kissa_furasshu_kobe_ko",
+      "lang": "ko",
+      "title": "고베의 시간여행, 순수함을 맛보는 곳: 純喫茶 フラッシュ (9, Chuo, ２丁目-９ 元町通 中央区 神戸市 兵庫県 650-0022)",
+      "venue_name": "純喫茶 フラッシュ",
+      "lat": 34.6889905,
+      "lng": 135.1868769,
+      "categories": [
+        "Vintage",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/jun_kissa_furasshu_kobe.jpg",
+      "address": "9, Chuo, ２丁目-９ 元町通 中央区 神戸市 兵庫県 650-0022",
+      "published": "2026-06-03",
+      "summary": "고베 모토마치 상점가에 자리한 純喫茶 フラッシュ는 복잡한 일상에서 벗어나 시간의 흐름을 잊게 하는 빈티지한 매력의 순수 찻집입니다. 정성껏 내린 커피 한 잔과 함께 고베의 정취를 오롯이 느끼며 아날로그 감성에 젖어들 수 있는 특별한 공간을 선사합니다.",
+      "agoda": "",
+      "link": "/item/jun_kissa_furasshu_kobe_ko"
+    },
+    {
+      "id": "okinawa_street_food_and_drink_drive_in_naha_ko",
+      "lang": "ko",
+      "title": "오키나와 스트리트 푸드 & 드링크 87 드라이브인: 국제거리 맛집, 〒900-0014 沖縄県那覇市松尾２丁目８−１",
+      "venue_name": "Okinawa Street Food & Drink 87 DRIVE-IN",
+      "lat": 26.2154732,
+      "lng": 127.6860248,
+      "categories": [
+        "Specialty",
+        "Vintage"
+      ],
+      "thumbnail": "/static/images/okinawa_street_food_and_drink_drive_in_naha.jpg",
+      "address": "〒900-0014 沖縄県那覇市松尾２丁目８−１ ホテルラン타나那覇 国際通り前",
+      "published": "2026-06-03",
+      "summary": "오키나와 국제거리 중심부에 위치한 '오키나와 스트리트 푸드 & 드링크 87 드라이브인'은 특별한 맛과 분위기로 여행객들을 사로잡는 숨겨진 보석 같은 곳입니다. 4.6점의 높은 구글 평점이 증명하듯, 이곳은 단순한 식당을 넘어 오키나와의 다채로운 미식 경험을 선사하는 핫플레이스입니다.",
+      "agoda": "",
+      "link": "/item/okinawa_street_food_and_drink_drive_in_naha_ko"
+    },
+    {
+      "id": "gyokusen_iori_kanazawa_ko",
+      "lang": "ko",
+      "title": "금빛 도시의 고즈넉한 휴식처: 玉泉庵, 〒920-0937 이시카와현 가나자와시 마루노우치 3-3에서 만나는 특별한 미식 경험",
+      "venue_name": "玉泉庵",
+      "lat": 36.5653351,
+      "lng": 136.656962,
+      "categories": [
+        "Dessert",
+        "Scenic",
+        "Specialty"
+      ],
+      "thumbnail": "/static/images/gyokusen_iori_kanazawa.jpg",
+      "address": "〒920-0937 石川県金沢市丸の内３−３",
+      "published": "2026-06-03",
+      "summary": "금빛 도시 가나자와의 중심부에 자리한 玉泉庵은 고즈넉한 분위기 속에서 전통과 현대가 어우러진 특별한 미식 경험을 선사합니다. 4.6점의 높은 구글 평점은 이곳이 단순한 카페를 넘어선 진정한 문화적 명소임을 증명합니다.",
+      "agoda": "",
+      "link": "/item/gyokusen_iori_kanazawa_ko"
+    },
+    {
+      "id": "shokuji_to_kissa_sakurano_ki_fukuoka_hakata_ko",
+      "lang": "ko",
+      "title": "후쿠오카 하카타의 숨겨진 보석: 식사와 喫茶 사쿠라노키 - 〒812-0008 후쿠오카현 후쿠오카시 하카타구 토코 2초메 20-28",
+      "venue_name": "食事と喫茶さくらの樹",
+      "lat": 33.5937193,
+      "lng": 130.4291331,
+      "categories": [
+        "Specialty",
+        "Dessert"
+      ],
+      "thumbnail": "/static/images/shokuji_to_kissa_sakurano_ki_fukuoka_hakata.jpg",
+      "address": "〒812-0008 福岡県福岡市博多区東光２丁目２０−２８",
+      "published": "2026-06-03",
+      "summary": "후쿠오카 하카타의 번화가 속에 자리한 '食事と喫茶さくらの樹'는 따뜻한 식사와 향긋한 커피가 공존하는 아늑한 공간입니다. 높은 구글 평점 4.2를 자랑하며 현지인과 여행객 모두에게 사랑받는 이곳에서 일상의 휴식과 미식의 즐거움을 동시에 경험해보세요.",
+      "agoda": "",
+      "link": "/item/shokuji_to_kissa_sakurano_ki_fukuoka_hakata_ko"
+    },
     {
       "id": "kabushikigaisha_fukuoka_jounan_ko",
       "lang": "ko",
