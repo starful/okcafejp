@@ -118,35 +118,36 @@ def run_guide_generator(limit: int = 3):
         print(f"❌ CSV not found: {csv_path}")
         return
 
-    tasks = []
-    batch_rows: list[dict] = []
     with open(csv_path, mode='r', encoding='utf-8-sig') as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            if len(batch_rows) >= limit:
-                break
-            batch_rows.append(row)
+        all_rows = list(csv.DictReader(f))
 
-    stems_raw = [guide_stem_from_topic_en((r.get("topic_en") or "").strip()) for r in batch_rows]
+    stems_raw = [guide_stem_from_topic_en((r.get("topic_en") or "").strip()) for r in all_rows]
     guide_stems = uniquify_slugs(stems_raw)
 
-    for row, guide_id in zip(batch_rows, guide_stems):
+    tasks = []
+    topics_queued = 0
+    for row, guide_id in zip(all_rows, guide_stems):
+        if topics_queued >= limit:
+            break
         keywords = row.get('keywords', '').strip()
-
         en_path = os.path.join(GUIDE_DIR, f"{guide_id}_en.md")
         ko_path = os.path.join(GUIDE_DIR, f"{guide_id}_ko.md")
-
+        topic_tasks = []
         if not os.path.exists(en_path):
-            tasks.append((guide_id, row['topic_en'], 'en', keywords))
+            topic_tasks.append((guide_id, row['topic_en'], 'en', keywords))
         if not os.path.exists(ko_path):
-            tasks.append((guide_id, row['topic_ko'], 'ko', keywords))
+            topic_tasks.append((guide_id, row['topic_ko'], 'ko', keywords))
+        if not topic_tasks:
+            continue
+        tasks.extend(topic_tasks)
+        topics_queued += 1
 
     if not tasks:
         print("✨ No new guides to generate.")
         return
 
     print(
-        f"🔔 Starting generation for {len(tasks)} guide files "
+        f"🔔 {topics_queued} topic(s), {len(tasks)} guide file(s) "
         f"(model={GEMINI_MODEL}, workers={GUIDE_MAX_WORKERS}, 429 retry)..."
     )
     with concurrent.futures.ThreadPoolExecutor(max_workers=GUIDE_MAX_WORKERS) as ex:
